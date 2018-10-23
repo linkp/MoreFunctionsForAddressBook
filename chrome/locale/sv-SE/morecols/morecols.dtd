@@ -1,0 +1,241 @@
+<!ENTITY MCcopyemail1 "Kopiera e-postadress">
+<!ENTITY MCcopyemail2 "Kopiera alternativ e-postadress">
+<!ENTITY MCcopymenu "Kopiera annan data">
+<!ENTITY MCcopyname "Namn">
+<!ENTITY MCcopyhome "Adress, privat">
+<!ENTITY MCcopyhome2 "Adress, privat 2">
+<!ENTITY MCcopywork "Adress, arbete">
+<!ENTITY MCcopywork2 "Adress, arbete 2">
+<!ENTITY MCcopyhometel "Telefon, privat">
+<!ENTITY MCcopyworktel "Telefon, arbete">
+<!ENTITY MCcopyfax "Faxnummer">
+<!ENTITY MCcopycell "Mobiltelefon">
+<!ENTITY MCcopypager "Personsökare">
+<!ENTITY MCcopyAIM "Snabbmeddelandesmeknamn">
+<!ENTITY MCcopywebhome "Webbplats, privat">
+<!ENTITY MCcopywebwork "Webbplats, arbete">
+<!ENTITY MCcopyall "All data">
+<!ENTITY MCexportcontact "Exportera">
+<!ENTITY MCimportcontact "Importera kontakt">
+<!ENTITY MCimportlist "Importera lista">
+<!ENTITY MCeditasnew "Redigera som ny">
+<!ENTITY MCimportvcard "Importera visitkort (.vcf)">
+<!ENTITY MCexportvcard "Exportera som visitkort">
+<!ENTITY MCexportrecipients "Exportera mottagarlistan">
+<!ENTITY MCextraTab "Övrig data">
+<!ENTITY MCanagrafic "Personlig data">
+<!ENTITY MCspousenameLabel "Maka/make:">
+<!ENTITY MCoptionsCaption "Etiketter för anpassade fält">
+<!ENTITY MCopenvcard "Öppna visitkort">
+<!ENTITY MCexportvcf "Exportera som VCF">
+<!ENTITY MCforwardvcard "Skicka som visitkort">
+<!ENTITY MCcontactactions "Åtgärder för kontakter">
+<!ENTITY MClistactions "Åtgärder för listor">
+<!ENTITY MCaddractions "Åtgärder för adressböcker">
+<!ENTITY MCimportmab "Importera adressbok från MAB-fil">
+<!ENTITY MCexportmab "Exportera i MAB-format">
+<!ENTITY MClastModifiedDateLabel "Senast ändrad:">
+<!ENTITY MCdata "Kontaktdata ">
+<!ENTITY MCdayLabel "Dag: ">
+<!ENTITY MCmonthLabel "Månad: ">
+<!ENTITY MCyearLabel "År: ">
+<!ENTITY MCbirthlabel "Födelsedatum">
+<!ENTITY MCanniversarylabel "Bemärkelsedag">
+<!ENTITY MCipod "(för iPod)">
+<!ENTITY MCrecover "Återskapa/Återställ">
+<!ENTITY MCcopy "Kopiera">
+<!ENTITY MCoptions0 "Inställningar">
+<!ENTITY MCoptions1 "Använd endast ASCII-tecken i filnamnen vid export">
+<!ENTITY MCoptions2 "Kopiera adresser med amerikanskt format">
+<!ENTITY MCoptions3 "Infoga datum när du skapar en ny kontakt">
+<!ENTITY MCoptions4 "Fast bredd för kolumner i kontaktsidofältet">
+<!ENTITY MCoptions5 "Kolumnbredd (px):">
+<!ENTITY MCoptionsCustomVcard "Relaterat visitkortsfält: ">
+<!ENTITY MCoptions7 "Kontaktsökfält">
+<!ENTITY MCoptions8 "Personsökare, Fax, Avdelning/institution">
+<!ENTITY MCoptions9 "Kategori, Anteckningar, Födelseår">
+<!ENTITY MCcompanyLabel "Organisation">
+<!ENTITY MCmultipleContacts "Redigera egenskaper gemensamt">
+<!ENTITY MCoptionsCustom1 "Övrigt 1">
+<!ENTITY MCoptionsCustom2 "Övrigt 2">
+<!ENTITY MCoptionsCustom3 "Övrigt 3">
+<!ENTITY MCoptionsCustom4 "Övrigt 4">
+<!ENTITY MCbirthYearLabel "Födelseår">
+<!ENTITY MCbirthMonthLabel "Födelsemånad">
+<!ENTITY MCbirthDayLabel "Födelsedag">
+<!ENTITY MCcategoryLabel "Kategori">
+<!ENTITY HomeState.label "Delstat/region">
+<!ENTITY Home.box "Privat">
+<!ENTITY HomeAddress.label "Adress">
+<!ENTITY HomeCity.label "Ort">
+<!ENTITY HomeCountry.label "Land">
+<!ENTITY HomeZipCode.label "Postnummer">
+<!ENTITY WorkAddress.label "Adress">
+<!ENTITY Work.box "Arbete">
+<!ENTITY WorkState.label "Delstat/region">
+<!ENTITY WorkCity.label "Ort">
+<!ENTITY WorkZipCode.label "Postnummer">
+<!ENTITY WorkCountry.label "Land">
+<!ENTITY Home.Web "Webb, privat">
+<!ENTITY Work.Web "Webb, arbete">
+<!ENTITY preferMailFormat.label "Föredrar att få meddelanden kodade som">
+<!ENTITY preferMailFormat0.label "Okänt">
+<!ENTITY preferMailFormat1.label "Oformaterad text">
+<!ENTITY preferMailFormat2.label "HTML">
+<!ENTITY allowRemoteContent.label "Tillåt fjärrbilder">
+<!ENTITY allowRemoteContentYes.label "Ja">
+<!ENTITY allowRemoteContentNo.label "Nej">
+<!ENTITY Notes.label "Anteckningar">
+<!ENTITY photoTab "Foto">
+<!ENTITY deleteIMG "Ta bort bild">
+<!ENTITY addIMG "Redigera/Infoga bild">
+<!ENTITY noIMG "Det finns ingen tillgänglig bild">
+<!ENTITY MCoptions10 "Inaktivera stöd för foton">
+<!ENTITY MCoptions11 "Infoga &quot;callto:&quot;-länkar för telefonnummer">
+<!ENTITY restartWarning "Redigering av vissa alternativ kräver att adressboken stängs och öppnas igen">
+<!ENTITY photoDim1.label "Kontaktsidofältet: ">
+<!ENTITY photoDim2.label "Huvudfönstret: ">
+<!ENTITY photoDimCaption "Fotostorlek (maxbredd/maxhöjd i pixlar)">
+<!ENTITY encCaption "Format och kodning">
+<!ENTITY MCoptions12 "Quoted printable och intern kodning">
+<!ENTITY MCoptions13 "Quoted printable och UTF-8">
+<!ENTITY MCoptions14 "UTF-8">
+<!ENTITY Work.JobTitle "Titel">
+<!ENTITY Work.Department "Avdelning/institution">
+<!ENTITY misc "Allmänt">
+<!ENTITY vcardFormat "Visitkortsformat">
+<!ENTITY fieldHandling "Fälthantering">
+<!ENTITY adrMergeLines "Använd endast ett fält för adressrader vid export">
+<!ENTITY adrDefault "Standardvärde för adressfält vid import:">
+<!ENTITY openPhoto "Öppna foto i ett fönster">
+<!ENTITY maxSizeLabel "Största fotostorlek vid export (kB):">
+<!ENTITY sizeOnDisk "Filstorlek på disk:">
+<!ENTITY csvCaption "Exportera i CSV-format">
+<!ENTITY csvSepLabel "Fältavgränsare: ">
+<!ENTITY attachAsVcard "Bifoga som visitkort">
+<!ENTITY MCoptions15 "Sortera kontakter i listfönster">
+<!ENTITY MFFABbirthday "Klicka här för att se födelsedatum i MoreFunctionsForAddressBook-stil">
+<!ENTITY nameORemail "Namn eller e-post">
+<!ENTITY MCbirthdateWarn1 "För att behålla kompatibiliteten, använd detta format:">
+<!ENTITY MCbirthdateWarn3 "dag=2 siffror - månad=2 siffror - år=4 siffror">
+<!ENTITY openCatDialog "Öppna dialogrutan Kategorilista">
+<!ENTITY categories "Kategorier">
+<!ENTITY catDialogTitle "Kategorilista">
+<!ENTITY catCurrentContact "Kategorier för denna kontakt">
+<!ENTITY catAssign "Kategorier att tilldela">
+<!ENTITY active "Aktiv">
+<!ENTITY name "Namn">
+<!ENTITY remove "Ta bort">
+<!ENTITY add "Lägg till">
+<!ENTITY delete "Ta bort">
+<!ENTITY assign "Tilldela">
+<!ENTITY catCaption "Inställningar för kategorihantering">
+<!ENTITY catViewMode "Visningsläge i kontaktsidofältet">
+<!ENTITY view0 "Standard">
+<!ENTITY view1 "Avancerat">
+<!ENTITY catSep "Avgränsare för flera kategorier">
+<!ENTITY catAutoAdd "Lägg till kontaktkategorier när dialogrutan Kategorilista öppnas">
+<!ENTITY showDialog "Visa dialogrutan Kategorilista">
+<!ENTITY createList "Skapa ny lista">
+<!ENTITY topIcon "Visa kategorilisteikonen överst i kontaktsidofältet">
+<!ENTITY v21 "version 2.1">
+<!ENTITY v30 "version 3.0">
+<!ENTITY charExportPref.label "Standardteckenuppsättning vid export">
+<!ENTITY charImportPref.label "Standardteckenuppsättning vid import">
+<!ENTITY noneValue.label "Manuellt val (endast utökad ASCII-teckenuppsättning)">
+<!ENTITY charDialogDesc "Import/öppnande av detta visitkort kräver att teckenuppsättningen väljs manuellt. Välj teckenuppsättningen som korrekt återger följande rad">
+<!ENTITY charset "Teckenuppsättning">
+<!ENTITY import "Importera">
+<!ENTITY export "Exportera">
+<!ENTITY showAttVcard "Visa visitkort i bilagelistan även när infogad-vyn är aktiverad">
+<!ENTITY contentTypeSend "Skicka visitkort som:">
+<!ENTITY numberDefault "Standardvärde för telefonnummer:">
+<!ENTITY work.lower "arbete">
+<!ENTITY home.lower "privat">
+<!ENTITY none.lower "inget">
+<!ENTITY extraFields "Extrafält">
+<!ENTITY extraField "Extrafält">
+<!ENTITY abChooserTitle "Inställningar för kontakterna som skall läggas till">
+<!ENTITY abChooserLabel1 "Välj en adressbok för kontakterna">
+<!ENTITY saveRec "Spara mottagarnas adresser">
+<!ENTITY save1 "som kontakter (alla)">
+<!ENTITY save2 "som kontakter (endast &quot;Till:&quot; och &quot;Svar-till:&quot;)">
+<!ENTITY save3 "som kontakter (endast &quot;Kopia:&quot;)">
+<!ENTITY save4 "som kontakter (endast &quot;Dold kopia:&quot;)">
+<!ENTITY save5 "som lista (alla)">
+<!ENTITY save6 "som lista (endast &quot;Till:&quot; och &quot;Svar-till:&quot;)">
+<!ENTITY save7 "som lista (endast &quot;Kopia:&quot;)">
+<!ENTITY save8 "som lista (endast &quot;Dold kopia:&quot;)">
+<!ENTITY asTha "som text (.tha/.thm)">
+<!ENTITY asVcf "som visitkort (.vcf)">
+<!ENTITY asCsv "som CSV (.csv)">
+<!ENTITY asThm "som text (.thm)">
+<!ENTITY asMab "i inbyggt Thunderbird-format (.mab)">
+<!ENTITY asIpod "som visitkort för iPod (.vcf)">
+<!ENTITY handleVcards "Tillåt MoreFunctionsForAddressBook att hantera visitkort i meddelandepanelen">
+<!ENTITY hideExtraFields "Dölj extrafält">
+<!ENTITY catAddTags "Lägg till meddelandetaggar när dialogrutan öppnas">
+<!ENTITY skipABtitle "Adressböcker for automatisk komplettering av adresser">
+<!ENTITY skipABlabel "Sök med denna identitet efter matchande poster i följande adressböcker:">
+<!ENTITY skipABactive "Aktiverat">
+<!ENTITY skipABname "Namn">
+<!ENTITY edit "Redigera">
+<!ENTITY skipABcompose "Automatisk komplettering av adresser">
+<!ENTITY vcardDateFormat "Datumformat vid export:">
+<!-- These two lines are about date format. YYYY = year, MM = month, DD = day -->
+<!ENTITY dateLong "ÅÅÅÅ-MM-DD">
+<!ENTITY dateShort "ÅÅÅÅMMDD">
+<!ENTITY MCexportcsv "Exportera som CSV">
+<!ENTITY TaskOpenPrefPanel "Inställningar">
+<!ENTITY extraMailTab "Övriga e-postadresser">
+<!ENTITY extraMailLabel "Alternativ e-postadress">
+<!ENTITY additionalEmails_pref "Använd alternativa e-postadresser vid automatisk komplettering av adresser">
+<!ENTITY showAbButton.pref "Visa knappen för sökning i adressböcker">
+<!ENTITY addressbooks "Adressböcker">
+<!ENTITY addressbook "Adressbok">
+<!ENTITY lists "Listor">
+<!ENTITY abSearch.label "Adressböcker och listor med kontakters e-postadresser:">
+<!ENTITY search "Sök">
+<!ENTITY pushAbButton "Klicka på knappen för att söka">
+<!ENTITY firstName "Förnamn">
+<!ENTITY lastName "Efternamn">
+<!-- Here "unix" is a short way to mean "unix time" cfr. http://en.wikipedia.org/wiki/Unix_time , this label can't be too long -->
+<!ENTITY lastUnix "Senast ändrad (unixtid)">
+<!ENTITY label.vCardField "Labels and associated vCard fields">
+<!ENTITY labels "Labels">
+<!ENTITY vCardFields "Associated vCard fields">
+<!ENTITY customFieldsLabel "Custom fields">
+<!ENTITY emailOtherFields "E-mails and other fields">
+<!ENTITY useGlobalEmailLabel "Add an entry in autocomplete with all the addresses of the contact">
+<!ENTITY copyAllRecipients "Copy all recipients">
+<!ENTITY importFromRawFile "Import addresses from a raw file">
+<!ENTITY vcardRawCaption "Import from vCards and raw files">
+<!ENTITY skipExistingContact "Skip when the primary email is present in some of the addressbooks">
+<!ENTITY displayName "Display name">
+<!ENTITY nickName "Nickname">
+<!ENTITY email1 "Primary email">
+<!ENTITY email2 "Secondary email">
+<!ENTITY anniversaryY "Anniversary year">
+<!ENTITY anniversaryM "Anniversary month">
+<!ENTITY anniversaryD "Anniversary day">
+<!ENTITY newAddressbook "Name of the new addressbook">
+<!ENTITY browse "Browse">
+<!ENTITY skipFirstLine "Skip the first line">
+<!ENTITY endCSV "----- (end of the fields to import from the CSV file) -----">
+<!ENTITY up "Move up">
+<!ENTITY down "Move down">
+<!ENTITY csvImportTitle "Import from a CSV file">
+<!ENTITY filePath "File path">
+<!ENTITY fieldsOrder "Fields order in the CSV file">
+<!ENTITY MCimportcsv "Import addressbook from CSV file">
+<!ENTITY autocomplete "Autocomplete">
+<!ENTITY newContactInList "When creating a new contact with a list selected, add it automatically to that list">
+<!ENTITY justBeginning "For autocomplete match just the beginning of the entries (preference not editable on TB versions lower than 31)">
+<!ENTITY files "Files">
+<!ENTITY addFile "Add file">
+<!ENTITY openFileFolder "Open files folder">
+<!ENTITY fileAdd "File to add">
+<!ENTITY fileName "File name">
+<!ENTITY fileDialogDesc "A copy of this file will be stored within the directory of Thunderbird profile">
+<!ENTITY desc "Description">
+

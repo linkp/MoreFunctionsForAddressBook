@@ -1,0 +1,15 @@
+﻿treechildren::-moz-tree-checkbox {
+	list-style-image: url("chrome://morecols/content/uncheck.gif");
+}
+
+treechildren::-moz-tree-checkbox(checked) {
+	list-style-image: url("chrome://morecols/content/check.gif");
+}
+
+treechildren::-moz-tree-row(selected) { 
+	background-color: transparent; 
+}
+
+treechildren::-moz-tree-cell-text { 
+	color: black !important;
+}

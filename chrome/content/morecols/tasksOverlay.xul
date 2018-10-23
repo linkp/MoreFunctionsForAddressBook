@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay SYSTEM "chrome://morecols/locale/morecols.dtd">
+<overlay id="moreColumnsTaskOverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+
+<script type="application/x-javascript">
+ <![CDATA[
+	function disableTaskItems0() {
+		var menus = document.getElementById("MFFABtaskmenu").getElementsByTagName("menu");
+		for (var i=0;i<menus.length;i++)
+			menus[i].disabled = (GetSelectedDirectory() == MCgABuri);
+	}
+	function disableTaskItems1() {
+		var ABtree = document.getElementById("abResultsTree");
+		var selcards = GetSelectedContacts(true);
+		var focusEl = document.commandDispatcher.focusedElement;
+		
+		if (selcards.length != 1 || GetSelectedCard().isMailList || focusEl.getAttribute("id") != "abResultsTree")
+			document.getElementById("TaskEditAsNewCard").setAttribute("disabled", "true");
+		else
+			document.getElementById("TaskEditAsNewCard").removeAttribute("disabled");
+
+		if (selcards.length == 0 || GetSelectedCard().isMailList || focusEl.getAttribute("id") != "abResultsTree")
+			document.getElementById("TaskForwardVcard").setAttribute("disabled", "true");
+		
+		else 
+			document.getElementById("TaskForwardVcard").removeAttribute("disabled");
+
+
+		if (selcards.length == 0  || focusEl.getAttribute("id") != "abResultsTree") 
+			document.getElementById("TaskExportMenu").setAttribute("disabled", "true");
+		else 
+			document.getElementById("TaskExportMenu").removeAttribute("disabled");
+	}
+
+	function disableTaskItems2() {
+		var ABtree = document.getElementById("abResultsTree");
+		var numsel = ABtree.view.selection.count;
+		var focusEl = document.commandDispatcher.focusedElement;
+		var addrBook = GetDirectoryFromURI(GetSelectedDirectory());
+		if (numsel < 1 || (focusEl.getAttribute("id") == "abResultsTree" && ( ! GetSelectedCard() || ! GetSelectedCard().isMailList) ) || (focusEl.getAttribute("id") == "dirTree" && (! addrBook || ! addrBook.isMailList)) ) {
+			document.getElementById("TaskExportList").setAttribute("disabled", "true");
+			document.getElementById("TaskExportListVcf").setAttribute("disabled", "true");
+			document.getElementById("TaskExportListVcf2").setAttribute("disabled", "true");
+			document.getElementById("TaskExportListCsv").setAttribute("disabled", "true");
+		}
+		else {
+			document.getElementById("TaskExportList").removeAttribute("disabled");
+			document.getElementById("TaskExportListVcf").removeAttribute("disabled");
+			document.getElementById("TaskExportListVcf2").removeAttribute("disabled");
+			document.getElementById("TaskExportListCsv").removeAttribute("disabled");
+		}
+	}
+	
+	function  disableTaskItems3() {
+		var addrBook = GetDirectoryFromURI(GetSelectedDirectory());
+		var focusEl = document.commandDispatcher.focusedElement;
+		if (focusEl.getAttribute("id") != "dirTree" || (addrBook && addrBook.isMailList)) {
+			document.getElementById("TaskExportAddrVcf2").setAttribute("disabled", "true");
+			document.getElementById("TaskExportAddrVcf").setAttribute("disabled", "true");
+			document.getElementById("TaskExportAddrMab").setAttribute("disabled", "true");
+			document.getElementById("TaskAddrRecover").setAttribute("disabled", "true");
+			document.getElementById("TaskExportAddrCsv").setAttribute("disabled", "true");
+		}
+		else {
+			document.getElementById("TaskExportAddrVcf2").removeAttribute("disabled");
+			document.getElementById("TaskExportAddrVcf").removeAttribute("disabled");
+			document.getElementById("TaskExportAddrMab").removeAttribute("disabled");
+			document.getElementById("TaskAddrRecover").removeAttribute("disabled");
+			document.getElementById("TaskExportAddrCsv").removeAttribute("disabled");
+		}
+	}
+	
+	function openMcPrefPanel() {
+		openDialog("chrome://morecols/content/preferences.xul","","chrome,modal,centerscreen" );
+	}
+  ]]>
+  </script>
+
+<menupopup id="taskPopup">
+	<menu id="MFFABtaskmenu" label="MoreFunctionsForAddressBook"  onpopupshowing="disableTaskItems0();">
+	<menupopup>
+	<menuitem label="&MCoptionsCaption;" oncommand='openDialog("chrome://morecols/content/morecolsOptions.xul","","chrome,modal,centerscreen" );' />
+	<menuseparator />
+	<menu label="&MCcontactactions;">
+		<menupopup onpopupshowing="disableTaskItems1();">
+		<menuitem id="TaskImportVcard" label="&MCimportvcard;" oncommand="preImportCard1(1);" />
+		<menuitem id="TaskImportCard" label="&MCimportcontact;" oncommand="preImportCard1(2);" />
+		<menuitem id="TaskImportRaw" label="&importFromRawFile;" oncommand="MFFABimportRawFile.start()" />
+		<menuseparator />
+		<menu id="TaskExportMenu" label="&MCexportcontact;">
+		<menupopup>
+			<menuitem id="TaskExportCard"  label="&asTha;"  oncommand="exportElement();" />
+			<menuitem id="TaskExportVcard"  label="&asVcf;"  oncommand="exportVCF(false,true,false)" />
+			<menuitem id="TaskExportCardCsv" label="&asCsv;"  oncommand="exportABCVS(true)" />	
+		</menupopup>
+		</menu>	
+		<menuseparator />
+		<menuitem id="TaskOpenVcard" label="&MCopenvcard;" oncommand="preImportCard1(0);" />
+		<menuitem id="TaskForwardVcard" label="&MCforwardvcard;" oncommand="exportVCF(false,false)" />
+		<menuitem id="TaskEditAsNewCard" label="&MCeditasnew;" oncommand="editAsNewCard();" />
+		</menupopup>
+	</menu>
+	<menu label="&MClistactions;">
+		<menupopup onpopupshowing="disableTaskItems2();">
+		<menuitem id="TaskImportList" label="&MCimportlist;" oncommand="preImportList1();" />
+		<menuseparator />
+		<menuitem id="TaskExportList" label="&MCexportcontact;" oncommand="exportListOrAB();" />
+		<menuitem id="TaskExportListVcf" label="&MCexportvcf;" oncommand="exportVCF(true,true,false)" />
+		<menuitem id="TaskExportListVcf2" label="&MCexportvcf; &MCipod;" oncommand="exportVCF(true,true,true)" />
+		<menuitem id="TaskExportListCsv" label="&MCexportcsv;" oncommand="exportABCVS(false)" />
+		</menupopup>
+	</menu>
+	<menu label="&MCaddractions;">
+		<menupopup onpopupshowing="disableTaskItems3();">
+		<menuitem id="TaskImportAddrMab" label="&MCimportmab;" oncommand="openDialogForMabImport()" />
+		<menuitem label="&MCimportcsv;" oncommand="MFFAButils.CSVimport()" />
+		<menuseparator />
+		<menuitem id="TaskExportAddrVcf" label="&MCexportvcf;" oncommand="exportVCF(true,true,false)" />
+		<menuitem id="TaskExportAddrVcf2" label="&MCexportvcf; &MCipod;" oncommand="exportVCF(true,true,true)" />
+		<menuitem id="TaskExportAddrMab" label="&MCexportmab;" oncommand="exportABasMab()" />
+		<menuitem id="TaskExportAddrCsv" label="&MCexportcsv;" oncommand="exportABCVS(false)" />
+		<menuseparator />
+		<menuitem id="TaskAddrRecover" label="&MCrecover;" oncommand="recoverAddrBook()" />
+		</menupopup>
+	</menu>
+	<menuseparator />
+	<menuitem id="openMcPrefPanel" oncommand="openMcPrefPanel()" label="&TaskOpenPrefPanel;" tooltiptext="MoreFunctionsForAddressBook &TaskOpenPrefPanel;" />
+	</menupopup>
+	</menu>
+</menupopup>
+
+</overlay>

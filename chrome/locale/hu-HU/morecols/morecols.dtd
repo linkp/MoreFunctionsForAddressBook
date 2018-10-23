@@ -1,0 +1,241 @@
+<!ENTITY MCcopyemail1 "E-mail cím másolása">
+<!ENTITY MCcopyemail2 "Második e-mail cím másolása">
+<!ENTITY MCcopymenu "Más adat másolása">
+<!ENTITY MCcopyname "Név">
+<!ENTITY MCcopyhome "Otthoni cím">
+<!ENTITY MCcopyhome2 "Otthoni cím 2">
+<!ENTITY MCcopywork "Munkahelyi cím">
+<!ENTITY MCcopywork2 "Munkahelyi cím 2">
+<!ENTITY MCcopyhometel "Otthoni telefon">
+<!ENTITY MCcopyworktel "Munkahelyi telefon">
+<!ENTITY MCcopyfax "Fax">
+<!ENTITY MCcopycell "Mobil telefon">
+<!ENTITY MCcopypager "Pager">
+<!ENTITY MCcopyAIM "IM fiók">
+<!ENTITY MCcopywebhome "Személyes honlap">
+<!ENTITY MCcopywebwork "Munkahelyi honlap">
+<!ENTITY MCcopyall "Mindegyik adat">
+<!ENTITY MCexportcontact "Exportálás">
+<!ENTITY MCimportcontact "Mappa bejegyzés importálása">
+<!ENTITY MCimportlist "Lista importálása">
+<!ENTITY MCeditasnew "Szerkesztés újként">
+<!ENTITY MCimportvcard "Névjegy/vcf importálása">
+<!ENTITY MCexportvcard "Exportálás névjegyként">
+<!ENTITY MCexportrecipients "Címzettlista exportálása">
+<!ENTITY MCextraTab "További bejegyzések">
+<!ENTITY MCanagrafic "Egyéni bejegyzések">
+<!ENTITY MCspousenameLabel "Férj/feleség neve:">
+<!ENTITY MCoptionsCaption "Átnevezés saját használatra">
+<!ENTITY MCopenvcard "Mappa megnyitása">
+<!ENTITY MCexportvcf "Exportálás vcf formátumban">
+<!ENTITY MCforwardvcard "Küldés névjegyként">
+<!ENTITY MCcontactactions "Névjegyműveletek">
+<!ENTITY MClistactions "Listaműveletek">
+<!ENTITY MCaddractions "Mappaműveletek">
+<!ENTITY MCimportmab "Importálás .mab fájlból">
+<!ENTITY MCexportmab "Exportálás .mab fájlba">
+<!ENTITY MClastModifiedDateLabel "Utolsó módosítás dátuma:">
+<!ENTITY MCdata "Címjegyzék adatai">
+<!ENTITY MCdayLabel "Nap:">
+<!ENTITY MCmonthLabel "Hónap:">
+<!ENTITY MCyearLabel "Év:">
+<!ENTITY MCbirthlabel "Születésnap">
+<!ENTITY MCanniversarylabel "Évforduló">
+<!ENTITY MCipod "(iPod-hoz)">
+<!ENTITY MCrecover "Módosítás/Visszaállítás">
+<!ENTITY MCcopy "Másolás">
+<!ENTITY MCoptions0 "Beállítások">
+<!ENTITY MCoptions1 "Exportáláskor a fájlnevekben csak ascii karaktereket használjon">
+<!ENTITY MCoptions2 "Címek másolása amerikai formátumban">
+<!ENTITY MCoptions3 "Dátum beillesztése új névjegy létrehozásakor">
+<!ENTITY MCoptions4 "A névjegypanel oszlopszélessége legyen állandó">
+<!ENTITY MCoptions5 "Oszlopszélesség (képpont):">
+<!ENTITY MCoptionsCustomVcard "Névjegy kapcsolódó eleme (vcard):">
+<!ENTITY MCoptions7 "Mező a névjegyek kereséséhez">
+<!ENTITY MCoptions8 "Pager, Fax, Részleg">
+<!ENTITY MCoptions9 "Kategória, Megjegyzés, Születési év">
+<!ENTITY MCcompanyLabel "Szervezet:">
+<!ENTITY MCmultipleContacts "Tulajdonságok csoportos szerkesztése">
+<!ENTITY MCoptionsCustom1 "További 1:">
+<!ENTITY MCoptionsCustom2 "További 2:">
+<!ENTITY MCoptionsCustom3 "További 3:">
+<!ENTITY MCoptionsCustom4 "További 4:">
+<!ENTITY MCbirthYearLabel "Születési év">
+<!ENTITY MCbirthMonthLabel "Születés hónapja">
+<!ENTITY MCbirthDayLabel "Születés napja">
+<!ENTITY MCcategoryLabel "Kategória">
+<!ENTITY HomeState.label "Állam">
+<!ENTITY Home.box "(lakhely)">
+<!ENTITY HomeAddress.label "Cím">
+<!ENTITY HomeCity.label "Város">
+<!ENTITY HomeCountry.label "Ország">
+<!ENTITY HomeZipCode.label "Irányítószám">
+<!ENTITY WorkAddress.label "Cím">
+<!ENTITY Work.box "(munkahely)">
+<!ENTITY WorkState.label "Állam">
+<!ENTITY WorkCity.label "Város">
+<!ENTITY WorkZipCode.label "Irányítószám">
+<!ENTITY WorkCountry.label "Ország">
+<!ENTITY Home.Web "Személyes honlap">
+<!ENTITY Work.Web "Munkahelyi honlap">
+<!ENTITY preferMailFormat.label "Válaszadáskor formázás a fogadott e-mail alapján mint">
+<!ENTITY preferMailFormat0.label "ismeretlen">
+<!ENTITY preferMailFormat1.label "tiszta szöveg">
+<!ENTITY preferMailFormat2.label "HTML">
+<!ENTITY allowRemoteContent.label "Távoli képek engedélyezése">
+<!ENTITY allowRemoteContentYes.label "Igen">
+<!ENTITY allowRemoteContentNo.label "Nem">
+<!ENTITY Notes.label "Megjegyzés">
+<!ENTITY photoTab "Fotó">
+<!ENTITY deleteIMG "Kép eltávolítása">
+<!ENTITY addIMG "Kép módosítása/beillesztése">
+<!ENTITY noIMG "Kép nem elérhető">
+<!ENTITY MCoptions10 "Fotók támogatásának kikapcsolása">
+<!ENTITY MCoptions11 "A \'callto\' hivatkozás beillesztése a telefonszámokhoz">
+<!ENTITY restartWarning "Néhány módosításhoz a címjegyzék bezárása és újranyitása szükséges.">
+<!ENTITY photoDim1.label "Névjegypanel:">
+<!ENTITY photoDim2.label "Saját ablak:">
+<!ENTITY photoDimCaption "Fotó mérete (max. széles/magas képpontban)">
+<!ENTITY encCaption "Formátum és kódolás">
+<!ENTITY MCoptions12 "Quoted-Printable és natív kódolás">
+<!ENTITY MCoptions13 "Quoted-Printable és UTF-8">
+<!ENTITY MCoptions14 "UTF-8">
+<!ENTITY Work.JobTitle "Cím">
+<!ENTITY Work.Department "Osztály">
+<!ENTITY misc "Vegyes">
+<!ENTITY vcardFormat "Névjegy fromátum">
+<!ENTITY fieldHandling "Mezők kezelése">
+<!ENTITY adrMergeLines "Exportáláskor csak egy mező használata a címhez">
+<!ENTITY adrDefault "Az ADR mező alapértéke importáláskor:">
+<!ENTITY openPhoto "Fotó megjelenítése ablakban">
+<!ENTITY maxSizeLabel "Fotó maximális mérete exportáláskor (kb):">
+<!ENTITY sizeOnDisk "Fájlméret lemezen:">
+<!ENTITY csvCaption "Exportálás CSV formátumban">
+<!ENTITY csvSepLabel "Mező elválasztó:">
+<!ENTITY attachAsVcard "Csatolás mint névjegy">
+<!ENTITY MCoptions15 "Névjegyek rendezése a lista ablakban">
+<!ENTITY MFFABbirthday "Kattintson ide a születésnap megtekintéséhez (MoreFunctionsForAddressBook stílusban)">
+<!ENTITY nameORemail "Név vagy email">
+<!ENTITY MCbirthdateWarn1 "Ha kívánja megtartani az összhangot más programokkal,">
+<!ENTITY MCbirthdateWarn3 "Nap = 2 karakter  -  Hónap = 2 karakter  -  Év = 4 karakter">
+<!ENTITY openCatDialog "Ketegóriák listájának megnyitása">
+<!ENTITY categories "Kategóriák">
+<!ENTITY catDialogTitle "Kategóriák listája">
+<!ENTITY catCurrentContact "A névjegyhez hozzárendelt kategóriák">
+<!ENTITY catAssign "Hozzárendelhető kategóriák">
+<!ENTITY active "Aktív">
+<!ENTITY name "Név">
+<!ENTITY remove "Eltávolítás">
+<!ENTITY add "Hozzáadás">
+<!ENTITY delete "Törlés">
+<!ENTITY assign "Hozzárendelés">
+<!ENTITY catCaption "Kategórák beállításai">
+<!ENTITY catViewMode "Névjegy panel nézet módja">
+<!ENTITY view0 "Általános">
+<!ENTITY view1 "Haladó">
+<!ENTITY catSep "Összetett kategóriák elválasztója">
+<!ENTITY catAutoAdd "Lista megnyitásakor kategóriák hozzáadása a névjegyhez">
+<!ENTITY showDialog "Kategóriák listájának megnyitása">
+<!ENTITY createList "Új lista létrehozása">
+<!ENTITY topIcon "Kategória lista ikonjának megjelenítése a névjegy panelben">
+<!ENTITY v21 "2.1 változat">
+<!ENTITY v30 "3.0 változat">
+<!ENTITY charExportPref.label "Az exportálás alapértelmezett kódolása">
+<!ENTITY charImportPref.label "Az importálás alapértelmezett kódolása">
+<!ENTITY noneValue.label "Manuális kiválasztás (csak bővített ASCII)">
+<!ENTITY charDialogDesc "A névjegy importálásához/megnyitásához a karakterkódolás manuális beállítása szükséges. Válassza ki a kódolást, amely az alábbi sort helyesen jeleníti meg">
+<!ENTITY charset "Karakterkódolás">
+<!ENTITY import "Importálás">
+<!ENTITY export "Exportálás">
+<!ENTITY showAttVcard "Névjegy megjelenítése a mellékletek listájában a soros nézet engedélyezésével">
+<!ENTITY contentTypeSend "Névjegy küldése mint:">
+<!ENTITY numberDefault "Telefonszámok alapértelmezett értéke:">
+<!ENTITY work.lower "munkahely">
+<!ENTITY home.lower "otthon">
+<!ENTITY none.lower "nincs">
+<!ENTITY extraFields "Extra mezők">
+<!ENTITY extraField "Extra mező">
+<!ENTITY abChooserTitle "Névjegy hozzáadásának beállításai">
+<!ENTITY abChooserLabel1 "Válassza ki a névjegyek címjegyzékét">
+<!ENTITY saveRec "Címzettek címének mentése">
+<!ENTITY save1 "mint névjegyek (mindegyik)">
+<!ENTITY save2 "mint névjegyek (csak KÜLDÉS és VÁLASZ)">
+<!ENTITY save3 "mint névjegyek (csak másolat)">
+<!ENTITY save4 "mint névjegyek (csak titkos másolat)">
+<!ENTITY save5 "mint lista (mindegyik)">
+<!ENTITY save6 "mint lista (csak KÜLDÉS és VÁLASZ)">
+<!ENTITY save7 "mint lista (csak másolat)">
+<!ENTITY save8 "mint lista (csak titkos másolat)">
+<!ENTITY asTha "mint szöveg (.tha/.thm)">
+<!ENTITY asVcf "mint névjegy (.vcf)">
+<!ENTITY asCsv "mint csv (.csv)">
+<!ENTITY asThm "mint szöveg (.thm)">
+<!ENTITY asMab "Thunderbird formátum (.mab)">
+<!ENTITY asIpod "mint névjegy Ipodhoz (.vcf)">
+<!ENTITY handleVcards "Névjegyek kezelésének engedélyezése a MoreFunctionsForAddressBook számára az üzenetek panelben">
+<!ENTITY hideExtraFields "Extra mezők elrejtése">
+<!ENTITY catAddTags "Üzenetek címkéinek hozzáadása a listák párbeszédablakának megnyitásakor">
+<!ENTITY skipABtitle "Címjegyzékek (címekhez) automatikus kiegészítése">
+<!ENTITY skipABlabel "Keresés ezzel az identitással ezekben a címjegyzékekben:">
+<!ENTITY skipABactive "Engedélyezve">
+<!ENTITY skipABname "Név">
+<!ENTITY edit "Szerkesztés">
+<!ENTITY skipABcompose "Címek auto-kiegészítése">
+<!ENTITY vcardDateFormat "Exportálás dátum formátuma:">
+<!-- These two lines are about date format. YYYY = year, MM = month, DD = day -->
+<!ENTITY dateLong "ÉÉÉÉ-HH-NN">
+<!ENTITY dateShort "ÉÉÉÉHHNN">
+<!ENTITY MCexportcsv "Exportálás mint CSV">
+<!ENTITY TaskOpenPrefPanel "Haladó beállítások">
+<!ENTITY extraMailTab "Más e-mailek">
+<!ENTITY extraMailLabel "További e-mail">
+<!ENTITY additionalEmails_pref "Használjon további e-maileket a címek automatikus kiegészítéséhez">
+<!ENTITY showAbButton.pref "Gomb megjelenítése a címjegyzékek kereséséhez">
+<!ENTITY addressbooks "Címjegyzékek">
+<!ENTITY addressbook "Címjegyzék">
+<!ENTITY lists "Listák">
+<!ENTITY abSearch.label "Címjegyzékek és listák email elérhetőséggel:">
+<!ENTITY search "Keresés">
+<!ENTITY pushAbButton "Kattintson a gombra a kereséshez">
+<!ENTITY firstName "Keresztnév">
+<!ENTITY lastName "Vezetéknbév">
+<!-- Here "unix" is a short way to mean "unix time" cfr. http://en.wikipedia.org/wiki/Unix_time , this label can't be too long -->
+<!ENTITY lastUnix "Legutolsó változtatás dátuma (unix)">
+<!ENTITY label.vCardField "Címkék és hozzárendelt névjegymezők">
+<!ENTITY labels "Címkék">
+<!ENTITY vCardFields "Hozzárendelt névjegymezők">
+<!ENTITY customFieldsLabel "Saját mezők">
+<!ENTITY emailOtherFields "Emailek és más mezők">
+<!ENTITY useGlobalEmailLabel "Bejegyzés hozzáadása auto-kitöltésnél a névjegy összes címével">
+<!ENTITY copyAllRecipients "Copy all recipients">
+<!ENTITY importFromRawFile "Import addresses from a raw file">
+<!ENTITY vcardRawCaption "Import from vCards and raw files">
+<!ENTITY skipExistingContact "Skip when the primary email is present in some of the addressbooks">
+<!ENTITY displayName "Display name">
+<!ENTITY nickName "Nickname">
+<!ENTITY email1 "Primary email">
+<!ENTITY email2 "Secondary email">
+<!ENTITY anniversaryY "Anniversary year">
+<!ENTITY anniversaryM "Anniversary month">
+<!ENTITY anniversaryD "Anniversary day">
+<!ENTITY newAddressbook "Name of the new addressbook">
+<!ENTITY browse "Browse">
+<!ENTITY skipFirstLine "Skip the first line">
+<!ENTITY endCSV "----- (end of the fields to import from the CSV file) -----">
+<!ENTITY up "Move up">
+<!ENTITY down "Move down">
+<!ENTITY csvImportTitle "Import from a CSV file">
+<!ENTITY filePath "File path">
+<!ENTITY fieldsOrder "Fields order in the CSV file">
+<!ENTITY MCimportcsv "Import addressbook from CSV file">
+<!ENTITY autocomplete "Autocomplete">
+<!ENTITY newContactInList "When creating a new contact with a list selected, add it automatically to that list">
+<!ENTITY justBeginning "For autocomplete match just the beginning of the entries (preference not editable on TB versions lower than 31)">
+<!ENTITY files "Files">
+<!ENTITY addFile "Add file">
+<!ENTITY openFileFolder "Open files folder">
+<!ENTITY fileAdd "File to add">
+<!ENTITY fileName "File name">
+<!ENTITY fileDialogDesc "A copy of this file will be stored within the directory of Thunderbird profile">
+<!ENTITY desc "Description">
+

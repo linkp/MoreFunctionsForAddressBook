@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay SYSTEM "chrome://morecols/locale/morecols.dtd">
+<overlay id="moreColumnsSearchOverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/x-javascript" src="chrome://morecols/content/utils.js"/>
+<script type="application/x-javascript" src="chrome://morecols/content/moreColsPopup.js"/>
+<script type="application/x-javascript" src="chrome://morecols/content/searchOverlay.js"/>
+ 
+<treecols id="abResultsTreeCols">
+	<treecol id="Category" class="sortDirectionIndicator" 
+		persist="hidden ordinal width sortDirection" flex="1" 
+		label="&MCcategoryLabel;" />
+	<splitter class="tree-splitter"/>
+	<treecol id="Notes" class="sortDirectionIndicator" 
+		persist="hidden ordinal width sortDirection" flex="1" 
+		label="&Notes.label;" />
+	<splitter class="tree-splitter"/>
+	<treecol id="BirthYear" class="sortDirectionIndicator" 
+		persist="hidden ordinal width sortDirection" flex="1" 
+		label="&MCbirthYearLabel;" />
+	<splitter class="tree-splitter"/>
+</treecols>
+
+<vbox id="searchResultListBox">
+	<button label="&createList;" id="createListButton" oncommand="createListFromSelection()">
+		<observes element="cmd_compose" attribute="disabled" />
+		<observes element="composeButton" attribute="disabled" />
+	</button>
+</vbox>
+</overlay>

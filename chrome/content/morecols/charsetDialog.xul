@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://morecols/locale/morecols.dtd">
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	title="MoreFunctionsForAddressBook"
+	buttons="accept"
+	onload="onLoad()"
+	height="300"
+	width="300"
+	ondialogaccept="onExit()">
+
+ <script type="application/x-javascript">
+ <![CDATA[
+ 
+	var gString;
+ 
+	function onLoad() {
+		gString = window.arguments[0];
+		document.getElementById("testLine").value = gString;
+		changeCharset();
+	}
+	
+	function changeCharset() {
+		try {
+			var converter = Components.classes["@mozilla.org/intl/scriptableunicodeconverter"]
+                		 .createInstance(Components.interfaces.nsIScriptableUnicodeConverter);
+			converter.charset = document.getElementById("charset-list").selectedItem.getAttribute("label");
+			var newStr = converter.ConvertToUnicode(gString);
+		}
+		catch(e) {
+			var newStr = "-------------";
+		}
+		document.getElementById("testLine").value = newStr;
+	}
+	
+	function onExit() {
+		opener.vcardToolsGlobals.charDefaultImport = document.getElementById("charset-list").selectedItem.getAttribute("label");
+	}
+	
+ 
+   ]]>
+ </script>
+<description>&charDialogDesc;:</description>
+<textbox id="testLine" value ="" readonly="true" multiline="true" />
+<spacer height="30" />
+<label value="&charset;:" />
+<menulist id="charset-list" onselect="changeCharset()">
+	<menupopup id="charset-list-popup">
+		<menuitem label="ARMSCII-8" />
+		<menuitem label="GEOSTD8" />
+		<menuitem label="ISO-8859-1" />
+		<menuitem label="ISO-8859-2" />
+		<menuitem label="ISO-8859-3" />
+		<menuitem label="ISO-8859-4" />
+		<menuitem label="ISO-8859-5" />
+		<menuitem label="ISO-8859-6" />
+		<menuitem label="ISO-8859-7" />
+		<menuitem label="ISO-8859-8" />
+		<menuitem label="ISO-8859-9" />
+		<menuitem label="ISO-8859-10" />
+		<menuitem label="ISO-8859-11" />
+		<menuitem label="ISO-8859-13" />
+		<menuitem label="ISO-8859-14" />
+		<menuitem label="ISO-8859-15" />
+		<menuitem label="ISO-8859-16" />
+		<menuitem label="KOI8-R" />
+		<menuitem label="KOI8-U" />
+		<menuitem label="UTF-16" />
+		<menuitem label="UTF-8" />
+		<menuitem label="WINDOWS-1250" />
+		<menuitem label="WINDOWS-1251" />
+		<menuitem label="WINDOWS-1252" />
+		<menuitem label="WINDOWS-1253" />
+		<menuitem label="WINDOWS-1254" />
+		<menuitem label="WINDOWS-1255" />
+		<menuitem label="WINDOWS-1256" />
+		<menuitem label="WINDOWS-1257" />
+		<menuitem label="WINDOWS-1258" />
+	</menupopup>
+</menulist>
+
+</dialog>

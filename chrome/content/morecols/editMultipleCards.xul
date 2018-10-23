@@ -1,0 +1,219 @@
+<?xml version="1.0"?> 
+<!DOCTYPE overlay SYSTEM "chrome://morecols/locale/morecols.dtd">
+<?xml-stylesheet href="chrome://communicator/skin/" type="text/css"?>
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        buttons="accept, cancel"
+        ondialogaccept="modifyCardsProperty();"
+	onload="checkCustomFields();"
+        title="&MCmultipleContacts;">
+
+<script type="text/javascript" src="chrome://morecols/content/vcardTools.js" />
+<script type="text/javascript" src="chrome://morecols/content/moreColsPopup.js" />
+<script type="text/javascript" src="chrome://morecols/content/utils.js" />
+
+<hbox>
+<groupbox>
+	<caption label="&misc;" />
+	<vbox>
+	<hbox>
+		<checkbox id="cust1.label" label="&MCoptionsCustom1;:" style="margin-top:6px"/>
+		<spacer flex="1" />
+		<hbox>
+			<textbox id="cust1" value="" width="150px" />
+		</hbox>
+	</hbox>
+	<hbox>
+		<checkbox  id="cust2.label" label="&MCoptionsCustom2;:" style="margin-top:6px"/>
+		<spacer flex="1" />
+		<hbox>
+			<textbox id="cust2" value="" width="150px" />
+		</hbox>
+	</hbox>
+	<hbox>
+		<checkbox  id="cust3.label" label="&MCoptionsCustom3;:" style="margin-top:6px"/>
+		<spacer flex="1" />
+		<hbox>
+			<textbox id="cust3" value="" width="150px" />
+		</hbox>
+	</hbox>
+	<hbox>
+		<checkbox  id="cust4.label" label="&MCoptionsCustom4;:" style="margin-top:6px"/>
+		<spacer flex="1" />
+		<hbox>
+			<textbox id="cust4" value="" width="150px" />
+		</hbox>
+	</hbox>
+	<hbox>
+		<checkbox  id="faxCheck" label="&MCcopyfax;:" style="margin-top:6px"/>
+		<spacer flex="1" />
+		<hbox>
+			<textbox id="fax" value="" width="150px" />
+		</hbox>
+	</hbox>
+	<hbox>
+		<checkbox  id="preferMailFormatCheck" label="&preferMailFormat.label;:" style="margin-top:6px"/>
+		<spacer flex="1" />
+		<hbox>
+			<menulist sizetopopup="pref" id="preferMailFormatList">
+				<menupopup>
+					<menuitem label="&preferMailFormat0.label;" value="0" />
+					<menuitem label="&preferMailFormat1.label;" value="1" />
+					<menuitem label="&preferMailFormat2.label;" value="2" />
+				</menupopup>
+			</menulist>			
+		</hbox>
+	</hbox>
+	<hbox>
+		<checkbox  id="allowRemoteContentCheck" label="&allowRemoteContent.label;:" style="margin-top:6px"/>
+		<spacer flex="1" />
+		<hbox>
+			<menulist id="allowRemoteContentList">
+				<menupopup>
+					<menuitem label="&allowRemoteContentNo.label;" value="0" />
+					<menuitem label="&allowRemoteContentYes.label;" value="1" />
+				</menupopup>
+			</menulist>
+		</hbox>
+		<spacer flex="1" />
+	</hbox>
+	</vbox>
+</groupbox>
+
+<groupbox>
+	<caption label="&Work.box;" />
+	<vbox>
+	<hbox>
+		<checkbox id="compCheck" label="&MCcompanyLabel;" style="margin-top:6px"/>
+		<spacer flex="1" />
+		<hbox>
+			<textbox id="comp" value="" width="150px" />
+		</hbox>
+	</hbox>
+	<hbox>
+		<checkbox id="wtelCheck" label="&MCcopyworktel;:" style="margin-top:6px"/>
+		<spacer flex="1" />
+		<hbox>
+			<textbox id="wtel" value="" width="150px" />
+		</hbox>
+	</hbox>
+	<hbox>
+		<checkbox id="titleCheck" label="&Work.JobTitle;:" style="margin-top:6px"/>
+		<spacer flex="1" />
+		<hbox>
+			<textbox id="title" value="" width="150px" />
+		</hbox>
+	</hbox>
+	<hbox>
+		<checkbox id="departCheck" label="&Work.Department;:" style="margin-top:6px"/>
+		<spacer flex="1" />
+		<hbox>
+			<textbox id="depart" value="" width="150px" />
+		</hbox>
+	</hbox>
+	<hbox>
+		<checkbox id="waddressCheck" label="&WorkAddress.label;:" style="margin-top:6px"/>
+		<spacer flex="1" />
+		<hbox>
+			<textbox id="waddress" value="" width="150px" />
+		</hbox>
+	</hbox>
+	<hbox>
+		<checkbox id="wcityCheck" label="&WorkCity.label;:" style="margin-top:6px"/>
+		<spacer flex="1" />
+		<hbox>
+			<textbox id="wcity" value="" width="150px" />
+		</hbox>
+	</hbox>
+	<hbox>
+		<checkbox id="wstateCheck" label="&WorkState.label;:" style="margin-top:6px"/>
+		<spacer flex="1" />
+		<hbox>
+			<textbox id="wstate" value="" width="150px" />
+		</hbox>
+	</hbox>
+	<hbox>
+		<checkbox id="wcodeCheck" label="&WorkZipCode.label;:" style="margin-top:6px"/>
+		<spacer flex="1" />
+		<hbox>
+			<textbox id="wcode" value="" width="150px" />
+		</hbox>
+	</hbox>
+	<hbox>
+		<checkbox id="wcountryCheck" label="&WorkCountry.label;:" style="margin-top:6px"/>
+		<spacer flex="1" />
+		<hbox>
+			<textbox id="wcountry" value="" width="150px" />
+		</hbox>
+	</hbox>
+	<hbox>
+		<checkbox id="wwebCheck" label="&Work.Web;:" style="margin-top:6px"/>
+		<spacer flex="1" />
+		<hbox>
+			<textbox id="wweb" value="" width="150px" />
+		</hbox>
+	</hbox>
+	</vbox>
+</groupbox>
+</hbox>
+<hbox>
+
+<groupbox flex="1">
+	<caption label="&categories;" />
+	<vbox>
+	<hbox>
+	<image src="chrome://morecols/content/list.gif" id="listIcon" onclick="openCatDialog()"  tooltiptext="&openCatDialog;"  />
+	<checkbox id="catCheck" label="&MCcategoryLabel;:" style="margin-top:6px"/>
+	</hbox>
+	<hbox id="catStandardView">
+		<textbox id="Category" value="" flex="1" />
+	</hbox>		
+	<hbox id="catAdvancedView">
+		<vbox>
+             <hbox class="CardEditWidth">
+			<textbox id="Category1" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+			<textbox id="Category2" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+			<textbox id="Category3" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+			<textbox id="Category4" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+		</hbox>
+		<hbox class="CardEditWidth">
+			<textbox id="Category5" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+			<textbox id="Category6" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+			<textbox id="Category7" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+			<textbox id="Category8" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+		</hbox>
+			<hbox class="CardEditWidth" id="categoryBox2a">
+			<textbox id="Category9" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+			<textbox id="Category10" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+			<textbox id="Category11" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+			<textbox id="Category12" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+		</hbox>
+		<hbox class="CardEditWidth"  id="categoryBox2b">
+			<textbox id="Category13" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+			<textbox id="Category14" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+			<textbox id="Category15" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+			<textbox id="Category16" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+		</hbox>
+		<hbox class="CardEditWidth"  id="categoryBox3a">
+			<textbox id="Category17" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+			<textbox id="Category18" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+			<textbox id="Category19" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+			<textbox id="Category20" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+		</hbox>
+		<hbox class="CardEditWidth" id="categoryBox3b">
+			<textbox id="Category21" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+			<textbox id="Category22" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+			<textbox id="Category23" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+			<textbox id="Category24" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+		</hbox>
+		</vbox>
+	</hbox>
+	<radiogroup orient="horizontal" id="mode">
+		<radio label="&add;" />
+		<radio label="&delete;" />
+		<radio label="&assign;" selected="true" />
+	</radiogroup>
+	</vbox>
+</groupbox>
+
+</hbox>
+</dialog>

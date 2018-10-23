@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay SYSTEM "chrome://morecols/locale/morecols.dtd">
+<?xml-stylesheet href="chrome://morecols/content/morecols.css" type="text/css"?>
+<overlay id="moreColumnsPopup"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="text/javascript" src="chrome://morecols/content/vcardTools.js" />
+<script type="text/javascript" src="chrome://morecols/content/moreColsPopup.js" />
+<script type="text/javascript" src="chrome://morecols/content/utils.js" />
+
+<commandset id="addressBook">
+	<command id="cmd_multiple_properties" oncommand="openEditMultipleCards()" />
+</commandset>
+
+<keyset id="tasksKeys">
+	<key key="0" modifiers="accel" command="cmd_multiple_properties" />
+</keyset>
+
+<hbox id="abContent" context="abContentPopup">
+	<menupopup id="abContentPopup" onpopupshowing="abContentPopupShowing()">
+		<menuitem id="abContentPopupItem1" label="&MCcopy;" command="cmd_copy" />
+		<menuitem id="abContentPopupItem2" label="&openPhoto;" oncommand="openPhotoByPopup()" />
+	</menupopup>
+</hbox>
+
+<popup id="dirTreeContext" onpopupshowing="disableABitems2()">
+	<menuseparator />
+	<menu label="MoreFunctionsForAddressBook">
+	<menupopup>
+	<menuitem id="abDirTreeContextRecover" label="&MCrecover;"  oncommand="recoverAddrBook()" />
+	<menu id="abDirTreeContextABexport" label="&MCexportcontact;">
+		<menupopup>
+		<menuitem id="abDirTreeContextExpList" label="&asThm;" oncommand="exportListOrAB()" />
+		<menuitem id="abDirTreeContextExpMab" label="&asMab;" oncommand="exportListOrAB()" />
+		<menuitem id="abDirTreeContextVcf" label="&asVcf;" oncommand="exportVCF(true,true,false)" />
+		<menuitem id="abDirTreeContextVcf" label="&asIpod;"  oncommand="exportVCF(true,true,true)" />
+		<menuitem id="abDirTreeContextCsv" label="&asCsv;"  oncommand="exportABCVS(false)" />
+		</menupopup>
+	</menu>
+	<menuitem id="abDirTreeContextImpMab" label="&MCimportmab;" oncommand="openDialogForMabImport()" />
+	<menuitem label="&MCimportcsv;" oncommand="MFFAButils.CSVimport()" />
+	</menupopup>
+	</menu>
+</popup>
+
+<popup id="abResultsTreeContext" onpopupshowing="disableABitems();">
+<menu id="abMenuCopyOther" label="&MCcopymenu;" insertafter="abResultsTreeContext-newim">
+	<menupopup>
+	<menuitem id="abResultsTreeContext-copyName" label="&MCcopyname;"  oncommand="copyABaddress('DisplayName');" />
+	<menuitem id="abResultsTreeContext-copyHome" label="&MCcopyhome;"  oncommand="copyHomeAddress(true);" />
+	<menuitem id="abResultsTreeContext-copyWork" label="&MCcopywork;"  oncommand="copyWorkAddress(true);" />
+	<menuitem id="abResultsTreeContext-copyHomeTel" label="&MCcopyhometel;" oncommand="copyABaddress('homePhone');" />
+	<menuitem id="abResultsTreeContext-copyWorkTel" label="&MCcopyworktel;" oncommand="copyABaddress('workPhone');" />
+	<menuitem id="abResultsTreeContext-copyFax" label="&MCcopyfax;" oncommand="copyABaddress('faxNumber');" />
+	<menuitem id="abResultsTreeContext-copyCell" label="&MCcopycell;" oncommand="copyABaddress('cellularNumber');" />
+	<menuitem id="abResultsTreeContext-copyPager" label="&MCcopypager;" oncommand="copyABaddress('pagerNumber');" />
+	<menuitem id="abResultsTreeContext-copyAIM" label="&MCcopyAIM;" oncommand="copyABaddress('aimScreenName');" />
+	<menuitem id="abResultsTreeContext-copyWebHome" label="&MCcopywebhome;" oncommand="copyABaddress('webpage2');" />
+	<menuitem id="abResultsTreeContext-copyWebWork" label="&MCcopywebwork;" oncommand="copyABaddress('webpage1');" />
+	<menuitem id="abResultsTreeContext-copyWebWork" label="&Notes.label;" oncommand="copyABaddress('notes');" />
+	<menuseparator />
+	<menuitem id="abResultsTreeContext-copyAll" label="&MCcopyall;" oncommand="copyABall();" />
+	</menupopup>
+</menu>
+	<menuitem id="abResultsTreeContext-copyAddress2" label="&MCcopyemail2;" insertafter="abResultsTreeContext-newim" oncommand="copyABaddress('secondEmail');" />
+	<menuitem id="abResultsTreeContext-copyAddress1" label="&MCcopyemail1;" insertafter="abResultsTreeContext-newim" oncommand="copyABaddress('primaryEmail');" />
+	<menuseparator insertafter="abResultsTreeContext-newim" />
+	<menu id="abMenuExportContact" label="&MCexportcontact;" insertafter="abResultsTreeContext-newim">
+		<menupopup>
+			<menuitem id="abExportCard" label="&asTha;" oncommand="exportElement();" />
+			<menuitem id="abExportVcard" label="&asVcf;" oncommand="exportVCF(false,true,false)" />
+			<menuitem id="abExportCsv" label="&asCsv;" oncommand="exportABCVS(true)" />
+		</menupopup>
+	</menu>
+	<menuitem id="abForwardVcard" label="&MCforwardvcard;" insertafter="abResultsTreeContext-newim" oncommand="exportVCF(false,false,false)" />
+	<menuseparator insertafter="abResultsTreeContext-newim" />
+	<menuitem id="abImportRaw" label="&importFromRawFile;" insertafter="abResultsTreeContext-newim" oncommand="MFFABimportRawFile.start()" />
+	<menuitem id="abOpenVcard" label="&MCopenvcard;" insertafter="abResultsTreeContext-newim" oncommand="preImportCard1(0);" />
+	<menuitem id="abImportVcard" label="&MCimportvcard;" insertafter="abResultsTreeContext-newim" oncommand="preImportCard1(1);" />
+	<menuitem id="abImportCard" label="&MCimportcontact;" insertafter="abResultsTreeContext-newim" oncommand="preImportCard1(2);" />
+	<menuitem id="abImportList" label="&MCimportlist;" insertafter="abResultsTreeContext-newim" oncommand="preImportList1();" />
+	<menuseparator insertafter="abResultsTreeContext-newim" />
+	<menuitem id="abEditAsNewCard" label="&MCeditasnew;" insertafter="abResultsTreeContext-newim" oncommand="editAsNewCard();" />
+	<menuseparator insertafter="abResultsTreeContext-newim" />
+	<menuitem id="abEditMultipleProperties" label="&MCmultipleContacts;" insertafter="abResultsTreeContext-properties" command="cmd_multiple_properties" />
+</popup>
+
+</overlay>

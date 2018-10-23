@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay SYSTEM "chrome://morecols/locale/morecols.dtd">
+<overlay id="winMess"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<script type="text/javascript" src="chrome://morecols/content/winMessOverlay.js" />
+<script type="text/javascript" src="chrome://morecols/content/vcardTools.js" />
+<script type="text/javascript" src="chrome://morecols/content/photo.js" />
+
+ <page id="abContactsPanel">
+        <vbox id="results_box">
+            <hbox>
+                <spacer flex="1"/>
+	                <button id="addVCARD" label="&attachAsVcard;" oncommand="attachVCARD()"/>
+                <spacer flex="1"/>
+            </hbox>
+        </vbox>
+ </page>
+
+
+</overlay>
+

@@ -1,0 +1,241 @@
+<!ENTITY MCcopyemail1 "העתק כתובת דואר אלקטרוני">
+<!ENTITY MCcopyemail2 "העתק דואר משני">
+<!ENTITY MCcopymenu "העתק מידע אחר">
+<!ENTITY MCcopyname "שם">
+<!ENTITY MCcopyhome "כתובת בבית">
+<!ENTITY MCcopyhome2 "כתובת בבית 2">
+<!ENTITY MCcopywork "כתובת בעבודה">
+<!ENTITY MCcopywork2 "כתובת בעבודה 2">
+<!ENTITY MCcopyhometel "טלפון בבית">
+<!ENTITY MCcopyworktel "טלפון בעבודה">
+<!ENTITY MCcopyfax "מספר פקס">
+<!ENTITY MCcopycell "טלפון נייד">
+<!ENTITY MCcopypager "מספר איתורית">
+<!ENTITY MCcopyAIM "שם מסרים מידיים">
+<!ENTITY MCcopywebhome "אתר אינטרנט בבית">
+<!ENTITY MCcopywebwork "אתר אינטרנט בעבודה">
+<!ENTITY MCcopyall "כל המידע">
+<!ENTITY MCexportcontact "יצוא">
+<!ENTITY MCimportcontact "יבוא card">
+<!ENTITY MCimportlist "יבוא רשימה">
+<!ENTITY MCeditasnew "עריכה כחדש">
+<!ENTITY MCimportvcard "יבוא vCard/vcf">
+<!ENTITY MCexportvcard "יצוא בתור vCard">
+<!ENTITY MCexportrecipients "יצוא רשימת הנמענים">
+<!ENTITY MCextraTab "מידע אחר">
+<!ENTITY MCanagrafic "מידע אישי">
+<!ENTITY MCspousenameLabel "שם בן\\בת זוג:">
+<!ENTITY MCoptionsCaption "תוויות לשדות מותאמים אישית">
+<!ENTITY MCopenvcard "פתיחת vCard">
+<!ENTITY MCexportvcf "יצוא בתור vcf">
+<!ENTITY MCforwardvcard "שליחה בתור vCard">
+<!ENTITY MCcontactactions "פעולות על אנשי קשר">
+<!ENTITY MClistactions "פעולות על רשימות">
+<!ENTITY MCaddractions "פעולות על ספרי כתובות">
+<!ENTITY MCimportmab "יבוא ספר כתובות מקובץ mab">
+<!ENTITY MCexportmab "יצוא לקובץ mab">
+<!ENTITY MClastModifiedDateLabel "תאריך עדכון אחרון:">
+<!ENTITY MCdata "מידע בכרטיס">
+<!ENTITY MCdayLabel "יום:">
+<!ENTITY MCmonthLabel "חודש:">
+<!ENTITY MCyearLabel "שנה:">
+<!ENTITY MCbirthlabel "תאריך לידה">
+<!ENTITY MCanniversarylabel "יום שנה">
+<!ENTITY MCipod "(עבור אייפוד)">
+<!ENTITY MCrecover "שחזור/איחוי">
+<!ENTITY MCcopy "העתק">
+<!ENTITY MCoptions0 "אפשרויות">
+<!ENTITY MCoptions1 "שימוש בתווים רגילים בלבד בקבצי יצוא">
+<!ENTITY MCoptions2 "העתקת כתובות בתבנית אמריקאית">
+<!ENTITY MCoptions3 "הוספת תאריך בעת יצירת איש קשר חדש">
+<!ENTITY MCoptions4 "עמודות ברוחב קבוע בלוח אנשי הקשר">
+<!ENTITY MCoptions5 "רוחב עמודות (פיקסלים):">
+<!ENTITY MCoptionsCustomVcard "שדה vCard מקושר:">
+<!ENTITY MCoptions7 "שדות חיפוש אנשי הקשר">
+<!ENTITY MCoptions8 "ביפר, פקס, מחלקה">
+<!ENTITY MCoptions9 "קטגוריה, הערות, שנת לידה">
+<!ENTITY MCcompanyLabel "ארגון:">
+<!ENTITY MCmultipleContacts "עריכת מאפיינים במשותף">
+<!ENTITY MCoptionsCustom1 "שדה 1:">
+<!ENTITY MCoptionsCustom2 "שדה 2:">
+<!ENTITY MCoptionsCustom3 "שדה 3:">
+<!ENTITY MCoptionsCustom4 "שדה 4:">
+<!ENTITY MCbirthYearLabel "שנה לידה">
+<!ENTITY MCbirthMonthLabel "חודש לידה">
+<!ENTITY MCbirthDayLabel "יום לידה">
+<!ENTITY MCcategoryLabel "קטגוריה:">
+<!ENTITY HomeState.label "מדינה">
+<!ENTITY Home.box "בית">
+<!ENTITY HomeAddress.label "כתובת">
+<!ENTITY HomeCity.label "עיר">
+<!ENTITY HomeCountry.label "ארץ">
+<!ENTITY HomeZipCode.label "מיקוד">
+<!ENTITY WorkAddress.label "כתובת">
+<!ENTITY Work.box "עבודה">
+<!ENTITY WorkState.label "מדינה">
+<!ENTITY WorkCity.label "עיר">
+<!ENTITY WorkZipCode.label "מיקוד">
+<!ENTITY WorkCountry.label "ארץ">
+<!ENTITY Home.Web "דף בית פרטי">
+<!ENTITY Work.Web "דף בית בעבודה">
+<!ENTITY preferMailFormat.label "מעדיף לקבל הודעות בתצורה">
+<!ENTITY preferMailFormat0.label "לא ידועה">
+<!ENTITY preferMailFormat1.label "טקסט פשוט">
+<!ENTITY preferMailFormat2.label "HTML">
+<!ENTITY allowRemoteContent.label "אפשר תמונות מרוחקות">
+<!ENTITY allowRemoteContentYes.label "כן">
+<!ENTITY allowRemoteContentNo.label "לא">
+<!ENTITY Notes.label "הערות">
+<!ENTITY photoTab "תמונה">
+<!ENTITY deleteIMG "הסר תמונה">
+<!ENTITY addIMG "ערוך/הוסף תמונה">
+<!ENTITY noIMG "תמונה לא זמינה">
+<!ENTITY MCoptions10 "בטל תמיכה בתמונות">
+<!ENTITY MCoptions11 "הוסף קישור חיוג למספרי טלפון">
+<!ENTITY restartWarning "עריכת חלק מהאפשרויות דורשת סגירה ופתיחה מחדש של ספר הכתובות">
+<!ENTITY photoDim1.label "לוח איש הקשר:">
+<!ENTITY photoDim2.label "חלון ראשי:">
+<!ENTITY photoDimCaption "גודל התמונה (אורך\\רוחב מירביים בפיקסלים)">
+<!ENTITY encCaption "Format and Encoding">
+<!ENTITY MCoptions12 "Quoted-Printable and native encoding">
+<!ENTITY MCoptions13 "Quoted-Printable and UTF-8">
+<!ENTITY MCoptions14 "UTF-8">
+<!ENTITY Work.JobTitle "תיאור">
+<!ENTITY Work.Department "מחלקה">
+<!ENTITY misc "שונות">
+<!ENTITY vcardFormat "תבנית vCard">
+<!ENTITY fieldHandling "טיפול בשדות">
+<!ENTITY adrMergeLines "ביצוא השתמש בשדה אחד בלבד עבור שורות הכתובת">
+<!ENTITY adrDefault "ערך ברירת מחדל עבור שדה הכתובת ביבוא:">
+<!ENTITY openPhoto "פתח תמונה בחלון">
+<!ENTITY maxSizeLabel "גודל התמונה המקסימלי ביצוא (kb):">
+<!ENTITY sizeOnDisk "גודל הקובץ בכונן:">
+<!ENTITY csvCaption "יצוא בפורמט CSV">
+<!ENTITY csvSepLabel "מפריד שדות:">
+<!ENTITY attachAsVcard "צרף בתור vCard">
+<!ENTITY MCoptions15 "מיון אנשי קשר בחלון הרשימה">
+<!ENTITY MFFABbirthday "לחץ כאן לצפות בתאריך הלידה בסגנון MoreFunctionsForAddressBook">
+<!ENTITY nameORemail "שם או כתובת דואר">
+<!ENTITY MCbirthdateWarn1 "אם ברצונך לשמור על התאימות עם תוכנות אחרות">
+<!ENTITY MCbirthdateWarn3 "יום - 2 ספרות, חודש - 2 ספרות, שנה - 4 ספרות">
+<!ENTITY openCatDialog "פתח חלון רשימת קטגוריות">
+<!ENTITY categories "קטגוריות">
+<!ENTITY catDialogTitle "רשימת קטגוריות">
+<!ENTITY catCurrentContact "קטגוריות עבור איש קשר זה">
+<!ENTITY catAssign "קטגוריות ל">
+<!ENTITY active "פעיל">
+<!ENTITY name "שם">
+<!ENTITY remove "הסר">
+<!ENTITY add "הוסף">
+<!ENTITY delete "מחר">
+<!ENTITY assign "הקצה">
+<!ENTITY catCaption "העדפות לניהול קטגוריות">
+<!ENTITY catViewMode "מצב תצוגה בלוח אנשי הקשר">
+<!ENTITY view0 "רגיל">
+<!ENTITY view1 "מתקדם">
+<!ENTITY catSep "מפריד עבור קטגוריות מרובות">
+<!ENTITY catAutoAdd "הוסף קטגוריות אנשי קשר בעת פתיחת חלון הרשימה">
+<!ENTITY showDialog "הצג חלון רשימת קטגוריות">
+<!ENTITY createList "צור רשימה חדשה">
+<!ENTITY topIcon "הצג צלמית רשימת הקטגוריות בראש לוח אנשי הקשר">
+<!ENTITY v21 "גירסא  2.1">
+<!ENTITY v30 "גירסא 3.0">
+<!ENTITY charExportPref.label "ברירת המחדל למפת תווים ליצוא">
+<!ENTITY charImportPref.label "ברירת המחדל למפת תווים ליבוא">
+<!ENTITY noneValue.label "בחירה ידנית (ascii מורחב בלבד)">
+<!ENTITY charDialogDesc "יבוא\\פתיחה  של קובץ vCard זה דורשת בחירת מפת תווים. נא לבחור את מפת התווים כך שהשורה הבאה תהיה תקינה">
+<!ENTITY charset "מפת תווים">
+<!ENTITY import "יבוא">
+<!ENTITY export "יצוא">
+<!ENTITY showAttVcard "Show vCards in attachments list also with inline view enabled">
+<!ENTITY contentTypeSend "Send vCards as: ">
+<!ENTITY numberDefault "Default value for telephone numbers: ">
+<!ENTITY work.lower "work">
+<!ENTITY home.lower "home">
+<!ENTITY none.lower "none">
+<!ENTITY extraFields "Extra fields">
+<!ENTITY extraField "Extra field">
+<!ENTITY abChooserTitle "Options for the contacts to add">
+<!ENTITY abChooserLabel1 "Choose the addressbook for the contacts">
+<!ENTITY saveRec "Save recipients addresses">
+<!ENTITY save1 "as contacts (all)">
+<!ENTITY save2 "as contacts (TO and REPLY-TO only)">
+<!ENTITY save3 "as contacts (CC only)">
+<!ENTITY save4 "as contacts (BCC only)">
+<!ENTITY save5 "as list (all)">
+<!ENTITY save6 "as list (TO and REPLY-TO only)">
+<!ENTITY save7 "as list (CC only)">
+<!ENTITY save8 "as list (CCN only)">
+<!ENTITY asTha "as text (.tha/.thm)">
+<!ENTITY asVcf "as vCard (.vcf)">
+<!ENTITY asCsv "as csv (.csv)">
+<!ENTITY asThm "as text (.thm)">
+<!ENTITY asMab "in native Thunderbird format (.mab)">
+<!ENTITY asIpod "as vCard for Ipod (.vcf)">
+<!ENTITY handleVcards "Allow MoreFunctionsForAddressBook to handle vCards in messages panel">
+<!ENTITY hideExtraFields "Hide extra fields">
+<!ENTITY catAddTags "Add messages tags when opening list dialog">
+<!ENTITY skipABtitle "ספר כתובות עבור השלמה אוטומטית לכתובות">
+<!ENTITY skipABlabel "עם הזהות הזו, חפש רשומות מתאימות בספרי הכתובות הללו:">
+<!ENTITY skipABactive "מופעל">
+<!ENTITY skipABname "שם">
+<!ENTITY edit "עריכה">
+<!ENTITY skipABcompose "השלמת כתובות אוטומטית">
+<!ENTITY vcardDateFormat "מבנה תאריך ליצוא:">
+<!-- These two lines are about date format. YYYY = year, MM = month, DD = day -->
+<!ENTITY dateLong "YYYY-MM-DD">
+<!ENTITY dateShort "YYYYMMDD">
+<!ENTITY MCexportcsv "יצא לפורמט CSV">
+<!ENTITY TaskOpenPrefPanel "אפשרויות נוספות">
+<!ENTITY extraMailTab "כתובות דואר אלקטרוניות אחרות">
+<!ENTITY extraMailLabel "כתובת דואר אלקטרוני נוספת">
+<!ENTITY additionalEmails_pref "השתמש בכתובות דואר אלקטרוניות נוספות להשלמה אוטומטית">
+<!ENTITY showAbButton.pref "הצג את כפתור החיפוש לספרי הכתובות">
+<!ENTITY addressbooks "ספרי כתובות">
+<!ENTITY addressbook "ספר כתובות">
+<!ENTITY lists "רשימות">
+<!ENTITY abSearch.label "ספרי כתובות ורשימות המכילים כתובות דואר אלקטרוני של אנשי הקשר:">
+<!ENTITY search "חיפוש">
+<!ENTITY pushAbButton "לחץ על הכפתור לחיפוש">
+<!ENTITY firstName "שם פרטי">
+<!ENTITY lastName "שם משפחה">
+<!-- Here "unix" is a short way to mean "unix time" cfr. http://en.wikipedia.org/wiki/Unix_time , this label can't be too long -->
+<!ENTITY lastUnix "תאריך עדכון (תבנית יוניקס)">
+<!ENTITY label.vCardField "תוויות ושדות vCard משוייכים">
+<!ENTITY labels "תוויות">
+<!ENTITY vCardFields "שדות vCard משוייכים">
+<!ENTITY customFieldsLabel "שדות מותאמים אישית">
+<!ENTITY emailOtherFields "כתוובת דואר ושדות אחרים">
+<!ENTITY useGlobalEmailLabel "הוספת רשומה להשלמה אוטומטית הכוללת את כל כתובות איש הקשר">
+<!ENTITY copyAllRecipients "Copy all recipients">
+<!ENTITY importFromRawFile "Import addresses from a raw file">
+<!ENTITY vcardRawCaption "Import from vCards and raw files">
+<!ENTITY skipExistingContact "Skip when the primary email is present in some of the addressbooks">
+<!ENTITY displayName "שם מוצג">
+<!ENTITY nickName "כינוי">
+<!ENTITY email1 "כתובת דואר אלקטרוני ראשית">
+<!ENTITY email2 "כתובת דואר אלקטרוני משנית">
+<!ENTITY anniversaryY "שנת האירוע">
+<!ENTITY anniversaryM "חודש האירוע">
+<!ENTITY anniversaryD "יום האירוע">
+<!ENTITY newAddressbook "שם ספר הכתובות החדש">
+<!ENTITY browse "עיין">
+<!ENTITY skipFirstLine "דלג על השורה הראשונה">
+<!ENTITY endCSV "---- (סיום השדות ליבוא מקובץ CSV) ----">
+<!ENTITY up "עבור מעלה">
+<!ENTITY down "עבור מטה">
+<!ENTITY csvImportTitle "יבוא מקובץ CSV">
+<!ENTITY filePath "נתיב הקובץ">
+<!ENTITY fieldsOrder "סדר השדות בקובץ CSV">
+<!ENTITY MCimportcsv "ייבוא ספר כתובת מקובץ CSV">
+<!ENTITY autocomplete "השלמה אוטומטית">
+<!ENTITY newContactInList "בעת יצירת איש קשר חדש עם רשימה נבחרת, הוסף אוטומטית לרשימה">
+<!ENTITY justBeginning "השלמה אוטומטית רק עבור תחילת ההערך (לא ניתן לעריכה בגרסאות נמוכות מ-31)">
+<!ENTITY files "Files">
+<!ENTITY addFile "Add file">
+<!ENTITY openFileFolder "Open files folder">
+<!ENTITY fileAdd "File to add">
+<!ENTITY fileName "File name">
+<!ENTITY fileDialogDesc "A copy of this file will be stored within the directory of Thunderbird profile">
+<!ENTITY desc "Description">
+

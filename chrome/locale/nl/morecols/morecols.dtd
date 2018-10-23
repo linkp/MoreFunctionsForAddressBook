@@ -1,0 +1,241 @@
+<!ENTITY MCcopyemail1 "E-mailadres kopiëren">
+<!ENTITY MCcopyemail2 "Secundair e-mailadres kopiëren">
+<!ENTITY MCcopymenu "Andere gegevens kopiëren">
+<!ENTITY MCcopyname "Naam">
+<!ENTITY MCcopyhome "Thuisadres">
+<!ENTITY MCcopyhome2 "Thuisadres 2">
+<!ENTITY MCcopywork "Werkadres">
+<!ENTITY MCcopywork2 "Werkadres 2">
+<!ENTITY MCcopyhometel "Telefoon (privé)">
+<!ENTITY MCcopyworktel "Telefoon (zakelijk)">
+<!ENTITY MCcopyfax "Faxnummer">
+<!ENTITY MCcopycell "Mobiel nummer">
+<!ENTITY MCcopypager "Piepernummer">
+<!ENTITY MCcopyAIM "Instant Messengernaam">
+<!ENTITY MCcopywebhome "Webpagina privé">
+<!ENTITY MCcopywebwork "Webpagina zakelijk">
+<!ENTITY MCcopyall "Alle gegevens">
+<!ENTITY MCexportcontact "Exporteren">
+<!ENTITY MCimportcontact "Kaart importeren">
+<!ENTITY MCimportlist "Lijst importeren">
+<!ENTITY MCeditasnew "Als nieuw bewerken">
+<!ENTITY MCimportvcard "vCard/vcf importeren">
+<!ENTITY MCexportvcard "Exporteren als vCard">
+<!ENTITY MCexportrecipients "Ontvangerslijst exporteren">
+<!ENTITY MCextraTab "Andere gegevens">
+<!ENTITY MCanagrafic "Persoonlijke gegevens">
+<!ENTITY MCspousenameLabel "Naam echtgeno(o)t(e):">
+<!ENTITY MCoptionsCaption "Labels voor aangepaste velden">
+<!ENTITY MCopenvcard "vCard openen">
+<!ENTITY MCexportvcf "Als vcf exporteren">
+<!ENTITY MCforwardvcard "Als vCard versturen">
+<!ENTITY MCcontactactions "Acties voor contactpersonen">
+<!ENTITY MClistactions "Acties voor lijsten">
+<!ENTITY MCaddractions "Acties voor adresboeken">
+<!ENTITY MCimportmab "Adresboek van mab-bestand importeren">
+<!ENTITY MCexportmab "Exporteren als mab-bestand">
+<!ENTITY MClastModifiedDateLabel "Datum laatste aanpassing:">
+<!ENTITY MCdata "Kaartgegevens">
+<!ENTITY MCdayLabel "Dag:">
+<!ENTITY MCmonthLabel "Maand:">
+<!ENTITY MCyearLabel "Jaar:">
+<!ENTITY MCbirthlabel "Geboortedag">
+<!ENTITY MCanniversarylabel "Verjaardag">
+<!ENTITY MCipod "(voor iPod)">
+<!ENTITY MCrecover "Herstellen">
+<!ENTITY MCcopy "Kopiëren">
+<!ENTITY MCoptions0 "Opties">
+<!ENTITY MCoptions1 "Uitsluitend ASCII-karakters gebruiken in bestandsnamen bij exporteren">
+<!ENTITY MCoptions2 "Adressen in Amerikaanse opmaak kopiëren">
+<!ENTITY MCoptions3 "Datum toevoegen bij aanmaken nieuwe contactpersoon">
+<!ENTITY MCoptions4 "Kolommen in het contactpersonenvenster hebben een vaste breedte">
+<!ENTITY MCoptions5 "Kolombreedte (in pixels):">
+<!ENTITY MCoptionsCustomVcard "Verwant vcard-veld:">
+<!ENTITY MCoptions7 "Zoekvelden voor contactpersonen">
+<!ENTITY MCoptions8 "Piepernummer, Faxnummer, Afdeling">
+<!ENTITY MCoptions9 "Categorie, Opmerkingen, Geboortejaar">
+<!ENTITY MCcompanyLabel "Organisatie">
+<!ENTITY MCmultipleContacts "Eigenschappen collectief bewerken">
+<!ENTITY MCoptionsCustom1 "Aangepast 1:">
+<!ENTITY MCoptionsCustom2 "Aangepast 2:">
+<!ENTITY MCoptionsCustom3 "Aangepast 3:">
+<!ENTITY MCoptionsCustom4 "Aangepast 4:">
+<!ENTITY MCbirthYearLabel "Geboortejaar">
+<!ENTITY MCbirthMonthLabel "Geboortemaand">
+<!ENTITY MCbirthDayLabel "Geboortedag">
+<!ENTITY MCcategoryLabel "Categorie:">
+<!ENTITY HomeState.label "Staat">
+<!ENTITY Home.box "Privé">
+<!ENTITY HomeAddress.label "Adres">
+<!ENTITY HomeCity.label "Stad">
+<!ENTITY HomeCountry.label "Land">
+<!ENTITY HomeZipCode.label "ZIP/Postcode">
+<!ENTITY WorkAddress.label "Adres">
+<!ENTITY Work.box "Zakelijk">
+<!ENTITY WorkState.label "Staat">
+<!ENTITY WorkCity.label "Stad">
+<!ENTITY WorkZipCode.label "ZIP/Postcode">
+<!ENTITY WorkCountry.label "Land">
+<!ENTITY Home.Web "Webpagina privé">
+<!ENTITY Work.Web "Webpagina zakelijk">
+<!ENTITY preferMailFormat.label "Voorkeur voor ontvangst van berichten als">
+<!ENTITY preferMailFormat0.label "onbekend">
+<!ENTITY preferMailFormat1.label "platte tekst">
+<!ENTITY preferMailFormat2.label "HTML">
+<!ENTITY allowRemoteContent.label "Externe afbeeldingen toestaan">
+<!ENTITY allowRemoteContentYes.label "Ja">
+<!ENTITY allowRemoteContentNo.label "Nee">
+<!ENTITY Notes.label "Opmerkingen">
+<!ENTITY photoTab "Foto">
+<!ENTITY deleteIMG "Afbeelding verwijderen">
+<!ENTITY addIMG "Afbeelding bewerken/invoegen">
+<!ENTITY noIMG "Geen afbeelding beschikbaar">
+<!ENTITY MCoptions10 "Foto-ondersteuning uitschakelen">
+<!ENTITY MCoptions11 "Een ‘callto’-koppeling voor telefoonnummers invoegen">
+<!ENTITY restartWarning "Sommige opties vereisen sluiten en heropenen van het adresboek">
+<!ENTITY photoDim1.label "Contactpersonenvenster:">
+<!ENTITY photoDim2.label "Hoofdvenster:">
+<!ENTITY photoDimCaption "Fotogrootte (maximale breedte/lengte in pixels)">
+<!ENTITY encCaption "Opmaak en codering">
+<!ENTITY MCoptions12 "Quoted-Printable en standaardcodering">
+<!ENTITY MCoptions13 "Quoted-Printable en UTF-8">
+<!ENTITY MCoptions14 "UTF-8">
+<!ENTITY Work.JobTitle "Titel">
+<!ENTITY Work.Department "Afdeling">
+<!ENTITY misc "Diversen">
+<!ENTITY vcardFormat "vCard-opmaak">
+<!ENTITY fieldHandling "Veldverwerking">
+<!ENTITY adrMergeLines "Bij exporteren slechts één veld voor adresregels gebruiken">
+<!ENTITY adrDefault "Standaardwaarde voor adresveld bij importeren:">
+<!ENTITY openPhoto "Foto in venster openen">
+<!ENTITY maxSizeLabel "Maximale fotogrootte voor exporteren (kb):">
+<!ENTITY sizeOnDisk "Bestandsgrootte op schijf:">
+<!ENTITY csvCaption "Exporteren in CSV-opmaak">
+<!ENTITY csvSepLabel "Veldscheidingsteken:">
+<!ENTITY attachAsVcard "Bijvoegen als vCard">
+<!ENTITY MCoptions15 "Contactpersonen sorteren in lijstvenster">
+<!ENTITY MFFABbirthday "KLik hier om de geboortedatum in de stijl van MoreFunctionsForAddressBook te zien">
+<!ENTITY nameORemail "Naam of e-mailadres">
+<!ENTITY MCbirthdateWarn1 "Indien u de compatibiliteit met andere programma\'s">
+<!ENTITY MCbirthdateWarn3 "geboortedag=2 cijfers - geboortemaand=2 cijfers - geboortejaar=4 cijfers">
+<!ENTITY openCatDialog "Dialoogvenster categorieënlijst openen">
+<!ENTITY categories "Categorieën">
+<!ENTITY catDialogTitle "Categorieënlijst">
+<!ENTITY catCurrentContact "Categorieën voor deze contactpersoon">
+<!ENTITY catAssign "Toe te wijzen categorieën">
+<!ENTITY active "Actief">
+<!ENTITY name "Naam">
+<!ENTITY remove "Verwijderen">
+<!ENTITY add "Toevoegen">
+<!ENTITY delete "Verwijderen">
+<!ENTITY assign "Toewijzen">
+<!ENTITY catCaption "Voorkeuren voor categoriebeheer">
+<!ENTITY catViewMode "Beeldmodus in contactpersonenpaneel">
+<!ENTITY view0 "Standaard">
+<!ENTITY view1 "Geavanceerd">
+<!ENTITY catSep "Scheidingsteken voor meerdere categorieën">
+<!ENTITY catAutoAdd "Contactpersooncategorieën toevoegen bij openen lijstdialoogvenster">
+<!ENTITY showDialog "Dialoogvenster categorieënlijst weergeven">
+<!ENTITY createList "Nieuwe lijst maken">
+<!ENTITY topIcon "Pictogram categorieënlijst bovenaan contactpersoonpaneel weergeven">
+<!ENTITY v21 "versie 2.1">
+<!ENTITY v30 "versie 3.0">
+<!ENTITY charExportPref.label "Standaardtekenset voor exporteren">
+<!ENTITY charImportPref.label "Standaardtekenset voor importeren">
+<!ENTITY noneValue.label "Handmatige selectie (alleen uitgebreide ASCII)">
+<!ENTITY charDialogDesc "Importeren/openen van deze vCard vereist handmatige selectie van de tekenset. Kies de tekenset die de volgende regel correct weergeeft">
+<!ENTITY charset "Tekenset">
+<!ENTITY import "Importeren">
+<!ENTITY export "Exporteren">
+<!ENTITY showAttVcard "vCards in bijlagenlijst ook met inline-beeld ingeschakeld weergeven">
+<!ENTITY contentTypeSend "vCards verzenden als:">
+<!ENTITY numberDefault "Standaardwaare voor telefoonnummers:">
+<!ENTITY work.lower "werk">
+<!ENTITY home.lower "privé">
+<!ENTITY none.lower "geen">
+<!ENTITY extraFields "Extra velden">
+<!ENTITY extraField "Extra veld">
+<!ENTITY abChooserTitle "Opties voor toe te voegen contactpersonen">
+<!ENTITY abChooserLabel1 "Kies het adresboek voor contactpersonen">
+<!ENTITY saveRec "Ontvangersadressen opslaan">
+<!ENTITY save1 "als contactpersonen (alles)">
+<!ENTITY save2 "als contactpersonen (alleen AAN en ANTWOORDEN-AAN)">
+<!ENTITY save3 "als contactpersonen (alleen CC)">
+<!ENTITY save4 "als contactpersonen (alleen BCC)">
+<!ENTITY save5 "als lijst (alles)">
+<!ENTITY save6 "als lijst (alleen AAN en ANTWOORDEN-AAN)">
+<!ENTITY save7 "als lijst (alleen CC)">
+<!ENTITY save8 "als lijst (alleen CCN)">
+<!ENTITY asTha "als tekst (.tha/.thm)">
+<!ENTITY asVcf "als vCard (.vcf)">
+<!ENTITY asCsv "als csv (.csv)">
+<!ENTITY asThm "als tekst (.thm)">
+<!ENTITY asMab "in standaard Thunderbird-opmaak (.mab)">
+<!ENTITY asIpod "als vCard voor iPod (.vcf)">
+<!ENTITY handleVcards "MoreFunctionsForAddressBook toestaan om vCards te verwerken in het berichtenpaneel">
+<!ENTITY hideExtraFields "Extra velden verbergen">
+<!ENTITY catAddTags "Berichtlabels toevoegen bij openen lijstdialoogvenster">
+<!ENTITY skipABtitle "Adresboeken voor auto-aanvullen adressen">
+<!ENTITY skipABlabel "Met deze identiteit naar overeenkomstige gegevens zoeken in deze adresboeken:">
+<!ENTITY skipABactive "Ingeschakeld">
+<!ENTITY skipABname "Naam">
+<!ENTITY edit "Bewerken">
+<!ENTITY skipABcompose "Auto-aanvullen adressen">
+<!ENTITY vcardDateFormat "Datumopmaak voor exporteren:">
+<!-- These two lines are about date format. YYYY = year, MM = month, DD = day -->
+<!ENTITY dateLong "DD-MM-JJJJ">
+<!ENTITY dateShort "DDMMJJJJ">
+<!ENTITY MCexportcsv "Exporteren als csv">
+<!ENTITY TaskOpenPrefPanel "Aanvullende opties">
+<!ENTITY extraMailTab "Overige e-mailadressen">
+<!ENTITY extraMailLabel "Extra e-mailadres">
+<!ENTITY additionalEmails_pref "Extra e-mailadressen gebruiken voor auto-aanvullen adressen">
+<!ENTITY showAbButton.pref "Knop voor doorzoeken adresboeken weergeven">
+<!ENTITY addressbooks "Adresboeken">
+<!ENTITY addressbook "Adresboek">
+<!ENTITY lists "Lijsten">
+<!ENTITY abSearch.label "Adresboeken en lijsten met contact-e-mailadressen:">
+<!ENTITY search "Zoeken">
+<!ENTITY pushAbButton "Klik op de knop om te zoeken">
+<!ENTITY firstName "Voornaam">
+<!ENTITY lastName "Achternaam">
+<!-- Here "unix" is a short way to mean "unix time" cfr. http://en.wikipedia.org/wiki/Unix_time , this label can't be too long -->
+<!ENTITY lastUnix "Laatste aanpassingsdatum (Unix)">
+<!ENTITY label.vCardField "Labels en aanverwante vCard-velden">
+<!ENTITY labels "Labels">
+<!ENTITY vCardFields "Aanverwante vCard-velden">
+<!ENTITY customFieldsLabel "Aangepaste velden">
+<!ENTITY emailOtherFields "E-mailadressen en andere velden">
+<!ENTITY useGlobalEmailLabel "Voegt een waarde aan AutoAanvullen toe met alle adressen van de contactpersoon">
+<!ENTITY copyAllRecipients "Alle ontvangers kopiëren">
+<!ENTITY importFromRawFile "Adressen uit een ruw bestand importeren">
+<!ENTITY vcardRawCaption "Inporteren uit vCards en ruwe bestanden">
+<!ENTITY skipExistingContact "Overslaan als primair e-mailadres in een adresboek staat">
+<!ENTITY displayName "Display name">
+<!ENTITY nickName "Nickname">
+<!ENTITY email1 "Primary email">
+<!ENTITY email2 "Secondary email">
+<!ENTITY anniversaryY "Anniversary year">
+<!ENTITY anniversaryM "Anniversary month">
+<!ENTITY anniversaryD "Anniversary day">
+<!ENTITY newAddressbook "Name of the new addressbook">
+<!ENTITY browse "Browse">
+<!ENTITY skipFirstLine "Skip the first line">
+<!ENTITY endCSV "----- (end of the fields to import from the CSV file) -----">
+<!ENTITY up "Move up">
+<!ENTITY down "Move down">
+<!ENTITY csvImportTitle "Import from a CSV file">
+<!ENTITY filePath "File path">
+<!ENTITY fieldsOrder "Fields order in the CSV file">
+<!ENTITY MCimportcsv "Import addressbook from CSV file">
+<!ENTITY autocomplete "Autocomplete">
+<!ENTITY newContactInList "When creating a new contact with a list selected, add it automatically to that list">
+<!ENTITY justBeginning "For autocomplete match just the beginning of the entries (preference not editable on TB versions lower than 31)">
+<!ENTITY files "Files">
+<!ENTITY addFile "Add file">
+<!ENTITY openFileFolder "Open files folder">
+<!ENTITY fileAdd "File to add">
+<!ENTITY fileName "File name">
+<!ENTITY fileDialogDesc "A copy of this file will be stored within the directory of Thunderbird profile">
+<!ENTITY desc "Description">
+

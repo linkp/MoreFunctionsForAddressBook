@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://morecols/content/morecols.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://morecols/locale/morecols.dtd">
+<overlay id="moreColumnsPopup2"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	 xmlns:html="http://www.w3.org/1999/xhtml">
+
+<script type="text/javascript" src="chrome://morecols/content/abCardOverlayOverlay.js" />
+<script type="text/javascript" src="chrome://morecols/content/photo.js" />
+<script type="text/javascript" src="chrome://morecols/content/utils.js" />
+<script type="text/javascript" src="chrome://messenger/content/dateFormat.js" />
+ 
+<hbox insertbefore="editcard">
+	<spacer flex="1" />
+	<image src="chrome://morecols/content/list.gif" id="listTopIcon" onclick="openCatDialog()"  tooltiptext="&openCatDialog;"  />
+</hbox>
+
+
+ <tabs id="abTabs">
+	<tab label="&extraMailTab;" id="extraEmail" />
+	<tab label="&MCextraTab;" id="extraTab" />
+	<tab label="&extraFields;" id="extraCustomTab" />
+	<tab label="&addressbooks;" id="abListTab" />
+	<tab label="&files;" id="MFFABfile" />
+</tabs>
+	
+	<tabpanels id="abTabPanels" flex="1">
+	<tabpanel>
+		<vbox flex="1">
+		<hbox align="center">
+			<label value="&extraMailLabel;  1 :"/><textbox id="extraEmail1" flex="1" class="extraMail" chromedir="ltr"/>
+		</hbox>
+		<hbox align="center">
+			<label value="&extraMailLabel;  2 :"/><textbox id="extraEmail2" flex="1" class="extraMail"  chromedir="ltr"/>
+		</hbox>
+		<hbox align="center">
+			<label value="&extraMailLabel;  3 :"/><textbox id="extraEmail3" flex="1" class="extraMail" chromedir="ltr"/>
+		</hbox>
+		<hbox align="center">
+			<label value="&extraMailLabel;  4 :"/><textbox id="extraEmail4" flex="1" class="extraMail"  chromedir="ltr"/>
+		</hbox>
+		<hbox align="center">
+			<label value="&extraMailLabel;  5 :"/><textbox id="extraEmail5" flex="1" class="extraMail" chromedir="ltr"/>
+		</hbox>
+		</vbox>	
+	</tabpanel>
+
+
+	<tabpanel>
+        <vbox index="extra" flex="1">
+	<groupbox flex="1">
+	<caption class="tab-caption" label="&MCanagrafic;"/>
+		<label value="&MFFABbirthday;" id="showMFFABstyleLabel" onclick="showMFFABstyle(this)" style="color: -moz-nativehyperlinktext; cursor: pointer; text-decoration: underline;" />
+          <vbox id="BirthBox" hidden="true">
+		  	<label value="&MCbirthlabel;"/>
+            <hbox>
+             <label  value="&MCdayLabel;" class="CardEditLabel"/>
+              <hbox class="CardEditWidth" style="width:50px"><textbox id="BirthDay2" flex="1" disableforreadonly="true" /></hbox>
+			    <label  value="&MCmonthLabel;" class="CardEditLabel"/>
+              <hbox class="CardEditWidth" style="width:50px"><textbox id="BirthMonth2" flex="1" disableforreadonly="true" /></hbox>
+			  <label  value="&MCyearLabel;" class="CardEditLabel"/>
+              <hbox class="CardEditWidth" style="width:50px"><textbox id="BirthYear2" flex="1" disableforreadonly="true"/></hbox>			  
+		</hbox>
+		</vbox>
+		<spacer  height="10px"/>
+		<vbox>
+		  	<label value="&MCanniversarylabel;"/>
+            <hbox align="center">
+             <label  value="&MCdayLabel;" class="CardEditLabel"/>
+              <hbox class="CardEditWidth" style="width:50px"><textbox id="AnniversaryDay" flex="1" disableforreadonly="true" /></hbox>
+			    <label  value="&MCmonthLabel;" class="CardEditLabel"/>
+              <hbox class="CardEditWidth" style="width:50px"><textbox id="AnniversaryMonth" flex="1" disableforreadonly="true" /></hbox>
+			  <label  value="&MCyearLabel;" class="CardEditLabel"/>
+              <hbox class="CardEditWidth" style="width:50px"><textbox id="AnniversaryYear" flex="1" disableforreadonly="true"/></hbox>			  
+			 </hbox>
+		</vbox>
+		
+	<vbox>
+		<label value="&MCbirthdateWarn1;" /> 
+		<label value="&MCbirthdateWarn3;" /> 
+		<spacer  flex="1" height="10px"/>
+		 <hbox align="center">
+              <label  value="&MCspousenameLabel;:" class="CardEditLabel" id="SpouseNameLabel" />
+              <hbox class="CardEditWidth"><textbox id="SpouseName" flex="1" disableforreadonly="true"/></hbox>
+            </hbox>
+          </vbox>
+	  </groupbox>
+	<groupbox flex="1">
+	    	<caption class="tab-caption" label="&MCdata;"/>
+		<vbox>
+	      <hbox>
+              <label  value="&MClastModifiedDateLabel;" class="CardEditLabel"/>
+              <hbox class="CardEditWidth"><textbox id="LastModifiedDate" flex="1" readonly="true" style="max-width:150px"/></hbox>
+            </hbox>
+	     <hbox id="catStandardView" align="center">
+		<image src="chrome://morecols/content/list.gif" id="listIcon" onclick="openCatDialog()" tooltiptext="&openCatDialog;" />
+              <label  value="&MCcategoryLabel;:" class="CardEditLabel" />
+              <hbox class="CardEditWidth"><textbox id="Category" flex="1" /></hbox>
+            </hbox>
+		
+	<hbox id="catAdvancedView">
+	      <image src="chrome://morecols/content/list.gif" id="listIcon" onclick="openCatDialog()"  tooltiptext="&openCatDialog;"  />
+              <label  value="&categories;:" class="CardEditLabel"  />
+		<vbox id="catAdvancedViewVbox">
+              <hbox class="CardEditWidth">
+			<textbox class="advCat" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false"  />
+			<textbox class="advCat" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+			<textbox class="advCat" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+			<textbox class="advCat" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+		</hbox>
+		<hbox class="CardEditWidth">
+			<textbox class="advCat" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+			<textbox class="advCat" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+			<textbox class="advCat" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+			<textbox class="advCat" type="autocomplete" autocompletesearch="category-autocomplete" showcommentcolumn="false" />
+		</hbox>
+		</vbox>
+	</hbox>
+
+		</vbox>
+		</groupbox>
+	 <spacer flex="1"/>
+	</vbox>
+	</tabpanel>
+	<tabpanel>
+		<vbox flex="1">
+		<hbox flex="1" align="center">
+		<label value="&extraField;  1 :"/><textbox id="extraCustom1" flex="1" chromedir="ltr"/>
+		</hbox>
+		<hbox flex="1" align="center">
+		<label value="&extraField; 2 :"/><textbox id="extraCustom2" flex="1" chromedir="ltr"/>
+		</hbox>
+		<hbox flex="1" align="center">
+		<label value="&extraField; 3 :"/><textbox id="extraCustom3" flex="1" chromedir="ltr"/>
+		</hbox>
+		<hbox flex="1" align="center">
+		<label value="&extraField; 4 :"/><textbox id="extraCustom4" flex="1" chromedir="ltr"/>
+		</hbox>
+		<hbox flex="1" align="center">
+		<label value="&extraField; 5 :"/><textbox id="extraCustom5" flex="1" chromedir="ltr"/>
+		</hbox>
+		<hbox flex="1" align="center">
+		<label value="&extraField; 6 :"/><textbox id="extraCustom6" flex="1" chromedir="ltr"/>
+		</hbox>
+		<hbox flex="1" align="center">
+		<label value="&extraField; 7 :"/><textbox id="extraCustom7" flex="1" chromedir="ltr"/>
+		</hbox>
+		<hbox flex="1" align="center">
+		<label value="&extraField; 8 :"/><textbox id="extraCustom8" flex="1" chromedir="ltr"/>
+		</hbox>
+		<hbox flex="1" align="center">
+		<label value="&extraField; 9 :"/><textbox id="extraCustom9" flex="1" chromedir="ltr"/>
+		</hbox>
+		<hbox flex="1" align="center">
+		<label value="&extraField; 10:"/><textbox id="extraCustom10" flex="1" chromedir="ltr"/>
+		</hbox>
+		</vbox>	
+	</tabpanel>
+	
+	<tabpanel orient="vertical">
+		<hbox align="center">
+			<label value="&abSearch.label;"/>
+			<spacer flex="1" />
+			<button label="&search;" oncommand="searchForABandList(this);"/>
+		</hbox>
+		
+		<listbox id="ABbox" flex="1"  suppressonselect="true" disableKeyNavigation="true" style="-moz-user-focus: ignore;">
+			 <listcols>
+				<listcol style="min-width:150px" />
+				<listcol flex="1"/>
+			</listcols>
+
+			<listhead>
+				<listheader label="&addressbook;"/>
+				<listheader label="&lists;" />
+			</listhead>
+		</listbox>
+		
+	</tabpanel>
+
+	<tabpanel>
+		<vbox>
+			<hbox>
+				<button label="&addFile;" oncommand="MFFABfileutils.newGenericFile()" />
+				<button label="&openFileFolder;"  oncommand="MFFABfileutils.openFilesDir()" />
+			</hbox>
+			<spacer height="20" />
+			<hbox>
+				<vbox id="MFFABfileContainerGlobal" style="overflow:auto">
+					<grid>
+    					   <columns>
+      						<column flex="1"/>
+      						<column flex="2"/>
+						<column flex="3"/>
+    					   </columns>
+					 <rows id="MFFABfileContainer0">
+					 <row>
+                                       		<description style="font-weight:bold">&files;</description>
+						<description style="font-weight:bold">&desc;</description>
+ 					 </row>
+					 </rows>
+					</grid>
+				</vbox>
+			</hbox>
+		</vbox>
+	</tabpanel>
+
+</tabpanels>
+</overlay>

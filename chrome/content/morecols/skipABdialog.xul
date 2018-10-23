@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE MFFABmainWinOverlay SYSTEM "chrome://morecols/locale/morecols.dtd">
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://morecols/content/skipABdialog.css" type="text/css"?>
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	width="550px"
+	height="500px"
+	title="&skipABtitle;"
+	onload="onLoad()"
+	ondialogaccept="onClose()">
+
+<script type="application/x-javascript" src="chrome://morecols/content/skipABdialog.js"/>
+
+<groupbox id="currentCardCats" flex="1">
+	<vbox>
+		<hbox>
+			<label value="&skipABlabel;" />
+		</hbox>
+	</vbox>
+	<hbox flex="1" >
+	<vbox flex="1" >
+	<tree id="tree" flex="1" editable="true" hidecolumnpicker="true">
+  <treecols>
+    <treecol id="activeCol" label="&skipABactive;" type="checkbox" editable="true"/>
+    <treecol id="nameCol" label="&skipABname;" flex="1" />
+  </treecols>
+
+  <treechildren id="list" />
+
+</tree>
+
+   
+	</vbox>
+	</hbox>
+	</groupbox>
+</dialog>
+

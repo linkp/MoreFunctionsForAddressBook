@@ -1,0 +1,240 @@
+<!ENTITY MCcopyemail1 "Copiar endereço de correio">
+<!ENTITY MCcopyemail2 "Copiar endereço de correio secundário">
+<!ENTITY MCcopymenu "Copiar outros dados">
+<!ENTITY MCcopyname "Nome">
+<!ENTITY MCcopyhome "Endereço de Casa">
+<!ENTITY MCcopyhome2 "Endereço de Casa 2">
+<!ENTITY MCcopywork "Endereço do Trabalho">
+<!ENTITY MCcopywork2 "Endereço do Trabalho 2">
+<!ENTITY MCcopyhometel "Telefone de casa">
+<!ENTITY MCcopyworktel "Telefone do Trabalho">
+<!ENTITY MCcopyfax "Número de Fax">
+<!ENTITY MCcopycell "Telemóvel">
+<!ENTITY MCcopypager "Numero de Pager">
+<!ENTITY MCcopyAIM "Nome das mensagens instantâneas">
+<!ENTITY MCcopywebhome "Página Web de Casa">
+<!ENTITY MCcopywebwork "Página Web do Trabalho">
+<!ENTITY MCcopyall "Todos os dados">
+<!ENTITY MCexportcontact "Exportar">
+<!ENTITY MCimportcontact "Importar cartão">
+<!ENTITY MCimportlist "Importar lista">
+<!ENTITY MCeditasnew "Editar como novo">
+<!ENTITY MCimportvcard "Importar vCard/vcf">
+<!ENTITY MCexportvcard "Exportar com vCard">
+<!ENTITY MCexportrecipients "Exportar a lista de remetentes">
+<!ENTITY MCextraTab "Outros dados">
+<!ENTITY MCanagrafic "Dados pessoais">
+<!ENTITY MCspousenameLabel "Nome da Esposa:">
+<!ENTITY MCoptionsCaption "Etiquetas para Campos Personalizados">
+<!ENTITY MCopenvcard "Abrir vCard">
+<!ENTITY MCexportvcf "Exportar como vcf">
+<!ENTITY MCforwardvcard "Enviar como vCard">
+<!ENTITY MCcontactactions "Acções para os contactos">
+<!ENTITY MClistactions "Acções para as listas">
+<!ENTITY MCaddractions "Acções para livros de endereços">
+<!ENTITY MCimportmab "Importar livro de endereços a partir de ficheiro .mab">
+<!ENTITY MCexportmab "Exportar no formato .mab">
+<!ENTITY MClastModifiedDateLabel "Última data modificada:">
+<!ENTITY MCdata "Dados do Cartão">
+<!ENTITY MCdayLabel "Dia:">
+<!ENTITY MCmonthLabel "Mês:">
+<!ENTITY MCyearLabel "Ano:">
+<!ENTITY MCbirthlabel "Data de nascimento">
+<!ENTITY MCanniversarylabel "Aniversário">
+<!ENTITY MCipod "(para Ipod)">
+<!ENTITY MCrecover "Restauro">
+<!ENTITY MCcopy "Copiar">
+<!ENTITY MCoptions0 "Opções">
+<!ENTITY MCoptions1 "Utilize apenas caracteres ascii nos nomes dos ficheiros ao exportar">
+<!ENTITY MCoptions2 "Copiar endereços com o formato americano">
+<!ENTITY MCoptions3 "Inserir a data quando criar um novo contacto">
+<!ENTITY MCoptions4 "Colunas com largura fixa no painel de contactos">
+<!ENTITY MCoptions5 "Largura das colunas (pixeis):">
+<!ENTITY MCoptionsCustomVcard "Campo relativo ao vcard:">
+<!ENTITY MCoptions7 "Campos de procura de Contactos">
+<!ENTITY MCoptions8 "Pager, Fax, Departamento">
+<!ENTITY MCoptions9 "Categoria, Notas, Aniversário">
+<!ENTITY MCcompanyLabel "Organização:">
+<!ENTITY MCmultipleContacts "Editar propriedades colectivamente">
+<!ENTITY MCoptionsCustom1 "Personalizado 1:">
+<!ENTITY MCoptionsCustom2 "Personalizado 2:">
+<!ENTITY MCoptionsCustom3 "Personalizado 3:">
+<!ENTITY MCoptionsCustom4 "Personalizado 4:">
+<!ENTITY MCbirthYearLabel "Ano de Nascimento">
+<!ENTITY MCbirthMonthLabel "Mês do nascimento">
+<!ENTITY MCbirthDayLabel "Dia">
+<!ENTITY MCcategoryLabel "Categoria">
+<!ENTITY HomeState.label "Estado">
+<!ENTITY Home.box "Casa">
+<!ENTITY HomeAddress.label "Endereço">
+<!ENTITY HomeCity.label "Cidade">
+<!ENTITY HomeCountry.label "País">
+<!ENTITY HomeZipCode.label "Código Postal">
+<!ENTITY WorkAddress.label "Endereço">
+<!ENTITY Work.box "Trabalho">
+<!ENTITY WorkState.label "Estado">
+<!ENTITY WorkCity.label "Cidade">
+<!ENTITY WorkZipCode.label "Código Postal">
+<!ENTITY WorkCountry.label "País">
+<!ENTITY Home.Web "Endereço Web de Casa">
+<!ENTITY Work.Web "Endereço Web do Trabalho">
+<!ENTITY preferMailFormat.label "prefere receber mensagens como:">
+<!ENTITY preferMailFormat0.label "Desconhecido">
+<!ENTITY preferMailFormat1.label "Texto">
+<!ENTITY preferMailFormat2.label "HTML">
+<!ENTITY allowRemoteContent.label "Permitir imagens remotas">
+<!ENTITY allowRemoteContentYes.label "Sim">
+<!ENTITY allowRemoteContentNo.label "Não">
+<!ENTITY Notes.label "Notas">
+<!ENTITY photoTab "Foto">
+<!ENTITY deleteIMG "Remover imagem">
+<!ENTITY addIMG "Editar/Inserir imagem">
+<!ENTITY noIMG "Nenhuma imagem disponível">
+<!ENTITY MCoptions10 "desactivar suporte de foto">
+<!ENTITY MCoptions11 "Inserir uma ligação &apos;ligar a&apos; para números de telefone">
+<!ENTITY restartWarning "Editar algumas opções necessita fechar e abrir o livro de endereços">
+<!ENTITY photoDim1.label "Painel de Contacto:">
+<!ENTITY photoDim2.label "Janela principal:">
+<!ENTITY photoDimCaption "Tamanho da foto (largura/altura máx em pixéis)">
+<!ENTITY encCaption "Formatar e codificar">
+<!ENTITY MCoptions12 "Citação-Impressa e codificação nativa">
+<!ENTITY MCoptions13 "Citação-Impressa e UTF-8">
+<!ENTITY MCoptions14 "UTF-8">
+<!ENTITY Work.JobTitle "Titulo">
+<!ENTITY Work.Department "Departamento">
+<!ENTITY misc "Diversos">
+<!ENTITY vcardFormat "Formato do VCard">
+<!ENTITY fieldHandling "Negociação dos campos">
+<!ENTITY adrMergeLines "Ao exportar usar apenas um campo para as linhas do endereço">
+<!ENTITY adrDefault "Valor pré-definido para o campo ADR ao importar:">
+<!ENTITY openPhoto "Abrir foto numa janela">
+<!ENTITY maxSizeLabel "Tam. máx. da foto a exportar (kb):">
+<!ENTITY sizeOnDisk "Tamanho do ficheiro no disco:">
+<!ENTITY csvCaption "Exportar no formato CVS">
+<!ENTITY csvSepLabel "Separador dos campos:">
+<!ENTITY attachAsVcard "Anexar um vCard">
+<!ENTITY MCoptions15 "ordenar contactos numa lista">
+<!ENTITY MFFABbirthday "Clique aqui para ver o aniversário de acordo com o estilo do MoreFunctionsForAddressBook">
+<!ENTITY nameORemail "Nome ou correio">
+<!ENTITY MCbirthdateWarn1 "Se deseja manter a compatibilidade com outros programas">
+<!ENTITY MCbirthdateWarn3 "Dia de anos=2 dígitos - Mês de nascimento=2 dígitos - Ano de nascimento=4 dígitos">
+<!ENTITY openCatDialog "Abrir o diálogo da lista de categorias">
+<!ENTITY categories "Categorias">
+<!ENTITY catDialogTitle "Lista de categorias">
+<!ENTITY catCurrentContact "Categorias para este contacto">
+<!ENTITY catAssign "Categorias para atribuir">
+<!ENTITY active "Activo">
+<!ENTITY name "Nome">
+<!ENTITY remove "Remover">
+<!ENTITY add "Adicionar">
+<!ENTITY delete "Eliminar">
+<!ENTITY assign "Atribuir">
+<!ENTITY catCaption "Preferências para a gestão de categorias">
+<!ENTITY catViewMode "Ver modo no painel de contactos">
+<!ENTITY view0 "Normal">
+<!ENTITY view1 "Avançado">
+<!ENTITY catSep "Separador para múltiplas categorias">
+<!ENTITY catAutoAdd "Adicionar categorias do contacto ao abri o diálogo da lista">
+<!ENTITY showDialog "Mostrar diálogo da lista de categorias">
+<!ENTITY createList "Criar nova lista">
+<!ENTITY topIcon "Mostrar o ícone da lista de categorias no topo do painel de contacto">
+<!ENTITY v21 "Versão 2.1">
+<!ENTITY v30 "Versão 3.0">
+<!ENTITY charExportPref.label "Conjunto de caracteres pré-definido para exportar">
+<!ENTITY charImportPref.label "Conjunto de caracteres pré-definido para importar">
+<!ENTITY noneValue.label "Selecção manual (apenas ascii expandido)">
+<!ENTITY charDialogDesc "Importar/Abrir este vCard necessita escolha manual do conjunto de caracteres. Escolha o conjunto de caracteres que tornam a linha seguinte correcta">
+<!ENTITY charset "Conjunto de caracteres">
+<!ENTITY import "Importar">
+<!ENTITY export "Exportar">
+<!ENTITY showAttVcard "Mostrar vCards na lista de anexos também com a vista em linha activada">
+<!ENTITY contentTypeSend "Enviar vCard como:">
+<!ENTITY numberDefault "Valor pré-definido para números de telefone:">
+<!ENTITY work.lower "trabalho">
+<!ENTITY home.lower "casa">
+<!ENTITY none.lower "nenhum">
+<!ENTITY extraFields "Campos extra">
+<!ENTITY extraField "Campo extra">
+<!ENTITY abChooserTitle "Opções para os contactos a adicionar">
+<!ENTITY abChooserLabel1 "Escolha o livro de endereços para os contactos">
+<!ENTITY saveRec "Guardar os endereços dos remetentes">
+<!ENTITY save1 "como contactos (todos)">
+<!ENTITY save2 "como contactos (apenas PARA e RESPONDER-PARA)">
+<!ENTITY save3 "como contactos (apenas CC)">
+<!ENTITY save4 "como contactos (apenas BCC)">
+<!ENTITY save5 "como lista (todos)">
+<!ENTITY save6 "como lista (apenas PARA e RESPONDER-PARA)">
+<!ENTITY save7 "como lista (apenas CC)">
+<!ENTITY save8 "como lista (apenas BCC)">
+<!ENTITY asTha "como texto (.tha/.thm)">
+<!ENTITY asVcf "como vCard (.vcf)">
+<!ENTITY asCsv "como csv (.csv)">
+<!ENTITY asThm "como texto (.thm)">
+<!ENTITY asMab "no formato nativo do Thunderbird (.mab)">
+<!ENTITY asIpod "como vCard para Ipod (.vcf)">
+<!ENTITY handleVcards "Permitir que o MoreFunctionsForAddressBook negoceie vCards no painel de mensagens">
+<!ENTITY hideExtraFields "Ocultar campos extra">
+<!ENTITY catAddTags "Adicionar etiquetas de mensagens ao abrir a lista de dialogo">
+<!ENTITY skipABtitle "Addressbooks for addresses autocomplete">
+<!ENTITY skipABlabel "With this identity, look for matching entries in these addressbooks:">
+<!ENTITY skipABactive "Enabled">
+<!ENTITY skipABname "Name">
+<!ENTITY edit "Edit">
+<!ENTITY skipABcompose "Addresses autocomplete">
+<!ENTITY vcardDateFormat "Date format for export:">
+<!-- These two lines are about date format. YYYY = year, MM = month, DD = day -->
+<!ENTITY dateLong "YYYY-MM-DD">
+<!ENTITY dateShort "YYYYMMDD">
+<!ENTITY MCexportcsv "Exportar como csv">
+<!ENTITY TaskOpenPrefPanel "Opções adicionais">
+<!ENTITY extraMailTab "Outros correios electrónicos">
+<!ENTITY extraMailLabel "Correios electrónicos adicionais">
+<!ENTITY additionalEmails_pref "Usar correios electrónicos adicionais para auto-completar endereços">
+<!ENTITY showAbButton.pref "Mostrar o botão para pesquisa de livros de endereços">
+<!ENTITY addressbooks "Livros de endereços">
+<!ENTITY addressbook "Livro de endereços">
+<!ENTITY lists "Listas">
+<!ENTITY abSearch.label "Livros de endereços e listas com contactos de correio eletrónico:">
+<!ENTITY search "Pesquisar">
+<!ENTITY pushAbButton "Clique o botão para pesquisar">
+<!ENTITY firstName "First name">
+<!ENTITY lastName "Last name">
+<!-- Here "unix" is a short way to mean "unix time" cfr. http://en.wikipedia.org/wiki/Unix_time , this label can't be too long -->
+<!ENTITY lastUnix "Last modified date (unix)">
+<!ENTITY label.vCardField "Labels and associated vCard fields">
+<!ENTITY labels "Labels">
+<!ENTITY vCardFields "Associated vCard fields">
+<!ENTITY customFieldsLabel "Custom fields">
+<!ENTITY emailOtherFields "E-mails and other fields">
+<!ENTITY useGlobalEmailLabel "Add an entry in autocomplete with all the addresses of the contact">
+<!ENTITY copyAllRecipients "Copy all recipients">
+<!ENTITY importFromRawFile "Import addresses from a raw file">
+<!ENTITY vcardRawCaption "Import from vCards and raw files">
+<!ENTITY skipExistingContact "Skip when the primary email is present in some of the addressbooks">
+<!ENTITY displayName "Display name">
+<!ENTITY nickName "Nickname">
+<!ENTITY email1 "Primary email">
+<!ENTITY email2 "Secondary email">
+<!ENTITY anniversaryY "Anniversary year">
+<!ENTITY anniversaryM "Anniversary month">
+<!ENTITY anniversaryD "Anniversary day">
+<!ENTITY newAddressbook "Name of the new addressbook">
+<!ENTITY browse "Browse">
+<!ENTITY skipFirstLine "Skip the first line">
+<!ENTITY endCSV "----- (end of the fields to import from the CSV file) -----">
+<!ENTITY up "Move up">
+<!ENTITY down "Move down">
+<!ENTITY csvImportTitle "Import from a CSV file">
+<!ENTITY filePath "File path">
+<!ENTITY fieldsOrder "Fields order in the CSV file">
+<!ENTITY MCimportcsv "Import addressbook from CSV file">
+<!ENTITY autocomplete "Autocomplete">
+<!ENTITY newContactInList "When creating a new contact with a list selected, add it automatically to that list">
+<!ENTITY justBeginning "For autocomplete match just the beginning of the entries (preference not editable on TB versions lower than 31)">
+<!ENTITY files "Files">
+<!ENTITY addFile "Add file">
+<!ENTITY openFileFolder "Open files folder">
+<!ENTITY fileAdd "File to add">
+<!ENTITY fileName "File name">
+<!ENTITY fileDialogDesc "A copy of this file will be stored within the directory of Thunderbird profile">
+<!ENTITY desc "Description">

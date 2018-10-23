@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE MFFABmainWinOverlay SYSTEM "chrome://morecols/locale/morecols.dtd">
+<overlay id="skipAB" 
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/x-javascript" src="chrome://morecols/content/utils.js"/>
+
+<vbox id="compositionAndAddressing">
+	<groupbox>
+		<hbox>
+			<label value="&skipABtitle;:" />
+			<button label="&edit;" oncommand="openSkipAbDialog(0)" />
+		</hbox>
+	</groupbox>
+</vbox>
+
+</overlay>

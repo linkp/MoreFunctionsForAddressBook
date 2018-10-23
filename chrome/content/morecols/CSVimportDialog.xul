@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://morecols/locale/morecols.dtd">
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	title="MoreFunctionsForAddressBook - &csvImportTitle;"
+	buttons="accept,cancel"
+	onload="onLoad()"
+	ondialogaccept="return onExit()"
+	width="550"
+	height="500">
+<script type="application/x-javascript" src="chrome://morecols/content/utils.js"/>
+ <script type="application/x-javascript">
+ <![CDATA[
+ 
+	function onLoad() {
+		document.getElementById("charset-list").selectedItem = document.getElementById("utf8");
+		setCustomLabels();
+	}
+		
+	function onExit() {
+		opener.vcardToolsGlobals.charDefaultImport = document.getElementById("charset-list").selectedItem.getAttribute("label");
+	}
+
+	function move(offset) {
+		var list = document.getElementById("list");
+		var pos = list.selectedIndex;
+		if (pos < 0)
+			return;
+		list.clearSelection();
+		if ( (pos == 0 && offset > 0) || ( pos == (list.itemCount -1) && offset < 0) )
+			return;
+		var label = list.currentItem.label;
+		var value = list.currentItem.value;
+		var newpos = pos - offset;
+		var item = list.removeItemAt(list.currentIndex);
+		var newitem = list.insertItemAt(newpos, label, value);
+		list.selectedIndex = newpos;
+		if (offset > 0 && newpos > 0)
+			list.ensureIndexIsVisible(newpos-1);
+		else
+			list.ensureIndexIsVisible(newpos+1);
+	} 
+
+	function pickFile(el) {
+		var file = getFileFromFilePicker("", "Open", "*.csv", "");
+ 		if (file) 
+			el.previousSibling.value = file.path;
+	}
+
+	function checkValues() {
+		if (! document.getElementById("filePath").value || ! document.getElementById("mabName").value)
+			return 1;
+		else if (document.getElementById("list").getItemAtIndex(0).id == "end")
+			return 2;
+		else
+			return 0;
+	}
+
+	function onExit() {
+		var check =  checkValues();
+		if (check > 0) {
+			var error = (check == 1) ? MCbundle.GetStringFromName("CSVerror1") : MCbundle.GetStringFromName("CSVerror2");
+			alert(error);
+			return false;
+		}
+		var arr = [];
+		var items = document.getElementById("list").getElementsByTagName("listitem");
+		for (let i=0;i<items.length;i++) {
+			if (items[i].value == "*")
+				break;
+			else
+				arr.push(items[i].value);
+		}
+		window.arguments[0].arr = arr;
+		window.arguments[0].charset = document.getElementById("charset-list").selectedItem.label;
+		window.arguments[0].filePath =  document.getElementById("filePath").value;
+		window.arguments[0].mabName =  document.getElementById("mabName").value.replace(/^\s+|\s+$/g, "");
+		window.arguments[0].skipFirstLine = document.getElementById("skipFirstLine").checked;
+		return true;
+	}
+
+	function setCustomLabels() {
+		for (var i=1;i<5;i++) {
+			var pref = MFFAButils.getUncertainCharPref("morecols.custom"+i.toString()+".label");
+			if (pref.length > 0)
+				document.getElementById("MCcustom"+i.toString()).label = pref;
+		}
+	
+		for (var i=1;i<11;i++) {
+			try {
+				var label = MFFAButils.getComplexPref("morecols.MFFABcustom"+i+".label");
+				if (label) 
+					document.getElementById("MFFABcustom"+i.toString()).label = label;
+			}
+			catch(e) {}		
+		}
+	}
+   ]]>
+ </script>
+
+<hbox align="center">
+	<label value="&newAddressbook;:" />
+	<textbox id="mabName"  />
+</hbox>
+<hbox align="center">
+	<label value="&filePath;:" />
+	<textbox id="filePath"  />
+	<button label="&browse;" oncommand="pickFile(this)" />
+</hbox>
+<hbox align="center">
+<label value="&charset;:" />
+<menulist id="charset-list">
+	<menupopup id="charset-list-popup">
+		<menuitem label="ARMSCII-8" />
+		<menuitem label="GEOSTD8" />
+		<menuitem label="ISO-8859-1" />
+		<menuitem label="ISO-8859-2" />
+		<menuitem label="ISO-8859-3" />
+		<menuitem label="ISO-8859-4" />
+		<menuitem label="ISO-8859-5" />
+		<menuitem label="ISO-8859-6" />
+		<menuitem label="ISO-8859-7" />
+		<menuitem label="ISO-8859-8" />
+		<menuitem label="ISO-8859-9" />
+		<menuitem label="ISO-8859-10" />
+		<menuitem label="ISO-8859-11" />
+		<menuitem label="ISO-8859-13" />
+		<menuitem label="ISO-8859-14" />
+		<menuitem label="ISO-8859-15" />
+		<menuitem label="ISO-8859-16" />
+		<menuitem label="KOI8-R" />
+		<menuitem label="KOI8-U" />
+		<menuitem label="UTF-16" />
+		<menuitem label="UTF-8" id="utf8" />
+		<menuitem label="WINDOWS-1250" />
+		<menuitem label="WINDOWS-1251" />
+		<menuitem label="WINDOWS-1252" />
+		<menuitem label="WINDOWS-1253" />
+		<menuitem label="WINDOWS-1254" />
+		<menuitem label="WINDOWS-1255" />
+		<menuitem label="WINDOWS-1256" />
+		<menuitem label="WINDOWS-1257" />
+		<menuitem label="WINDOWS-1258" />
+	</menupopup>
+</menulist>
+</hbox>
+<hbox align="center">
+	<checkbox id="skipFirstLine" label="&skipFirstLine;" />
+</hbox>
+<spacer height="15" />
+<hbox align="center">
+<vbox flex="1">
+<hbox flex="1" align="center">
+<listbox id="list" flex="1" style="min-height:300px">
+  <listhead>
+    <listheader label="&fieldsOrder;" />
+  </listhead>
+	<listitem label="&endCSV;" value="*" id="end" />
+	<listitem label="&firstName;" value="FirstName" />
+	<listitem label="&lastName;" value="LastName" />
+	<listitem label="&displayName;" value="DisplayName" />
+	<listitem label="&nickName;" value="NickName" />
+	<listitem label="&email1;" value="PrimaryEmail" />
+	<listitem label="&email2;" value="SecondEmail" />
+	<listitem label="&MCcopyAIM;" value="_AimScreenName" />
+	<listitem label="&MCcopyworktel;" value="WorkPhone" />
+	<listitem label="&MCcopyhometel;" value="HomePhone" />
+	<listitem label="&MCcopyfax;" value="FaxNumber" />
+	<listitem label="&MCcopypager;" value="PagerNumber" />
+	<listitem label="&MCcopycell;" value="CellularNumber" />
+	<listitem label="&MCcopyhome;" value="HomeAddress" />
+	<listitem label="&MCcopyhome2;" value="HomeAddress2" />
+	<listitem label="&HomeCity.label; &Home.box;" value="HomeCity" />
+	<listitem label="&HomeState.label; &Home.box;" value="HomeState" />
+	<listitem label="&HomeZipCode.label; &Home.box;" value="HomeZipCode" />
+	<listitem label="&HomeCountry.label; &Home.box;" value="HomeCountry" />
+	<listitem label="&MCcopywork;" value="WorkAddress" />
+	<listitem label="&MCcopywork2;" value="WorkAddress2" />
+	<listitem label="&WorkCity.label; &Work.box;" value="WorkCity" />
+	<listitem label="&WorkState.label; &Work.box;" value="WorkState" />
+	<listitem label="&WorkZipCode.label; &Work.box;" value="WorkZipCode" />
+	<listitem label="&WorkCountry.label; &Work.box;" value="WorkCountry" />
+	<listitem label="&Work.JobTitle;" value="JobTitle" />
+	<listitem label="&Work.Department;" value="Department" />
+	<listitem label="&MCcompanyLabel;" value="Company" />
+	<listitem label="&MCcopywebhome;" value="WebPage1" />
+	<listitem label="&MCcopywebwork;" value="WebPage2" />
+	<listitem label="&MCbirthYearLabel;" value="BirthYear" />
+	<listitem label="&MCbirthMonthLabel;" value="BirthMonth" />
+	<listitem label="&MCbirthDayLabel;" value="BirthDay" />
+	<listitem label="&MCoptionsCustom1;" value="Custom1" id="MCcustom1" />
+	<listitem label="&MCoptionsCustom2;" value="Custom2" id="MCcustom2" />
+	<listitem label="&MCoptionsCustom3;" value="Custom3" id="MCcustom3" />
+	<listitem label="&MCoptionsCustom4;" value="Custom4" id="MCcustom4" />
+	<listitem label="&Notes.label;" value="Notes" />
+	<listitem label="&anniversaryY;" value="AnniversaryYear" />
+	<listitem label="&anniversaryM;" value="AnniversaryMonth" />
+	<listitem label="&anniversaryD;" value="AnniversaryDay" />
+	<listitem label="&MCcategoryLabel;" value="Category" />
+	<listitem label="&MCspousenameLabel;" value="SpouseName" />
+	<listitem label="&extraField; 1" value="MFFABcustom1" id="MFFABcustom1" />
+	<listitem label="&extraField; 2" value="MFFABcustom2" id="MFFABcustom2" />
+	<listitem label="&extraField; 3" value="MFFABcustom3" id="MFFABcustom3" />
+	<listitem label="&extraField; 4" value="MFFABcustom4" id="MFFABcustom4" />
+	<listitem label="&extraField; 5" value="MFFABcustom5" id="MFFABcustom5" />
+	<listitem label="&extraField; 6" value="MFFABcustom6" id="MFFABcustom6" />
+	<listitem label="&extraField; 7" value="MFFABcustom7" id="MFFABcustom7" />
+	<listitem label="&extraField; 8" value="MFFABcustom8" id="MFFABcustom8" />
+	<listitem label="&extraField; 9" value="MFFABcustom9" id="MFFABcustom9" />
+	<listitem label="&extraField; 10" value="MFFABcustom10" id="MFFABcustom10" />
+	<listitem label="&extraMailLabel; 1" value="MFFABemail1" />
+	<listitem label="&extraMailLabel; 2" value="MFFABemail2" />
+	<listitem label="&extraMailLabel; 3" value="MFFABemail3" />
+	<listitem label="&extraMailLabel; 4" value="MFFABemail4" />
+	<listitem label="&extraMailLabel; 5" value="MFFABemail5" />
+</listbox>
+</hbox>
+</vbox>
+<vbox>
+<button label="&up;" onclick="move(1)" />
+<button label="&down;" onclick="move(-1)" />
+</vbox>
+</hbox>
+</dialog>

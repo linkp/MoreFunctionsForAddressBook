@@ -1,0 +1,240 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay SYSTEM "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"  [
+ <!ENTITY % morecolsDTD SYSTEM "chrome://morecols/locale/morecols.dtd">
+ %morecolsDTD;
+ <!ENTITY %  quickFilterBarDTD SYSTEM "chrome://messenger/locale/quickFilterBar.dtd">
+ %quickFilterBarDTD;
+]>
+
+
+<overlay id="moreColumns"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="text/javascript" src="chrome://morecols/content/moreColsOverlay.js" />
+<script type="text/javascript" src="chrome://morecols/content/utils.js" />
+
+<toolbar id="ab-bar2">
+	<toolbarbutton insertafter= "peopleSearchInput" id="qfb-AB-sticky" type="checkbox" persist="checked" tooltiptext="&quickFilterBar.sticky.tooltip;"/>
+</toolbar>
+
+<textbox id="peopleSearchInput">
+<button type="menu" style="min-width:1px !important; border:0px !important; margin:0px 5px;" id="MFFABsearchButton">
+<menupopup id="quick-search-menupopup" onpopuphiding="MFFABhideSearchPopup(event)">
+	<menuitem label="&nameORemail;" type="radio" value="0" searchTerm="" checked="true" />
+	<menuitem label="&MCcategoryLabel;" type="radio" value="1" searchTerm="Category" />
+	<menuitem label="&Notes.label;" type="radio" value="2" searchTerm="Notes" />
+	<menuitem label="&MCbirthYearLabel;" type="radio" value="3" searchTerm="BirthYear" />
+	<menuitem label="&HomeCity.label; &Home.box;" type="radio" value="4" searchTerm="HomeCity" />
+	<menuitem label="&HomeCountry.label; &Home.box;" type="radio" value="5" searchTerm="HomeCountry" />
+	<menuitem label="&WorkCity.label; &Work.box;" type="radio" value="6" searchTerm="WorkCity" />
+	<menuitem label="&WorkCountry.label; &Work.box;" type="radio" value="7" searchTerm="WorkCountry" />
+	<menuitem label="&MCcompanyLabel;" type="radio" value="8" searchTerm="Company" />
+	<menuseparator />
+	<menuitem id="cust1view" label="&MCoptionsCustom1;"  type="radio" value="9" searchTerm="Custom1" />
+	<menuitem id="cust2view" label="&MCoptionsCustom2;"  type="radio" value="10" searchTerm="Custom2" />
+	<menuitem id="cust3view" label="&MCoptionsCustom3;"  type="radio" value="11" searchTerm="Custom3" />
+	<menuitem id="cust4view" label="&MCoptionsCustom4;"  type="radio" value="12" searchTerm="Custom4" />
+</menupopup>
+</button>
+</textbox>
+
+<menupopup id="sortMenuPopup" onpopupshowing="InitViewSortByMenu(); cleanlabels1();">
+	<menuitem label="&MCoptionsCustom4;"  
+		id="cmd_SortByCustom4"
+            oncommand="SortResultPane('Custom4');" 
+		insertafter="cmd_SortByWorkPhone"
+		name="sortas" type="radio" checked="true"/>
+	<menuitem label="&MCoptionsCustom3;"  
+		id="cmd_SortByCustom3"
+            oncommand="SortResultPane('Custom3');" 
+		insertafter="cmd_SortByWorkPhone"
+		name="sortas" type="radio" checked="true"/>
+	<menuitem label="&MCoptionsCustom2;"  
+		id="cmd_SortByCustom2"
+            oncommand="SortResultPane('Custom2');" 
+		insertafter="cmd_SortByWorkPhone"
+		name="sortas" type="radio" checked="true"/>
+	<menuitem label="&MCoptionsCustom1;"  
+		id="cmd_SortByCustom1"
+            oncommand="SortResultPane('Custom1');" 
+		insertafter="cmd_SortByWorkPhone"
+		name="sortas" type="radio" checked="true"/>
+	<menuitem label="&Work.Web;"  
+		id="cmd_SortByWebpage1"
+            oncommand="SortResultPane('Webpage1');" 
+		insertafter="cmd_SortByWorkPhone"
+		name="sortas" type="radio" checked="true"/>
+	<menuitem label="&WorkCountry.label; &Work.box;"  
+		id="cmd_SortByWorkCountry"
+            oncommand="SortResultPane('WorkCountry');" 
+		insertafter="cmd_SortByWorkPhone"
+		name="sortas" type="radio" checked="true"/>
+	<menuitem label="&WorkZipCode.label; &Work.box;"  
+		id="cmd_SortByWorkZipCode"
+            oncommand="SortResultPane('WorkZipCode');" 
+		insertafter="cmd_SortByWorkPhone"
+		name="sortas" type="radio" checked="true"/>
+	<menuitem label="&WorkState.label; &Work.box;" 
+		id="cmd_SortByWorkState"
+            oncommand="SortResultPane('WorkState');" 
+		insertafter="cmd_SortByWorkPhone"
+		name="sortas" type="radio" checked="true"/>
+	<menuitem label="&WorkCity.label; &Work.box;"  
+		id="cmd_SortByWorkCity"
+            oncommand="SortResultPane('WorkCity');" 
+		insertafter="cmd_SortByWorkPhone"
+		name="sortas" type="radio" checked="true"/>
+	<menuitem label="&WorkAddress.label; &Work.box;"  
+		id="cmd_SortByWorkAddress"
+            oncommand="SortResultPane('WorkAddress');" 
+		insertafter="cmd_SortByWorkPhone"
+		name="sortas" type="radio" checked="true"/>
+	<menuitem label="&Home.Web;"  
+		id="cmd_SortByWebpage2"
+            oncommand="SortResultPane('Webpage2');" 
+		insertafter="cmd_SortByWorkPhone"
+		name="sortas" type="radio" checked="true"/>
+	<menuitem label="&HomeZipCode.label; &Home.box;"  
+		id="cmd_SortByHomeZipCode"
+            oncommand="SortResultPane('HomeZipCode');" 
+		insertafter="cmd_SortByWorkPhone"
+		name="sortas" type="radio" checked="true"/>
+	<menuitem label="&HomeCountry.label; &Home.box;"  
+		id="cmd_SortByHomeCountry"
+            oncommand="SortResultPane('HomeCountry');" 
+		insertafter="cmd_SortByWorkPhone"
+		name="sortas" type="radio" checked="true"/>
+	<menuitem label="&HomeCity.label; &Home.box;"  
+		id="cmd_SortByHomeCity"
+            oncommand="SortResultPane('HomeCity');" 
+		insertafter="cmd_SortByWorkPhone"
+		name="sortas" type="radio" checked="true"/>
+	<menuitem label="&HomeState.label; &Home.box;" 
+		id="cmd_SortByHomeState"
+            oncommand="SortResultPane('HomeState');" 
+		insertafter="cmd_SortByWorkPhone"
+		name="sortas" type="radio" checked="true"/>
+	<menuitem label="&HomeAddress.label; &Home.box;"  
+		id="cmd_SortByHomeAddress"
+            oncommand="SortResultPane('HomeAddress');" 
+		insertafter="cmd_SortByWorkPhone"
+		name="sortas" type="radio" checked="true"/>
+	<menuitem label="&MCbirthYearLabel;"  
+		id="cmd_SortByBirthYear"
+            oncommand="SortResultPane('BirthYear');" 
+		insertafter="cmd_SortByWorkPhone"
+		name="sortas" type="radio" checked="true"/>
+	<menuitem label="&MCbirthMonthLabel;"  
+		id="cmd_SortByBirthMonth"
+            oncommand="SortResultPane('BirthMonth');" 
+		insertafter="cmd_SortByWorkPhone"
+		name="sortas" type="radio" checked="true"/>
+	<menuitem label="&MCbirthDayLabel;"  
+		id="cmd_SortByBirthDay"
+            oncommand="SortResultPane('BirthDay');" 
+		insertafter="cmd_SortByWorkPhone"
+		name="sortas" type="radio" checked="true"/>
+	<menuitem label="&MCcategoryLabel;"  
+		id="cmd_SortByCategory"
+            oncommand="SortResultPane('Category');" 
+		insertafter="cmd_SortByWorkPhone"
+		name="sortas" type="radio" checked="true"/>
+	 <menuitem label="&firstName;"  
+		id="cmd_SortByFistName"
+            oncommand="SortResultPane('FirstName');" 
+		insertafter="cmd_SortByWorkPhone"
+		name="sortas" type="radio" checked="true"/>
+	 <menuitem label="&lastName;"  
+		id="cmd_SortByLastName"
+            oncommand="SortResultPane('LastName');" 
+		insertafter="cmd_SortByWorkPhone"
+		name="sortas" type="radio" checked="true"/>
+	<menuitem label="&lastUnix;"  
+		id="cmd_SortByLastModifiedDate"
+            oncommand="SortResultPane('LastModifiedDate');" 
+		insertafter="cmd_SortByWorkPhone"
+		name="sortas" type="radio" checked="true"/>
+</menupopup>
+<treecols id="abResultsTreeCols">
+	<splitter ordinal="26" class="tree-splitter" />
+	<treecol id="HomeState" ordinal="27" hidden="true" class="sortDirectionIndicator" 
+		persist="hidden ordinal width sortDirection" flex="1" label="&HomeState.label; &Home.box;" />
+	<splitter ordinal="28" class="tree-splitter" />
+	<treecol id="HomeAddress" ordinal="29" hidden="true" class="sortDirectionIndicator" 
+		persist="hidden ordinal width sortDirection" flex="1" label="&HomeAddress.label; &Home.box;" />
+	<splitter ordinal="30" class="tree-splitter" />
+	<treecol id="HomeCity" ordinal="33" hidden="true" class="sortDirectionIndicator" 
+		persist="hidden ordinal width sortDirection" flex="1" label="&HomeCity.label; &Home.box;" />
+	<splitter ordinal="33" class="tree-splitter" />
+	<treecol id="HomeCountry" ordinal="34" hidden="true" class="sortDirectionIndicator" 
+		persist="hidden ordinal width sortDirection" flex="1" label="&HomeCountry.label; &Home.box;" />
+	<splitter ordinal="35" class="tree-splitter" />
+	<treecol id="HomeZipCode" ordinal="36" hidden="true" class="sortDirectionIndicator" 
+		persist="hidden ordinal width sortDirection" flex="1" label="&HomeZipCode.label; &Home.box;" />
+	<splitter ordinal="37" class="tree-splitter" />
+	<treecol id="WorkAddress" ordinal="38" hidden="true" class="sortDirectionIndicator" 
+		persist="hidden ordinal width sortDirection" flex="1" label="&WorkAddress.label; &Work.box;" />
+	<splitter ordinal="39" class="tree-splitter" />
+	<treecol id="WorkState" ordinal="42" hidden="true" class="sortDirectionIndicator" 
+		persist="hidden ordinal width sortDirection" flex="1" label="&WorkState.label; &Work.box;" />
+	<splitter ordinal="43" class="tree-splitter" />
+	<treecol id="WorkCity" ordinal="44" hidden="true" class="sortDirectionIndicator" 
+		persist="hidden ordinal width sortDirection" flex="1" label="&WorkCity.label; &Work.box;" />
+	<splitter ordinal="45" class="tree-splitter" />
+	<treecol id="WorkZipCode" ordinal="46" hidden="true" class="sortDirectionIndicator" 
+		persist="hidden ordinal width sortDirection" flex="1" label="&WorkZipCode.label; &Work.box;" />
+	<splitter ordinal="47" class="tree-splitter" />
+	<treecol id="WorkCountry" ordinal="48" hidden="true" class="sortDirectionIndicator" 
+		persist="hidden ordinal width sortDirection" flex="1" label="&WorkCountry.label; &Work.box;" />
+	<splitter ordinal="49" class="tree-splitter" />
+	<treecol id="WebPage2" ordinal="50" hidden="true" class="sortDirectionIndicator" 
+		persist="hidden ordinal width sortDirection" flex="1" label="&Home.Web;" />
+	<splitter ordinal="51" class="tree-splitter" />
+	<treecol id="WebPage1" ordinal="52" hidden="true" class="sortDirectionIndicator" 
+		persist="hidden ordinal width sortDirection" flex="1" label="&Work.Web;" />
+	<splitter ordinal="53" class="tree-splitter" />
+	<treecol id="Custom1" ordinal="54" hidden="true" class="sortDirectionIndicator" 
+		persist="hidden ordinal width sortDirection" flex="1" label="&MCoptionsCustom1;" />
+	<splitter ordinal="55" class="tree-splitter" />
+	<treecol id="Custom2" ordinal="56" hidden="true" class="sortDirectionIndicator" 
+		persist="hidden ordinal width sortDirection" flex="1" label="&MCoptionsCustom2;" />
+	<splitter ordinal="57" class="tree-splitter" />
+	<treecol id="Custom3" ordinal="58" hidden="true" class="sortDirectionIndicator" 
+		persist="hidden ordinal width sortDirection" flex="1" label="&MCoptionsCustom3;" />
+	<splitter ordinal="59" class="tree-splitter" />
+	<treecol id="Custom4" ordinal="60" hidden="true" class="sortDirectionIndicator" 
+		persist="hidden ordinal width sortDirection" flex="1" label="&MCoptionsCustom4;" />
+	<splitter ordinal="61" class="tree-splitter" />
+	<treecol id="BirthYear" ordinal="62" hidden="true" class="sortDirectionIndicator" 
+		persist="hidden ordinal width sortDirection" flex="1" label="&MCbirthYearLabel;" />
+	<splitter ordinal="63" class="tree-splitter" />
+	<treecol id="BirthMonth" ordinal="64" hidden="true" class="sortDirectionIndicator" 
+		persist="hidden ordinal width sortDirection" flex="1" label="&MCbirthMonthLabel;" />
+	<splitter ordinal="65" class="tree-splitter" />
+	<treecol id="BirthDay" ordinal="66" hidden="true" class="sortDirectionIndicator" 
+		persist="hidden ordinal width sortDirection" flex="1" label="&MCbirthDayLabel;" />
+	<splitter ordinal="67" class="tree-splitter" />
+	<treecol id="Category" ordinal="68" hidden="true" class="sortDirectionIndicator" 
+		persist="hidden ordinal width sortDirection" flex="1" label="&MCcategoryLabel;" />
+	<splitter ordinal="69" class="tree-splitter" />
+	<treecol id="FirstName" ordinal="70" hidden="true" class="sortDirectionIndicator" 
+		persist="hidden ordinal width sortDirection" flex="1" label="&firstName;" />
+	<splitter ordinal="71" class="tree-splitter" />
+	<treecol id="LastName" ordinal="72" hidden="true" class="sortDirectionIndicator" 
+		persist="hidden ordinal width sortDirection" flex="1" label="&lastName;" />
+	<splitter ordinal="73" class="tree-splitter" />
+	<treecol id="Notes" ordinal="74" hidden="true" class="sortDirectionIndicator" 
+		persist="hidden ordinal width sortDirection" flex="1" label="&Notes.label;" />
+	<splitter ordinal="75" class="tree-splitter" />
+	<treecol id="LastModifiedDate" ordinal="76" hidden="true" class="sortDirectionIndicator" 
+		persist="hidden ordinal width sortDirection" flex="1" label="&lastUnix;" />
+</treecols>
+
+<statusbar id="status-bar">
+	<statusbarpanel id="MFFABpanel">
+		<progressmeter  id="MFAABmeter" mode="determined"  value="0" hidden="true" />
+	</statusbarpanel>
+</statusbar>
+
+</overlay>
+

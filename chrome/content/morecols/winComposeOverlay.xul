@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay SYSTEM "chrome://morecols/locale/morecols.dtd">
+<overlay id="winCompose"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<script type="text/javascript" src="chrome://morecols/content/utils.js" />
+
+<menupopup id="taskPopup">
+	<menuitem id="skipABcompose" label="&skipABcompose;" oncommand="openSkipAbDialog(1)" />
+</menupopup>
+
+</overlay>
+

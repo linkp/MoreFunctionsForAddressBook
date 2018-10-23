@@ -1,0 +1,163 @@
+<?xml version="1.0"?> 
+<!DOCTYPE overlay SYSTEM "chrome://morecols/locale/morecols.dtd">
+<?xml-stylesheet href="chrome://communicator/skin/" type="text/css"?>
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	onload="loadMoreColsPrefs();"
+        buttons="accept, cancel"
+        ondialogaccept="saveMoreColsPrefs();"
+        title="&label.vCardField;"
+>
+
+  <script type="text/javascript" src="chrome://morecols/content/moreColsOverlay.js" />
+  <script type="text/javascript" src="chrome://morecols/content/utils.js" />
+  <script type="application/x-javascript">
+ <![CDATA[
+  var prefs = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
+
+  function loadMoreColsPrefs()  {
+	if (prefs.getBoolPref("morecols.extrafields.hide"))
+		document.getElementById("extraFields").hidden = true;
+
+	for (var i=1;i<5;i++) {
+		document.getElementById("MCcustom"+i.toString()).value = MFFAButils.getUncertainCharPref("morecols.custom"+i.toString()+".label");
+		document.getElementById("MCcustom"+i.toString()+"vcard").value = MFFAButils.getUncertainCharPref("morecols.custom"+i.toString()+".vcard_field");
+	}
+	
+	document.getElementById("anniversaryField").value = prefs.getCharPref("morecols.anniversary.vcard_field");
+	document.getElementById("spouseField").value = prefs.getCharPref("morecols.spouse.vcard_field");
+
+	for (var i=1;i<11;i++) {
+		var clabel = null;
+		var extravcard = null;
+		try {
+			clabel = MFFAButils.getComplexPref("morecols.MFFABcustom"+i+".label");
+			extravcard = prefs.getCharPref("morecols.MFFABcustom"+i+".vcard_field");
+		}
+		catch(e) {}
+		if (clabel) 
+			document.getElementById("MFFABcustom"+i).value = clabel;
+		if (extravcard) 
+			document.getElementById("MCextra"+i+"vcard").value = extravcard;
+	}
+	
+	for (var i=1;i<6;i++) {
+		var emLabel = MFFAButils.getUncertainCharPref("morecols.extra_email"+i.toString()+".label");
+		if (emLabel)
+			document.getElementById("extraMailLabel"+i.toString()).value =emLabel;
+	}
+    }
+
+    function saveMoreColsPrefs()   {
+	
+	prefs.setCharPref("morecols.custom1.vcard_field", document.getElementById("MCcustom1vcard").value);
+	prefs.setCharPref("morecols.custom2.vcard_field", document.getElementById("MCcustom2vcard").value);
+	prefs.setCharPref("morecols.custom3.vcard_field", document.getElementById("MCcustom3vcard").value);
+	prefs.setCharPref("morecols.custom4.vcard_field", document.getElementById("MCcustom4vcard").value);
+
+	prefs.setCharPref("morecols.anniversary.vcard_field", document.getElementById("anniversaryField").value);
+	prefs.setCharPref("morecols.spouse.vcard_field", document.getElementById("spouseField").value);
+
+	for (var i=1;i<5;i++) {
+		var custom = document.getElementById("MCcustom"+i).value;
+		if (custom) 
+			MFFAButils.setComplexPref("morecols.custom"+i+".label", custom);
+		else
+			prefs.deleteBranch("morecols.custom"+i+".label");				
+	}
+
+	for (var i=1;i<11;i++) {
+		var newVal = document.getElementById("MFFABcustom"+i).value;
+		if (newVal != "") 
+			MFFAButils.setComplexPref("morecols.MFFABcustom"+i+".label");		
+		else
+			prefs.deleteBranch("morecols.MFFABcustom"+i+".label");
+		var extravcard = document.getElementById("MCextra"+i+"vcard").value;
+		if (extravcard != "")
+			prefs.setCharPref("morecols.MFFABcustom"+i+".vcard_field", extravcard)
+	}
+
+	for (var i=1;i<6;i++) {
+		var emLabel = document.getElementById("extraMailLabel"+i.toString()).value;
+		if (emLabel) 
+			MFFAButils.setComplexPref("morecols.extra_email"+i.toString()+".label");		
+		else	
+			prefs.deleteBranch("morecols.extra_email"+i.toString()+".label");
+	}
+
+     }
+  ]]>
+  </script>
+
+ <tabbox>
+    <tabs>
+      <tab label="&customFieldsLabel;" />
+      <tab label="&extraFields;" />
+      <tab label="&emailOtherFields;" />
+    </tabs>
+
+<tabpanels flex="1">
+
+<tabpanel>
+<groupbox>
+	<caption label="&label.vCardField;"  />
+	<hbox align="center"><label value="&MCoptionsCustom1;:" /><textbox id="MCcustom1" value="" width="150px" /><label value="&MCoptionsCustomVcard;" /><textbox id="MCcustom1vcard" value="" width="150px" /></hbox>
+	<hbox align="center"> <label value="&MCoptionsCustom2;:" /><textbox id="MCcustom2" value="" width="150px" /><label value="&MCoptionsCustomVcard;" /><textbox id="MCcustom2vcard" value="" width="150px" /></hbox>
+	<hbox align="center"> <label value="&MCoptionsCustom3;:" /><textbox id="MCcustom3" value="" width="150px" /><label value="&MCoptionsCustomVcard;" /><textbox id="MCcustom3vcard" value="" width="150px" /></hbox>
+	<hbox align="center"> <label value="&MCoptionsCustom4;:" /><textbox id="MCcustom4" value="" width="150px" /><label value="&MCoptionsCustomVcard;" /><textbox id="MCcustom4vcard" value="" width="150px" /></hbox>
+</groupbox>
+</tabpanel>
+
+<tabpanel>
+<groupbox id="extraFields">
+	<caption label="&label.vCardField;"  />
+	<hbox align="center"> <label value="&extraField; 1 :" /><textbox id="MFFABcustom1" value="" width="150px" />
+	<label value="&MCoptionsCustomVcard;" /><textbox id="MCextra1vcard" value="" width="150px" /></hbox>
+	<hbox align="center"> <label value="&extraField; 2 :" /><textbox id="MFFABcustom2" value="" width="150px" />
+	<label value="&MCoptionsCustomVcard;" /><textbox id="MCextra2vcard" value="" width="150px" /></hbox>
+	<hbox align="center"> <label value="&extraField; 3 :" /><textbox id="MFFABcustom3" value="" width="150px" />
+	<label value="&MCoptionsCustomVcard;" /><textbox id="MCextra3vcard" value="" width="150px" /></hbox>
+	<hbox align="center"> <label value="&extraField; 4 :" /><textbox id="MFFABcustom4" value="" width="150px" />
+	<label value="&MCoptionsCustomVcard;" /><textbox id="MCextra4vcard" value="" width="150px" /></hbox>
+	<hbox align="center"> <label value="&extraField; 5 :" /><textbox id="MFFABcustom5" value="" width="150px" />
+	<label value="&MCoptionsCustomVcard;" /><textbox id="MCextra5vcard" value="" width="150px" /></hbox>
+	<hbox align="center"> <label value="&extraField; 6 :" /><textbox id="MFFABcustom6" value="" width="150px" />
+	<label value="&MCoptionsCustomVcard;" /><textbox id="MCextra6vcard" value="" width="150px" /></hbox>
+	<hbox align="center"> <label value="&extraField; 7 :" /><textbox id="MFFABcustom7" value="" width="150px" />
+	<label value="&MCoptionsCustomVcard;" /><textbox id="MCextra7vcard" value="" width="150px" /></hbox>
+	<hbox align="center"> <label value="&extraField; 8 :" /><textbox id="MFFABcustom8" value="" width="150px" />
+	<label value="&MCoptionsCustomVcard;" /><textbox id="MCextra8vcard" value="" width="150px" /></hbox>
+	<hbox align="center"> <label value="&extraField; 9 :" /><textbox id="MFFABcustom9" value="" width="150px" />
+	<label value="&MCoptionsCustomVcard;" /><textbox id="MCextra9vcard" value="" width="150px" /></hbox>
+	<hbox align="center"> <label value="&extraField; 10:" /><textbox id="MFFABcustom10" value="" width="150px" />
+	<label value="&MCoptionsCustomVcard;" /><textbox id="MCextra10vcard" value="" width="150px" /></hbox>
+</groupbox>
+</tabpanel>
+
+<tabpanel>
+<vbox>
+<groupbox>
+	<caption label="&vCardFields;"  />
+	<hbox align="center"> 
+		<label value="&MCanniversarylabel; - &MCoptionsCustomVcard;" />
+		<textbox id="anniversaryField" value="" width="150px" />
+	</hbox>
+	<hbox align="center"> 
+		<label value="&MCspousenameLabel; - &MCoptionsCustomVcard;" />
+		<textbox id="spouseField" value="" width="150px" />
+	</hbox>
+</groupbox>
+<groupbox>
+	<caption label="&labels;"  />
+	<hbox align="center"> <label value="&extraMailLabel; 1:" /><textbox id="extraMailLabel1" width="150px" /></hbox>
+	<hbox align="center"> <label value="&extraMailLabel; 2:" /><textbox id="extraMailLabel2" width="150px" /></hbox>
+	<hbox align="center"> <label value="&extraMailLabel; 3:" /><textbox id="extraMailLabel3" width="150px" /></hbox>
+	<hbox align="center"> <label value="&extraMailLabel; 4:" /><textbox id="extraMailLabel4" width="150px" /></hbox>
+	<hbox align="center"> <label value="&extraMailLabel; 5:" /><textbox id="extraMailLabel5" width="150px" /></hbox>
+</groupbox>
+</vbox>
+</tabpanel>
+
+</tabpanels> 
+</tabbox>
+
+</dialog>

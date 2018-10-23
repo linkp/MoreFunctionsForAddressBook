@@ -1,0 +1,42 @@
+<?xml version="1.0"?> 
+<?xml-stylesheet href="chrome://communicator/skin/" type="text/css"?> 
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        buttons="accept,cancel"
+        title="fieldMapImport.title;"
+        ondialogaccept="FieldImportOKButton();"
+        onload="OnLoadFieldMapImport();">
+
+<script type="application/javascript" src="chrome://messenger/content/fieldMapImport.js"/>
+
+<hbox align="center">
+		<checkbox id="skipFirstRecord" label="SKIP FIRST" />
+</hbox>
+
+<separator class="thin"/>
+	<label control="fieldList">fieldMapImport.text;</label>
+<separator class="thin"/>
+
+<!-- field list -->
+<hbox flex="1">
+	<listbox id="fieldList" flex="1">
+	<listcols>
+		<listcol flex="7"/>
+		<listcol flex="13"/>
+	</listcols>
+
+	<listhead>
+		<listheader id="fieldNameHeader" label="fieldMapImport.fieldListTitle;"/>
+		<listheader id="sampleDataHeader" label="fieldMapImport.dataTitle;"/>
+	</listhead>
+	</listbox>
+
+	<vbox>
+		<spacer flex="1"/>
+		<button id="upButton" class="up" label="fieldMapImport.up.label;" />
+		<button id="downButton" class="down" label="fieldMapImport.down.label;" />
+		<spacer flex="1"/>
+	</vbox>
+</hbox>
+
+</dialog>

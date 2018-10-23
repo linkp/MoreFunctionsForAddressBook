@@ -2,9 +2,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+var ABQueryUtilsExist;
 Components.utils.import("resource://gre/modules/Services.jsm");
 Components.utils.import("resource:///modules/mailServices.js");
 Components.utils.import("resource://gre/modules/XPCOMUtils.jsm");
+try {
+	Components.utils.import("resource:///modules/ABQueryUtils.jsm");
+	ABQueryUtilsExist = true
+}
+catch(e) {
+	ABQueryUtilsExist = false;
+}
 
 const ACR = Components.interfaces.nsIAutoCompleteResult;
 const nsIAbAutoCompleteResult = Components.interfaces.nsIAbAutoCompleteResult;
@@ -43,6 +51,13 @@ function nsAbAutoCompleteResult(aSearchString) {
   this._searchResults = []; // final results
   this.searchString = aSearchString;
   this._collectedValues = new Map();  // temporary unsorted results
+  if (ABQueryUtilsExist) {
+	// Get model query from pref; this will return mail.addr_book.autocompletequery.format.phonetic
+	  // if mail.addr_book.show_phonetic_fields == true
+	  this.modelQuery = getModelQuery("mail.addr_book.autocompletequery.format");
+	  // check if the currently active model query has been modified by user
+	  this._modelQueryHasUserValue = modelQueryHasUserValue("mail.addr_book.autocompletequery.format");
+  }  
 }
 
 nsAbAutoCompleteResult.prototype = {
@@ -50,6 +65,7 @@ nsAbAutoCompleteResult.prototype = {
 
   // nsIAutoCompleteResult
 
+  modelQuery: null,
   searchString: null,
   searchResult: ACR.RESULT_NOMATCH,
   defaultIndex: -1,
@@ -294,7 +310,12 @@ nsAbAutoCompleteSearch.prototype = {
       cumulativeFieldText += " " + aCard.getProperty("Notes", "");
     cumulativeFieldText = cumulativeFieldText.toLocaleLowerCase();
 
-    return aSearchWords.every(String.prototype.contains,
+    if (typeof String.contains != "undefined")
+
+	return aSearchWords.every(String.prototype.contains,
+                              cumulativeFieldText);
+    else	
+	return aSearchWords.every(String.prototype.includes,
                               cumulativeFieldText);
   },
 
@@ -397,7 +418,7 @@ nsAbAutoCompleteSearch.prototype = {
     // result ignored.
     // The comma check is so that we don't autocomplete against the user
     // entering multiple addresses.
-    if (!fullString || aSearchString.contains(",")) {
+    if (!fullString || aSearchString.indexOf(",") > -1) {
       result.searchResult = ACR.RESULT_IGNORED;
       aListener.onSearchResult(this, result);
       return;
@@ -413,9 +434,18 @@ nsAbAutoCompleteSearch.prototype = {
       this._commentColumn = Services.prefs.getIntPref("mail.autoComplete.commentColumn");
     } catch(e) { }
 
-    if (aPreviousResult instanceof nsIAbAutoCompleteResult &&
-        aSearchString.startsWith(aPreviousResult.searchString) &&
-        aPreviousResult.searchResult == ACR.RESULT_SUCCESS) {
+    
+    if (ABQueryUtilsExist)
+    	    var iftext = (aPreviousResult instanceof nsIAbAutoCompleteResult &&
+       		 aSearchString.startsWith(aPreviousResult.searchString) &&
+        	aPreviousResult.searchResult == ACR.RESULT_SUCCESS &&
+    	        !result._modelQueryHasUserValue &&
+        	result.modelQuery == aPreviousResult.modelQuery);
+    else
+	    var iftext = (aPreviousResult instanceof nsIAbAutoCompleteResult &&
+        	aSearchString.startsWith(aPreviousResult.searchString) &&
+        	aPreviousResult.searchResult == ACR.RESULT_SUCCESS);
+    if (iftext) {
       // We have successful previous matches, therefore iterate through the
       // list and reduce as appropriate
       for (let i = 0; i < aPreviousResult.matchCount; ++i) {
@@ -453,10 +483,13 @@ nsAbAutoCompleteSearch.prototype = {
       //                 "(NickName,c,@V)(PrimaryEmail,c,@V)(SecondEmail,c,@V)" +
       //                 "(and(IsMailList,=,TRUE)(Notes,c,@V)))";
       let modelQuery;
-      if (Services.prefs.getBoolPref("morecols.autocomplete.match_just_beginning")) {
+
+      if (ABQueryUtilsExist && result._modelQueryHasUserValue)
+	  modelQuery = result.modelQuery;
+      else if (Services.prefs.getBoolPref("morecols.autocomplete.match_just_beginning")) {
 		if (Services.prefs.getBoolPref("morecols.autocomplete.use_additional_emails"))
 			modelQuery = "(or(DisplayName,bw,@V)(FirstName,bw,@V)(LastName,bw,@V)" +
-                       "(NickName,bw,@V)(PrimaryEmail,bw,@V)(SecondEmail,bw,@V)(MFFABemail2,bw,@V)(MFFABemail3,bw,@V)(MFFABemail4,bw,@V)(MFFABemail5,bw,@V)" +  "(and(IsMailList,=,TRUE)(Notes,bw,@V)))";
+                       "(NickName,bw,@V)(PrimaryEmail,bw,@V)(SecondEmail,bw,@V)(MFFABemail1,c,@V)(MFFABemail2,bw,@V)(MFFABemail3,bw,@V)(MFFABemail4,bw,@V)(MFFABemail5,bw,@V)" +  "(and(IsMailList,=,TRUE)(Notes,bw,@V)))";
 		else
 			modelQuery = "(or(DisplayName,bw,@V)(FirstName,bw,@V)(LastName,bw,@V)" +
                        "(NickName,bw,@V)(PrimaryEmail,bw,@V)(SecondEmail,bw,@V)" +
@@ -465,7 +498,7 @@ nsAbAutoCompleteSearch.prototype = {
 	else {
 		if (Services.prefs.getBoolPref("morecols.autocomplete.use_additional_emails"))
 			modelQuery = "(or(DisplayName,c,@V)(FirstName,c,@V)(LastName,c,@V)" +
-                       "(NickName,c,@V)(PrimaryEmail,c,@V)(SecondEmail,c,@V)(MFFABemail2,c,@V)(MFFABemail3,c,@V)(MFFABemail4,c,@V)(MFFABemail5,c,@V)" +
+                       "(NickName,c,@V)(PrimaryEmail,c,@V)(SecondEmail,c,@V)(MFFABemail1,c,@V)(MFFABemail2,c,@V)(MFFABemail3,c,@V)(MFFABemail4,c,@V)(MFFABemail5,c,@V)" +
                        "(and(IsMailList,=,TRUE)(Notes,c,@V)))";
 		else
 			modelQuery = "(or(DisplayName,c,@V)(FirstName,c,@V)(LastName,c,@V)" +

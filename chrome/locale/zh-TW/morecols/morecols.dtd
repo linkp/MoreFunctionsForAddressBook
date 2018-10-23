@@ -1,0 +1,241 @@
+<!ENTITY MCcopyemail1 "複製電子郵件信箱">
+<!ENTITY MCcopyemail2 "複製第二電子信箱">
+<!ENTITY MCcopymenu "複製其他資料">
+<!ENTITY MCcopyname "姓名">
+<!ENTITY MCcopyhome "住處地址">
+<!ENTITY MCcopyhome2 "住處地址2">
+<!ENTITY MCcopywork "公司地址">
+<!ENTITY MCcopywork2 "公司地址2">
+<!ENTITY MCcopyhometel "住處電話">
+<!ENTITY MCcopyworktel "公司電話">
+<!ENTITY MCcopyfax "傳真">
+<!ENTITY MCcopycell "行動電話">
+<!ENTITY MCcopypager "呼叫器">
+<!ENTITY MCcopyAIM "即時通訊暱稱">
+<!ENTITY MCcopywebhome "個人網頁">
+<!ENTITY MCcopywebwork "公司網頁">
+<!ENTITY MCcopyall "所有資料">
+<!ENTITY MCexportcontact "匯出">
+<!ENTITY MCimportcontact "匯入名片">
+<!ENTITY MCimportlist "匯入清單">
+<!ENTITY MCeditasnew "編輯並新增">
+<!ENTITY MCimportvcard "匯入 vCard/vcf">
+<!ENTITY MCexportvcard "匯出為 vCard">
+<!ENTITY MCexportrecipients "匯出收信清單">
+<!ENTITY MCextraTab "其他資料">
+<!ENTITY MCanagrafic "個人資料">
+<!ENTITY MCspousenameLabel "配偶姓名:">
+<!ENTITY MCoptionsCaption "自訂欄位標籤">
+<!ENTITY MCopenvcard "開啟 vCard">
+<!ENTITY MCexportvcf "匯出為 vcf 檔案">
+<!ENTITY MCforwardvcard "寄出為 vCard">
+<!ENTITY MCcontactactions "對聯絡人動作">
+<!ENTITY MClistactions "對名單動作">
+<!ENTITY MCaddractions "對通訊錄動作">
+<!ENTITY MCimportmab "從 mab 檔案匯入通訊錄">
+<!ENTITY MCexportmab "匯出為 mab 格式">
+<!ENTITY MClastModifiedDateLabel "最後修改的資料:">
+<!ENTITY MCdata "名片資料">
+<!ENTITY MCdayLabel "日:">
+<!ENTITY MCmonthLabel "月:">
+<!ENTITY MCyearLabel "年:">
+<!ENTITY MCbirthlabel "出生日期">
+<!ENTITY MCanniversarylabel "週年紀念日">
+<!ENTITY MCipod "(Ipod 用)">
+<!ENTITY MCrecover "修復/還原">
+<!ENTITY MCcopy "複製">
+<!ENTITY MCoptions0 "選項">
+<!ENTITY MCoptions1 "匯出時只使用 ASCII 字元為檔名">
+<!ENTITY MCoptions2 "以美式格式複製地址">
+<!ENTITY MCoptions3 "建立新聯絡人時插入日期">
+<!ENTITY MCoptions4 "固定聯絡人面板的欄位寬度">
+<!ENTITY MCoptions5 "欄位寬度（像素）:">
+<!ENTITY MCoptionsCustomVcard "關聯的 vcard 欄位:">
+<!ENTITY MCoptions7 "聯絡人搜尋框">
+<!ENTITY MCoptions8 "呼叫器、傳真、部門">
+<!ENTITY MCoptions9 "類別、備註、出生年">
+<!ENTITY MCcompanyLabel "公司">
+<!ENTITY MCmultipleContacts "編輯總體屬性">
+<!ENTITY MCoptionsCustom1 "自訂 1">
+<!ENTITY MCoptionsCustom2 "自訂 2">
+<!ENTITY MCoptionsCustom3 "自訂 3">
+<!ENTITY MCoptionsCustom4 "自訂 4">
+<!ENTITY MCbirthYearLabel "出生年">
+<!ENTITY MCbirthMonthLabel "出生月">
+<!ENTITY MCbirthDayLabel "出生日">
+<!ENTITY MCcategoryLabel "分類">
+<!ENTITY HomeState.label "州">
+<!ENTITY Home.box "住家">
+<!ENTITY HomeAddress.label "地址">
+<!ENTITY HomeCity.label "市">
+<!ENTITY HomeCountry.label "鄉">
+<!ENTITY HomeZipCode.label "郵遞區號">
+<!ENTITY WorkAddress.label "地址">
+<!ENTITY Work.box "工作">
+<!ENTITY WorkState.label "州">
+<!ENTITY WorkCity.label "市">
+<!ENTITY WorkZipCode.label "郵遞區號">
+<!ENTITY WorkCountry.label "鄉">
+<!ENTITY Home.Web "個人網站">
+<!ENTITY Work.Web "公司網站">
+<!ENTITY preferMailFormat.label "收信時偏好的格式">
+<!ENTITY preferMailFormat0.label "不明">
+<!ENTITY preferMailFormat1.label "純文字">
+<!ENTITY preferMailFormat2.label "HTML">
+<!ENTITY allowRemoteContent.label "允許使用遠端圖片">
+<!ENTITY allowRemoteContentYes.label "是">
+<!ENTITY allowRemoteContentNo.label "否">
+<!ENTITY Notes.label "備註">
+<!ENTITY photoTab "相片">
+<!ENTITY deleteIMG "移除圖片">
+<!ENTITY addIMG "編輯/插入圖片">
+<!ENTITY noIMG "沒有可用圖片">
+<!ENTITY MCoptions10 "停用相片支援">
+<!ENTITY MCoptions11 "將電話號碼加上「callto」連結">
+<!ENTITY restartWarning "某些選項的編輯必須將通訊錄關閉再重開">
+<!ENTITY photoDim1.label "通訊錄面板:">
+<!ENTITY photoDim2.label "主視窗:">
+<!ENTITY photoDimCaption "相片尺寸 (最大寬/高，單位像素)">
+<!ENTITY encCaption "格式與編碼">
+<!ENTITY MCoptions12 "使用可列印字元的編碼（Quoted-Printable）與本地編碼">
+<!ENTITY MCoptions13 "使用可列印字元的編碼與 UTF-8">
+<!ENTITY MCoptions14 "UTF-8">
+<!ENTITY Work.JobTitle "職稱">
+<!ENTITY Work.Department "部門">
+<!ENTITY misc "其他">
+<!ENTITY vcardFormat "vCard 格式">
+<!ENTITY fieldHandling "欄位處理">
+<!ENTITY adrMergeLines "匯出時將地址轉為一個欄位">
+<!ENTITY adrDefault "匯入時 ADR 欄位的預設值:">
+<!ENTITY openPhoto "在新視窗開啟相片">
+<!ENTITY maxSizeLabel "匯出相片最大的檔案大小 (kb):">
+<!ENTITY sizeOnDisk "磁碟上的檔案大小:">
+<!ENTITY csvCaption "匯出為 CSV 檔案">
+<!ENTITY csvSepLabel "欄位分隔符號:">
+<!ENTITY attachAsVcard "以 vCard 格式夾帶為附件">
+<!ENTITY MCoptions15 "於列表視窗中排序聯絡人">
+<!ENTITY MFFABbirthday "按此以 MoreFunctionsForAddressBook 樣式檢視生日">
+<!ENTITY nameORemail "姓名或電子郵件">
+<!ENTITY MCbirthdateWarn1 "以此格式來確保相容性:">
+<!ENTITY MCbirthdateWarn3 "日=2 位數 - 月=2 位數 - 年=4 位數">
+<!ENTITY openCatDialog "開啟類別清單">
+<!ENTITY categories "類別">
+<!ENTITY catDialogTitle "類別清單">
+<!ENTITY catCurrentContact "聯絡人類別">
+<!ENTITY catAssign "要指定的類別">
+<!ENTITY active "啟用">
+<!ENTITY name "姓名">
+<!ENTITY remove "移除">
+<!ENTITY add "新增">
+<!ENTITY delete "刪除">
+<!ENTITY assign "指定">
+<!ENTITY catCaption "類別管理員偏好設定">
+<!ENTITY catViewMode "聯絡人面版下的檢視模式">
+<!ENTITY view0 "標準">
+<!ENTITY view1 "進階">
+<!ENTITY catSep "多類別的分隔符號">
+<!ENTITY catAutoAdd "開啟清單時新增聯絡人類別">
+<!ENTITY showDialog "顯示類別列表對話框">
+<!ENTITY createList "建立新名單">
+<!ENTITY topIcon "在聯絡人面板上方顯示類別清單圖示">
+<!ENTITY v21 "2.1 version">
+<!ENTITY v30 "3.0 version">
+<!ENTITY charExportPref.label "匯出時預設的字元編碼">
+<!ENTITY charImportPref.label "匯入時預設的字元編碼">
+<!ENTITY noneValue.label "手動選擇（只包括 EASCII）">
+<!ENTITY charDialogDesc "匯入/開啟此 vCard 需要手動選擇字元編碼。請選擇可正確顯示以下文字的編碼">
+<!ENTITY charset "字元編碼">
+<!ENTITY import "匯入">
+<!ENTITY export "匯出">
+<!ENTITY showAttVcard "內嵌檢視啟用時仍於附件清單顯示 vCard">
+<!ENTITY contentTypeSend "寄送 vCards:">
+<!ENTITY numberDefault "電話號碼的預設值:">
+<!ENTITY work.lower "工作">
+<!ENTITY home.lower "住處">
+<!ENTITY none.lower "無">
+<!ENTITY extraFields "額外欄位">
+<!ENTITY extraField "額外欄位">
+<!ENTITY abChooserTitle "要加入的聯絡人選項">
+<!ENTITY abChooserLabel1 "請選擇聯絡人所屬的通訊錄">
+<!ENTITY saveRec "儲存收件人地址">
+<!ENTITY save1 "儲存為聯絡人（全部）">
+<!ENTITY save2 "儲存為聯絡人（只儲存「到」和「回覆至」的收件人 ）">
+<!ENTITY save3 "儲存為聯絡人（只儲存副本收件人）">
+<!ENTITY save4 "儲存為聯絡人（只儲存密件副本收件人）">
+<!ENTITY save5 "儲存為群組名單（全部）">
+<!ENTITY save6 "儲存為群組名單（只儲存「到」和「回覆至」的收件人 ）">
+<!ENTITY save7 "儲存為群組名單（只儲存副本收件人）">
+<!ENTITY save8 "儲存為群組名單（只儲存密件副本收件人）">
+<!ENTITY asTha "儲存為文字檔 (.tha/.thm)">
+<!ENTITY asVcf "儲存為 vCard (.vcf)">
+<!ENTITY asCsv "儲存為逗號分隔檔案 (.csv)">
+<!ENTITY asThm "儲存為文字檔 (.thm)">
+<!ENTITY asMab "儲存為 Thunderbird 內建格式 (.mab)">
+<!ENTITY asIpod "儲存為 Ipod 用的 vCard (.vcf)">
+<!ENTITY handleVcards "允許 MoreFunctionsForAddressBook 於郵件面板內處理 vCard">
+<!ENTITY hideExtraFields "隱藏額外欄位">
+<!ENTITY catAddTags "開啟清單時加入郵件標籤">
+<!ENTITY skipABtitle "位址自動完成用通訊錄">
+<!ENTITY skipABlabel "在此身分識別下，於這些通訊錄中尋找相符項目:">
+<!ENTITY skipABactive "啟用">
+<!ENTITY skipABname "姓名">
+<!ENTITY edit "編輯">
+<!ENTITY skipABcompose "自動完成通訊錄">
+<!ENTITY vcardDateFormat "匯出時的日期格式:">
+<!-- These two lines are about date format. YYYY = year, MM = month, DD = day -->
+<!ENTITY dateLong "YYYY-MM-DD">
+<!ENTITY dateShort "YYYYMMDD">
+<!ENTITY MCexportcsv "匯出為 csv　檔案">
+<!ENTITY TaskOpenPrefPanel "偏好設定">
+<!ENTITY extraMailTab "其他 E-mail">
+<!ENTITY extraMailLabel "附加 E-mail">
+<!ENTITY additionalEmails_pref "位址自動完成使用其他 E-mail">
+<!ENTITY showAbButton.pref "顯示通訊錄搜尋按鈕">
+<!ENTITY addressbooks "通訊錄">
+<!ENTITY addressbook "通訊錄">
+<!ENTITY lists "清單">
+<!ENTITY abSearch.label "包含聯絡人電子郵件位址的通訊錄及群組名單:">
+<!ENTITY search "搜尋">
+<!ENTITY pushAbButton "點下按鈕開始搜尋">
+<!ENTITY firstName "名">
+<!ENTITY lastName "姓">
+<!-- Here "unix" is a short way to mean "unix time" cfr. http://en.wikipedia.org/wiki/Unix_time , this label can't be too long -->
+<!ENTITY lastUnix "最後修改日期 (unix)">
+<!ENTITY label.vCardField "標籤及相關 vCard 欄位">
+<!ENTITY labels "標籤">
+<!ENTITY vCardFields "相關 vCard 欄位">
+<!ENTITY customFieldsLabel "自訂欄位">
+<!ENTITY emailOtherFields "E-mail 與其他欄位">
+<!ENTITY useGlobalEmailLabel "將聯絡人的所有位址新增為自動完成項目">
+<!ENTITY copyAllRecipients "複製所有收件人">
+<!ENTITY importFromRawFile "匯入位址自一個原始檔案">
+<!ENTITY vcardRawCaption "匯入自 vCards 和原始檔案">
+<!ENTITY skipExistingContact "當主要電子郵件出現在某些通訊錄時跳過">
+<!ENTITY displayName "顯示名稱">
+<!ENTITY nickName "暱稱">
+<!ENTITY email1 "主要 Email">
+<!ENTITY email2 "第二 Email">
+<!ENTITY anniversaryY "紀念日年份">
+<!ENTITY anniversaryM "紀念日月份">
+<!ENTITY anniversaryD "紀念日日期">
+<!ENTITY newAddressbook "新通訊錄名稱">
+<!ENTITY browse "瀏覽">
+<!ENTITY skipFirstLine "跳過第一行">
+<!ENTITY endCSV "----- (end of the fields to import from the CSV file) -----">
+<!ENTITY up "向上移">
+<!ENTITY down "向下移">
+<!ENTITY csvImportTitle "從 CSV 檔匯入">
+<!ENTITY filePath "檔案路徑">
+<!ENTITY fieldsOrder "CSV 檔的欄位順序">
+<!ENTITY MCimportcsv "從 CSV 檔匯入通訊錄">
+<!ENTITY autocomplete "自動完成">
+<!ENTITY newContactInList "若在已選擇群組名單的狀態下建立新聯絡人資料，就自動將聯絡人加入該名單">
+<!ENTITY justBeginning "自動完成只比對項目的開頭（偏好設定不適用於31及更早期版本的 TB）">
+<!ENTITY files "Files">
+<!ENTITY addFile "Add file">
+<!ENTITY openFileFolder "Open files folder">
+<!ENTITY fileAdd "File to add">
+<!ENTITY fileName "File name">
+<!ENTITY fileDialogDesc "A copy of this file will be stored within the directory of Thunderbird profile">
+<!ENTITY desc "Description">
+

@@ -1,0 +1,11 @@
+﻿textbox[readonly="true"] {
+	-moz-appearance: none !important;
+	background-color: white !important;
+}
+
+#editcard {
+	overflow-x:scroll;
+}
+
+
+

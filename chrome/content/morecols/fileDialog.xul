@@ -1,0 +1,30 @@
+<?xml version="1.0"?> 
+<!DOCTYPE overlay SYSTEM "chrome://morecols/locale/morecols.dtd">
+<?xml-stylesheet href="chrome://communicator/skin/" type="text/css"?>
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        buttons="accept, cancel"
+	buttondisabledaccept="true"
+        ondialogaccept="return onExit();"
+	onload="onLoad();"
+        title="&addFile;">
+
+<script type="text/javascript" src="chrome://morecols/content/utils.js" />
+<script type="text/javascript" src="chrome://morecols/content/fileDialog.js" />
+
+<hbox>
+	<vbox>
+	<label value="&fileAdd;:" />		
+	<hbox>
+		<textbox id="filePath" flex="1" readonly="true" />
+		<button id="fileButton" label="&browse;" oncommand="pickFile()" />
+	</hbox>
+	<label value="&fileName;:" />	
+	<hbox>
+		<textbox id="fileName" style="width:300px" />
+	</hbox>
+	<hbox>
+		<description>&fileDialogDesc;</description>
+	</hbox>
+	</vbox>
+</hbox>
+</dialog>

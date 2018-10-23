@@ -1,0 +1,400 @@
+<?xml version="1.0"?> 
+<!DOCTYPE overlay SYSTEM "chrome://morecols/locale/morecols.dtd">
+<?xml-stylesheet href="chrome://communicator/skin/" type="text/css"?>
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	onload="initPanel();"
+        buttons="accept, cancel"
+        ondialogaccept="savePrefs();"
+        title="More Functions for Address Book">
+  <script type="application/x-javascript">
+ <![CDATA[
+  function initPanel() {
+	var prefs = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
+	document.getElementById("justascii").checked  = ! prefs.getBoolPref("morecols.export.use_original_name");
+	document.getElementById("usaaddress").checked  = (prefs.getIntPref("morecols.address.format") == 1);
+	document.getElementById("date_in_new_contact").checked  = prefs.getBoolPref("morecols.newcontact.insert_date");
+	document.getElementById("fixedcol").checked  = prefs.getBoolPref("morecols.columns.width_fixed");
+	document.getElementById("widthcol").value  = prefs.getIntPref("morecols.columns.min_width");
+	// document.getElementById("photo_on").checked = prefs.getBoolPref("morecols.photo_support.disable");
+	document.getElementById("callto_links").checked = prefs.getBoolPref("morecols.phone_numbers.link_as_callto");
+	// document.getElementById("photoDim1").value = prefs.getIntPref("morecols.contact.photo_max_pixels");
+	// document.getElementById("photoDim2").value = prefs.getIntPref("morecols.main_window.photo_max_pixels");
+	if (prefs.getBoolPref("morecols.export.always_use_quotedprintable_utf8"))
+		document.getElementById("enc-format").selectedIndex = 1;
+	else if (prefs.getBoolPref("morecols.export.always_use_quotedprintable"))
+		document.getElementById("enc-format").selectedIndex = 0;
+	else if (prefs.getBoolPref("morecols.vcard_export.version_3"))
+		document.getElementById("enc-format").selectedIndex = 3;
+	else
+		document.getElementById("enc-format").selectedIndex = 2;		
+		
+	if (prefs.getBoolPref("morecols.vcard.adr_default_work"))
+		document.getElementById("adr-default").selectedIndex = 1;
+	else
+		document.getElementById("adr-default").selectedIndex = 0;
+		
+	document.getElementById("adr_merge_lines").checked = prefs.getBoolPref("morecols.vcard_export.adr_merge_lines");
+	document.getElementById("photo_max_size").value = prefs.getIntPref("morecols.vcard_export.photo_max_kb");
+	document.getElementById("csv_sep").selectedIndex = prefs.getIntPref("morecols.export.csv_separator");
+	
+	document.getElementById("catSeparator").value = prefs.getCharPref("morecols.category.separator");
+	document.getElementById("catAutoAdd").checked = prefs.getBoolPref("morecols.category.auto_add");
+	document.getElementById("topIcon").checked = prefs.getBoolPref("morecols.category.top_icon_show");
+	document.getElementById("skipBox").checked = prefs.getBoolPref("morecols.import.skip_first_email_exist");
+
+	if (prefs.getBoolPref("morecols.category.advanced_view"))
+		document.getElementById("catView").selectedIndex = 1;
+	else
+		document.getElementById("catView").selectedIndex = 0;
+	
+	var charsetPopup = document.getElementById("charset-list-popup");
+	var charsetList = prefs.getCharPref("morecols.vcard_export_charset_list");
+	var charsetPref = prefs.getCharPref("morecols.vcard_export_charset");
+	var charsetItems = charsetList.split(",");
+	for (var i=0;i<charsetItems.length; i++) {
+		var menuitem = document.createElement("menuitem");
+		menuitem.setAttribute("label", charsetItems[i]);
+		charsetPopup.appendChild(menuitem);
+		if (charsetItems[i] == charsetPref)
+			document.getElementById("charset-list").selectedItem = menuitem;
+        }
+	toggleCharset(document.getElementById("enc-format"));
+
+	var charsetPopup2 = document.getElementById("charset-list2-popup");
+	charsetList = prefs.getCharPref("morecols.vcard_import_charset_list");
+	charsetPref = prefs.getCharPref("morecols.vcard_import_charset");
+	charsetItems = charsetList.split(",");
+	for (var i=0;i<charsetItems.length; i++) {
+		var menuitem = document.createElement("menuitem");
+		menuitem.setAttribute("label", charsetItems[i]);
+		charsetPopup2.appendChild(menuitem);
+		if (charsetItems[i] == charsetPref)
+			document.getElementById("charset-list2").selectedItem = menuitem;
+        }
+	if (charsetPref == "none")
+		document.getElementById("charset-list2").selectedIndex = 0;
+	document.getElementById("numberPref").selectedIndex = prefs.getIntPref("morecols.vcard.cell_fax_default");
+	if (prefs.getBoolPref("morecols.vcard_send.octet_stream_type"))
+		document.getElementById("contentType").selectedIndex = 0;
+	else
+		document.getElementById("contentType").selectedIndex = 1;
+	document.getElementById("hide_vcards").checked = prefs.getBoolPref("morecols.vcard.never_hide");
+	document.getElementById("handle_vcards").checked = prefs.getBoolPref("morecols.vcard.handle");
+	document.getElementById("hide_extraFields").checked = prefs.getBoolPref("morecols.extrafields.hide");
+	document.getElementById("catAddTags").checked = prefs.getBoolPref("morecols.category.add_tags");
+	document.getElementById("date-format").selectedIndex = prefs.getIntPref("morecols.vcard.export_date_format");
+	document.getElementById("additionalEmails").checked = prefs.getBoolPref("morecols.autocomplete.use_additional_emails");
+	document.getElementById("callto_prefix").value = prefs.getCharPref("morecols.phone_numbers.protocol_prefix");
+	document.getElementById("showAbButton").checked = prefs.getBoolPref("morecols.abButton.show");
+	document.getElementById("useGlobalEmail").checked = prefs.getBoolPref("morecols.autocomplete.use_multiple_emails");
+	document.getElementById("addContactToList").checked = prefs.getBoolPref("morecols.newcard.add_to_seleted_list");
+	document.getElementById("vcardTelSeparator").value = prefs.getCharPref("morecols.contact.fields_separator");
+	var appInfo = Components.classes["@mozilla.org/xre/app-info;1"]
+                        .getService(Components.interfaces.nsIXULAppInfo);
+	var versionChecker = Components.classes["@mozilla.org/xpcom/version-comparator;1"]
+                               .getService(Components.interfaces.nsIVersionComparator);
+	if (versionChecker.compare(appInfo.version, "31") >= 0) 
+		document.getElementById("matchJustBeginning").checked = prefs.getBoolPref("morecols.autocomplete.match_just_beginning");
+	else {
+		document.getElementById("matchJustBeginning").checked = true;
+		document.getElementById("matchJustBeginning").disabled = true;
+	}
+   }
+	
+    function savePrefs() {
+	var prefs = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
+	prefs.setBoolPref("morecols.export.use_original_name", ! document.getElementById("justascii").checked);
+	prefs.setBoolPref("morecols.newcontact.insert_date", document.getElementById("date_in_new_contact").checked);
+	prefs.setBoolPref("morecols.columns.width_fixed", document.getElementById("fixedcol").checked);
+	prefs.setIntPref("morecols.columns.min_width", document.getElementById("widthcol").value);
+	if (document.getElementById("usaaddress").checked)
+		prefs.setIntPref("morecols.address.format", 1);
+	else
+		prefs.setIntPref("morecols.address.format", 0);
+	// prefs.setBoolPref("morecols.photo_support.disable", document.getElementById("photo_on").checked);
+	prefs.setBoolPref("morecols.phone_numbers.link_as_callto", document.getElementById("callto_links").checked);
+
+	/* var photoDim1 = document.getElementById("photoDim1").value;
+	if (photoDim1 < 100)
+		photoDim1 = 100;
+	else if (photoDim1 > 500)
+		photoDim1 = 500;
+	prefs.setIntPref("morecols.contact.photo_max_pixels", photoDim1);
+	var photoDim2 = document.getElementById("photoDim2").value;
+	if (photoDim2 < 100)
+		photoDim2 = 100;
+	else if (photoDim2 > 500)
+		photoDim2 = 500;
+	prefs.setIntPref("morecols.main_window.photo_max_pixels", photoDim2);*/
+
+	if (document.getElementById("enc-format").selectedIndex == 0) {
+		prefs.setBoolPref("morecols.export.always_use_quotedprintable_utf8", false);
+		prefs.setBoolPref("morecols.export.always_use_quotedprintable", true);
+		prefs.setBoolPref("morecols.vcard_export.version_3", false);
+	}
+	else if (document.getElementById("enc-format").selectedIndex == 1) {
+		prefs.setBoolPref("morecols.export.always_use_quotedprintable", true);
+		prefs.setBoolPref("morecols.export.always_use_quotedprintable_utf8", true);
+		prefs.setBoolPref("morecols.vcard_export.version_3", false);
+	}
+	else if (document.getElementById("enc-format").selectedIndex == 3) {
+		prefs.setBoolPref("morecols.export.always_use_quotedprintable", false);
+		prefs.setBoolPref("morecols.export.always_use_quotedprintable_utf8", false);
+		prefs.setBoolPref("morecols.vcard_export.version_3", true);
+	}
+	else {
+		prefs.setBoolPref("morecols.export.always_use_quotedprintable", false);
+		prefs.setBoolPref("morecols.export.always_use_quotedprintable_utf8", false);
+		prefs.setBoolPref("morecols.vcard_export.version_3", false);
+	}
+	
+	if (document.getElementById("adr-default").selectedIndex == 1)
+		prefs.setBoolPref("morecols.vcard.adr_default_work", true);
+	else
+		prefs.setBoolPref("morecols.vcard.adr_default_work", false);
+		
+	prefs.setBoolPref("morecols.vcard_export.adr_merge_lines", document.getElementById("adr_merge_lines").checked);
+	prefs.setIntPref("morecols.export.csv_separator", document.getElementById("csv_sep").selectedIndex);
+	prefs.setIntPref("morecols.vcard_export.photo_max_kb", document.getElementById("photo_max_size").value);
+
+	prefs.setCharPref("morecols.category.separator", document.getElementById("catSeparator").value);
+	prefs.setBoolPref("morecols.category.auto_add", document.getElementById("catAutoAdd").checked);
+	prefs.setBoolPref("morecols.category.top_icon_show", document.getElementById("topIcon").checked);
+	if (document.getElementById("catView").selectedIndex == 1)
+		prefs.setBoolPref("morecols.category.advanced_view", true);
+	else
+		prefs.setBoolPref("morecols.category.advanced_view", false);
+		
+	prefs.setCharPref("morecols.vcard_export_charset", document.getElementById("charset-list").selectedItem.getAttribute("label"));
+	if (document.getElementById("charset-list2").selectedIndex == 0)
+		var charDefaultImportPref = "none";
+	else
+		var charDefaultImportPref = document.getElementById("charset-list2").selectedItem.getAttribute("label");
+	prefs.setCharPref("morecols.vcard_import_charset", charDefaultImportPref);
+	prefs.setIntPref("morecols.vcard.cell_fax_default", document.getElementById("numberPref").selectedIndex);
+	prefs.setBoolPref("morecols.vcard_send.octet_stream_type", (document.getElementById("contentType").selectedIndex == 0));
+	prefs.setBoolPref("morecols.vcard.never_hide", document.getElementById("hide_vcards").checked);
+	prefs.setBoolPref("morecols.vcard.handle", document.getElementById("handle_vcards").checked);
+	prefs.setBoolPref("morecols.extrafields.hide", document.getElementById("hide_extraFields").checked);
+	prefs.setBoolPref("morecols.category.add_tags", document.getElementById("catAddTags").checked);
+	prefs.setIntPref("morecols.vcard.export_date_format", document.getElementById("date-format").selectedIndex);
+	prefs.setBoolPref("morecols.autocomplete.use_additional_emails", document.getElementById("additionalEmails").checked);
+	prefs.setCharPref("morecols.phone_numbers.protocol_prefix",document.getElementById("callto_prefix").value);
+	prefs.setBoolPref("morecols.abButton.show", document.getElementById("showAbButton").checked);
+	prefs.setBoolPref("morecols.autocomplete.use_multiple_emails", document.getElementById("useGlobalEmail").checked);
+	prefs.setBoolPref("morecols.import.skip_first_email_exist", document.getElementById("skipBox").checked);
+	prefs.setBoolPref("morecols.autocomplete.match_just_beginning", document.getElementById("matchJustBeginning").checked);
+	prefs.setBoolPref("morecols.newcard.add_to_seleted_list", document.getElementById("addContactToList").checked);
+	prefs.setCharPref("morecols.contact.fields_separator", document.getElementById("vcardTelSeparator").value);
+    }
+
+    function openCatDialog() {
+	openDialog("chrome://morecols/content/catDialog.xul", "", "chrome,resizable=no,titlebar,centerscreen", null, true);
+    }
+	
+	function toggleCharset(group) {
+		if (group.selectedIndex < 2)
+			document.getElementById("charset-list").setAttribute("disabled", "true");
+		else
+			document.getElementById("charset-list").removeAttribute("disabled");
+	}
+
+  ]]>
+  </script>
+  
+<tabbox>
+	<tabs>
+ 	   <tab label="&misc;" selected="true"/>
+	   <tab label="&autocomplete;" />
+	   <tab label="&vcardFormat;" />
+	   <tab label="&categories;" />
+	</tabs>
+   	<tabpanels>
+	<tabpanel orient="vertical">
+
+	<groupbox>
+    <caption label="&MCoptions0;" />   
+    <hbox align="center">
+        <checkbox id="justascii" label="&MCoptions1;" /> 
+    </hbox>
+    <hbox align="center">
+        <checkbox id="usaaddress" label="&MCoptions2;" /> 
+    </hbox>
+     <hbox align="center">
+        <checkbox id="date_in_new_contact" label="&MCoptions3;" /> 
+    </hbox>
+     <hbox align="center">
+        <checkbox id="fixedcol" label="&MCoptions4;" /> -  <label value="&MCoptions5;" />
+	<textbox id="widthcol" size="4" style="width:40px;" value="" />
+     </hbox>
+     <hbox align="center">
+        <checkbox id="callto_links" label="&MCoptions11;" /><textbox id="callto_prefix" />
+     </hbox>
+     <hbox align="center">
+        <checkbox id="hide_vcards" label="&showAttVcard;" />
+     </hbox>
+      <hbox align="center">
+        <checkbox id="handle_vcards" label="&handleVcards;" />
+     </hbox>
+      <hbox align="center">
+        <checkbox id="hide_extraFields" label="&hideExtraFields;" />
+     </hbox>
+     <hbox align="center">
+        <checkbox id="showAbButton" label="&showAbButton.pref;" />
+     </hbox>
+    <hbox align="center">
+        <checkbox id="addContactToList" label="&newContactInList;" />
+     </hbox>
+</groupbox>
+
+ <groupbox>
+    <caption label="&csvCaption;" />
+    <hbox align="center">
+		<label value="&csvSepLabel;" />
+		<menulist id="csv_sep">
+			<menupopup>
+				<menuitem label=","/>
+				<menuitem label=";"/>
+			</menupopup>
+		</menulist>
+	</hbox>
+ </groupbox>
+
+<groupbox>
+    <caption label="&vcardRawCaption;" />
+	 <hbox align="center">
+        <checkbox id="skipBox" label="&skipExistingContact;" />
+     </hbox>
+ </groupbox>
+<description>&restartWarning;</description>
+</tabpanel>
+
+<tabpanel orient="vertical">
+	<hbox align="center">
+        	<checkbox id="additionalEmails" label="&additionalEmails_pref;" />
+	 </hbox>
+	<hbox align="center">
+		<checkbox id="useGlobalEmail" label="&useGlobalEmailLabel;" />
+	</hbox>
+	<hbox align="center">
+		<checkbox id="matchJustBeginning" label="&justBeginning;" />
+	</hbox>
+</tabpanel>
+
+<tabpanel orient="vertical">
+	<groupbox>
+    <caption label="&export;" />
+	<label value="&encCaption;:" />
+     <hbox align="center">
+        <radiogroup id="enc-format" onselect="setTimeout(toggleCharset,300,this)" orient="horizontal">
+		<radio id="format0" label="&MCoptions12;"/>
+		<radio id="format1" label="&MCoptions13;"/>
+		<radio id="format2" label="&v21;"/>
+		<radio id="format3" label="&v30;"/>
+  	</radiogroup>
+     </hbox>
+	 <spacer style="height:10px" />
+	 <hbox align="center">
+		<label value="&charExportPref.label;:" />
+		<menulist id="charset-list">
+			<menupopup id="charset-list-popup" />
+		</menulist>
+		<spacer flex="1" />
+	</hbox>
+	  <hbox align="center">
+			<label value="&contentTypeSend;" />
+        		<radiogroup id="contentType" orient="horizontal">
+			<radio id="type0" label="application/octet-stream"/>
+			<radio id="type1" label="text/x-vcard"/>
+  			</radiogroup>
+	  </hbox>
+ 	</groupbox>
+	<groupbox>
+		<caption label="&import;" />
+		<hbox align="center">
+			<label value="&charImportPref.label;:" />
+			<menulist id="charset-list2">
+			<menupopup id="charset-list2-popup">
+				<menuitem label="&noneValue.label;" />
+			</menupopup>
+			</menulist>
+			<spacer flex="1" />
+		</hbox>	
+		 </groupbox>
+	<groupbox>
+    <caption label="&fieldHandling;" />
+	<hbox align="center">
+        <checkbox id="adr_merge_lines" label="&adrMergeLines;" />
+     </hbox>
+    <hbox align="center">
+        <label value="Separator for multiple telephone numbers: " />
+	<textbox id="vcardTelSeparator" size="1" maxlength="1" />
+     </hbox>
+    <hbox align="center">
+	 <label value="&vcardDateFormat;" />
+        <radiogroup id="date-format" orient="horizontal">
+		<radio id="date-long" label="&dateLong;"/>
+		<radio id="date-short" label="&dateShort;"/>
+  	</radiogroup>
+	</hbox>
+	 <hbox align="center">
+	 <label value="&adrDefault;" />
+        <radiogroup id="adr-default" orient="horizontal">
+		<radio id="adr_home" label="&MCcopyhome;"/>
+		<radio id="adr_work" label="&MCcopywork;"/>
+  	</radiogroup>
+    </hbox>
+	 <hbox align="center">
+			<label value="&numberDefault;" />
+        		<radiogroup id="numberPref" orient="horizontal">
+			<radio id="number0" label="&none.lower;"/>
+			<radio id="number1" label="&work.lower;"/>
+			<radio id="number2" label="&home.lower;"/>
+  			</radiogroup>
+		</hbox>
+	</groupbox>
+	<groupbox>
+    <caption label="&photoTab;" />
+	<hbox align="center">
+			<label value="&maxSizeLabel;" />
+			<textbox id="photo_max_size" size="3"/>
+	</hbox>
+	</groupbox>
+</tabpanel>
+
+<tabpanel orient="vertical">
+	<groupbox>
+	    <caption label="&catCaption;" />
+		<label value="&catViewMode;:" />
+		<hbox align="center">
+			<radiogroup id="catView">
+				<radio id="view0" label="&view0;"/>
+				<radio id="view1" label="&view1;"/>
+			</radiogroup>
+		</hbox>
+		<hbox align="center">
+			<label value="&catSep;:" />
+			<textbox id="catSeparator" size="1"  maxlength="1" />
+		</hbox>
+		<hbox align="center">
+		        <checkbox id="catAutoAdd" label="&catAutoAdd;" />
+		</hbox>
+		<hbox align="center">
+		        <checkbox id="catAddTags" label="&catAddTags;" />
+		</hbox>
+		<hbox align="center">
+		        <checkbox id="topIcon" label="&topIcon;" />
+		</hbox>
+
+		<hbox align="center">
+			<label value="&showDialog;" />
+		        <button label="&catDialogTitle;" oncommand="openCatDialog()" />
+		</hbox>
+	</groupbox>
+</tabpanel>
+
+</tabpanels>
+</tabbox>
+
+</dialog>

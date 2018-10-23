@@ -1,0 +1,241 @@
+<!ENTITY MCcopyemail1 "复制电子邮件地址">
+<!ENTITY MCcopyemail2 "复制次要电子邮件">
+<!ENTITY MCcopymenu "复制其他数据">
+<!ENTITY MCcopyname "姓名">
+<!ENTITY MCcopyhome "家庭地址">
+<!ENTITY MCcopyhome2 "家庭地址2">
+<!ENTITY MCcopywork "工作地址">
+<!ENTITY MCcopywork2 "工作地址2">
+<!ENTITY MCcopyhometel "家庭电话">
+<!ENTITY MCcopyworktel "工作电话">
+<!ENTITY MCcopyfax "传真号码">
+<!ENTITY MCcopycell "手机区号">
+<!ENTITY MCcopypager "呼机号码">
+<!ENTITY MCcopyAIM "即时通讯名称">
+<!ENTITY MCcopywebhome "家庭网页">
+<!ENTITY MCcopywebwork "工作网页">
+<!ENTITY MCcopyall "所有数据">
+<!ENTITY MCexportcontact "导出">
+<!ENTITY MCimportcontact "导入名片">
+<!ENTITY MCimportlist "导入列表">
+<!ENTITY MCeditasnew "编辑为新的">
+<!ENTITY MCimportvcard "导入个人名片">
+<!ENTITY MCexportvcard "导出为个人名片">
+<!ENTITY MCexportrecipients "导出收件人列表">
+<!ENTITY MCextraTab "其他数据">
+<!ENTITY MCanagrafic "个人资料">
+<!ENTITY MCspousenameLabel "配偶姓名：">
+<!ENTITY MCoptionsCaption "自定义字段的标签">
+<!ENTITY MCopenvcard "打开个人名片">
+<!ENTITY MCexportvcf "导出为个人名片文件">
+<!ENTITY MCforwardvcard "发送为个人名片">
+<!ENTITY MCcontactactions "操作联系人">
+<!ENTITY MClistactions "操作列表">
+<!ENTITY MCaddractions "操作通讯录">
+<!ENTITY MCimportmab "从 mab 文件导入通讯录">
+<!ENTITY MCexportmab "导出为 mab 格式">
+<!ENTITY MClastModifiedDateLabel "最后修改日期：">
+<!ENTITY MCdata "名片数据">
+<!ENTITY MCdayLabel "天：">
+<!ENTITY MCmonthLabel "月：">
+<!ENTITY MCyearLabel "年：">
+<!ENTITY MCbirthlabel "出生日期">
+<!ENTITY MCanniversarylabel "周年纪念日">
+<!ENTITY MCipod "（用于 iPod）">
+<!ENTITY MCrecover "恢复/还原">
+<!ENTITY MCcopy "复制">
+<!ENTITY MCoptions0 "选项">
+<!ENTITY MCoptions1 "当您导出时在文件名中只能使用 ASCII 字符">
+<!ENTITY MCoptions2 "以美国格式复制地址">
+<!ENTITY MCoptions3 "当您创建一个新联系人时插入日期">
+<!ENTITY MCoptions4 "在联系人面板列固定宽度">
+<!ENTITY MCoptions5 "列宽(像素)：">
+<!ENTITY MCoptionsCustomVcard "相关个人名片字段：">
+<!ENTITY MCoptions7 "联系人搜索字段">
+<!ENTITY MCoptions8 "呼机,传真,部门">
+<!ENTITY MCoptions9 "分类,备注,出生年份">
+<!ENTITY MCcompanyLabel "公司">
+<!ENTITY MCmultipleContacts "编辑全局属性">
+<!ENTITY MCoptionsCustom1 "自定义 1">
+<!ENTITY MCoptionsCustom2 "自定义 2">
+<!ENTITY MCoptionsCustom3 "自定义 3">
+<!ENTITY MCoptionsCustom4 "自定义 4">
+<!ENTITY MCbirthYearLabel "出生年份">
+<!ENTITY MCbirthMonthLabel "出生月份">
+<!ENTITY MCbirthDayLabel "出生日">
+<!ENTITY MCcategoryLabel "分类">
+<!ENTITY HomeState.label "状态">
+<!ENTITY Home.box "家">
+<!ENTITY HomeAddress.label "地址">
+<!ENTITY HomeCity.label "城市">
+<!ENTITY HomeCountry.label "国家">
+<!ENTITY HomeZipCode.label "邮政编码">
+<!ENTITY WorkAddress.label "地址">
+<!ENTITY Work.box "工作">
+<!ENTITY WorkState.label "状态">
+<!ENTITY WorkCity.label "城市">
+<!ENTITY WorkZipCode.label "邮政编码">
+<!ENTITY WorkCountry.label "国家">
+<!ENTITY Home.Web "网站首页">
+<!ENTITY Work.Web "工作网站">
+<!ENTITY preferMailFormat.label "喜欢接受消息为">
+<!ENTITY preferMailFormat0.label "未知">
+<!ENTITY preferMailFormat1.label "纯文本">
+<!ENTITY preferMailFormat2.label "HTML">
+<!ENTITY allowRemoteContent.label "允许远程图像">
+<!ENTITY allowRemoteContentYes.label "是">
+<!ENTITY allowRemoteContentNo.label "否">
+<!ENTITY Notes.label "备注">
+<!ENTITY photoTab "照片">
+<!ENTITY deleteIMG "远程图像">
+<!ENTITY addIMG "编辑/插入图像">
+<!ENTITY noIMG "图像不可用">
+<!ENTITY MCoptions10 "禁用照片支持">
+<!ENTITY MCoptions11 "对于电话号码插入“呼叫至”链接">
+<!ENTITY restartWarning "编辑一些选项需要关闭并重新打开通讯录">
+<!ENTITY photoDim1.label "联系人面板：">
+<!ENTITY photoDim2.label "主窗口：">
+<!ENTITY photoDimCaption "照片尺寸 (最大宽度/长度,像素)">
+<!ENTITY encCaption "格式和编码">
+<!ENTITY MCoptions12 "转引可打印的并本地编码">
+<!ENTITY MCoptions13 "转引可打印的并UTF-8">
+<!ENTITY MCoptions14 "UTF-8">
+<!ENTITY Work.JobTitle "标题">
+<!ENTITY Work.Department "部门">
+<!ENTITY misc "杂项">
+<!ENTITY vcardFormat "vCard 格式">
+<!ENTITY fieldHandling "正在处理字段">
+<!ENTITY adrMergeLines "在导出时对于地址行只使用一个字段">
+<!ENTITY adrDefault "在导入时用于 ADR 字段的默认值：">
+<!ENTITY openPhoto "在一个窗口打开照片">
+<!ENTITY maxSizeLabel "导出时最大照片大小(kb)：">
+<!ENTITY sizeOnDisk "在磁盘的文件大小：">
+<!ENTITY csvCaption "导出为CSV格式">
+<!ENTITY csvSepLabel "字段分隔符：">
+<!ENTITY attachAsVcard "附加为个人名片">
+<!ENTITY MCoptions15 "排序窗口中的联系人列表">
+<!ENTITY MFFABbirthday "点击这里查看 MoreFunctionsForAddressBook 风格的出生日期">
+<!ENTITY nameORemail "姓名或电子邮箱">
+<!ENTITY MCbirthdateWarn1 "为保证兼容性使用此格式：">
+<!ENTITY MCbirthdateWarn3 "日=2数字 - 月=2数字 - 年=4数字">
+<!ENTITY openCatDialog "打开分类列表对话框">
+<!ENTITY categories "分类">
+<!ENTITY catDialogTitle "分类列表">
+<!ENTITY catCurrentContact "此联系人的分类">
+<!ENTITY catAssign "指定分类">
+<!ENTITY active "主动">
+<!ENTITY name "姓名">
+<!ENTITY remove "移除">
+<!ENTITY add "添加">
+<!ENTITY delete "删除">
+<!ENTITY assign "指定">
+<!ENTITY catCaption "联系人管理器选项">
+<!ENTITY catViewMode "联系人面板的查看模式">
+<!ENTITY view0 "标准">
+<!ENTITY view1 "高级">
+<!ENTITY catSep "用于多个分类的分隔符">
+<!ENTITY catAutoAdd "当打开列表对话框时添加联系人分类">
+<!ENTITY showDialog "显示分类列表对话框">
+<!ENTITY createList "创建新列表">
+<!ENTITY topIcon "在联系人面板顶部显示分类列表图标">
+<!ENTITY v21 "2.1 版本">
+<!ENTITY v30 "3.0 版本">
+<!ENTITY charExportPref.label "导出的默认字符集">
+<!ENTITY charImportPref.label "导入的默认字符集">
+<!ENTITY noneValue.label "手动选择（仅ASCII扩展）">
+<!ENTITY charDialogDesc "导入/打开此个人名片需要手动选择字符集。选择正确的字符集，让下面的行正确">
+<!ENTITY charset "字符集">
+<!ENTITY import "导入">
+<!ENTITY export "导出">
+<!ENTITY showAttVcard "在附件列表显示个人名片，另外也启用内嵌视图">
+<!ENTITY contentTypeSend "发送个人名片为：">
+<!ENTITY numberDefault "电话号码的默认值：">
+<!ENTITY work.lower "工作">
+<!ENTITY home.lower "家">
+<!ENTITY none.lower "无">
+<!ENTITY extraFields "额外字段">
+<!ENTITY extraField "额外字段">
+<!ENTITY abChooserTitle "添加联系人 选项">
+<!ENTITY abChooserLabel1 "选择通讯录的联系人">
+<!ENTITY saveRec "保存收件人通讯录">
+<!ENTITY save1 "为联系人(全部)">
+<!ENTITY save2 "为联系人(仅至和回复到)">
+<!ENTITY save3 "为联系人(仅CC)">
+<!ENTITY save4 "为联系人(仅BCC)">
+<!ENTITY save5 "为列表(全部)">
+<!ENTITY save6 "为列表(仅至和回复到)">
+<!ENTITY save7 "为列表(仅CC)">
+<!ENTITY save8 "为列表(仅CCN)">
+<!ENTITY asTha "为文本(.tha/.thm)">
+<!ENTITY asVcf "为个人名片(.vcf)">
+<!ENTITY asCsv "为CSV(.csv)">
+<!ENTITY asThm "为文本(.thm)">
+<!ENTITY asMab "在本机 Thunderbird 格式(.mab)">
+<!ENTITY asIpod "为个人名片用于iPod(.vcf)">
+<!ENTITY handleVcards "让 MoreFunctionsForAddressBook 在消息面板处理个人名片">
+<!ENTITY hideExtraFields "隐藏额外字段">
+<!ENTITY catAddTags "当打开列表对话框时添加消息标签">
+<!ENTITY skipABtitle "通讯录自动完成">
+<!ENTITY skipABlabel "用这个身份，寻找匹配这些通讯录的条目：">
+<!ENTITY skipABactive "启用">
+<!ENTITY skipABname "名称">
+<!ENTITY edit "编辑">
+<!ENTITY skipABcompose "地址自动完成">
+<!ENTITY vcardDateFormat "导出的日期格式：">
+<!-- These two lines are about date format. YYYY = year, MM = month, DD = day -->
+<!ENTITY dateLong "YYYY-MM-DD">
+<!ENTITY dateShort "YYYYMMDD">
+<!ENTITY MCexportcsv "导出为 CSV">
+<!ENTITY TaskOpenPrefPanel "附加选项">
+<!ENTITY extraMailTab "其他电子邮箱">
+<!ENTITY extraMailLabel "额外的电子邮箱">
+<!ENTITY additionalEmails_pref "对地址自动完成使用额外的电子邮箱">
+<!ENTITY showAbButton.pref "显示通讯录搜索按钮">
+<!ENTITY addressbooks "通讯录">
+<!ENTITY addressbook "通讯录">
+<!ENTITY lists "列表">
+<!ENTITY abSearch.label "通讯录和列表中的联系人电子邮箱地址：">
+<!ENTITY search "搜索">
+<!ENTITY pushAbButton "点击按钮搜索">
+<!ENTITY firstName "名">
+<!ENTITY lastName "姓">
+<!-- Here "unix" is a short way to mean "unix time" cfr. http://en.wikipedia.org/wiki/Unix_time , this label can't be too long -->
+<!ENTITY lastUnix "最后修改日期 (unix)">
+<!ENTITY label.vCardField "标签及个人名片相关字段">
+<!ENTITY labels "标签">
+<!ENTITY vCardFields "个人名片相关字段">
+<!ENTITY customFieldsLabel "自定义字段">
+<!ENTITY emailOtherFields "电子邮件和其他字段">
+<!ENTITY useGlobalEmailLabel "将所有联系过的地址添加到自动完成项">
+<!ENTITY copyAllRecipients "复制所有收件人">
+<!ENTITY importFromRawFile "从原始文件导入通讯录">
+<!ENTITY vcardRawCaption "从 vCards 和原始文件导入通讯录">
+<!ENTITY skipExistingContact "跳过与通讯录中某项的主邮箱相同的项">
+<!ENTITY displayName "显示名">
+<!ENTITY nickName "昵称">
+<!ENTITY email1 "主要电子邮箱">
+<!ENTITY email2 "次要电子邮箱">
+<!ENTITY anniversaryY "纪念年">
+<!ENTITY anniversaryM "纪念月">
+<!ENTITY anniversaryD "纪念日">
+<!ENTITY newAddressbook "新通讯录的名称">
+<!ENTITY browse "浏览">
+<!ENTITY skipFirstLine "跳过首行">
+<!ENTITY endCSV "----- (要从 CSV 文件导入的字段结尾) -----">
+<!ENTITY up "上移">
+<!ENTITY down "下移">
+<!ENTITY csvImportTitle "已从一个 CVS 文件导入">
+<!ENTITY filePath "文件路径">
+<!ENTITY fieldsOrder "该 CSV 文件的字段顺序">
+<!ENTITY MCimportcsv "从 CSV 文件导入通讯录">
+<!ENTITY autocomplete "自动完成">
+<!ENTITY newContactInList "当选定的一个列表创建一个新的联系人时，自动添加它到该列表">
+<!ENTITY justBeginning "自动完成的匹配仅限于条项的开头（首选项在 TB 版本低于 31 时不能编辑）">
+<!ENTITY files "Files">
+<!ENTITY addFile "Add file">
+<!ENTITY openFileFolder "Open files folder">
+<!ENTITY fileAdd "File to add">
+<!ENTITY fileName "File name">
+<!ENTITY fileDialogDesc "A copy of this file will be stored within the directory of Thunderbird profile">
+<!ENTITY desc "Description">
+

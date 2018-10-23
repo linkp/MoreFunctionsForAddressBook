@@ -1,0 +1,33 @@
+<?xml version="1.0"?> 
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://morecols/locale/morecols.dtd">
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        id="abChooserWindow"
+        title="&abChooserTitle;"
+        ondialogaccept="return onOK()"
+	onload="init();">
+
+  <script type="application/javascript" src="chrome://morecols/content/abChooser.js"/>
+  <script type="application/javascript" src="chrome://morecols/content/utils.js"/>
+
+  <label  value="&abChooserLabel1;:" />
+  <hbox align="center">
+    <menulist id="abPopup">
+      <menupopup id="abPopup-menupopup" class="addrbooksPopup" writable="true" />
+    </menulist>
+  </hbox>
+  <spacer height="10" />
+   <label  value="&preferMailFormat.label;:" id="boxLabel" />
+  <hbox align="center" id="formatBox"> 
+    <menulist id="formatPopup">
+      <menupopup>
+		<menuitem label="&preferMailFormat0.label;" selected="true" />
+		<menuitem label="&preferMailFormat1.label;" />
+		<menuitem label="&preferMailFormat2.label;" />
+	</menupopup>
+    </menulist>
+  </hbox>
+  <hbox align="center" id="nameBox">
+	<textbox id="nameValue" />
+  </hbox>
+</dialog>

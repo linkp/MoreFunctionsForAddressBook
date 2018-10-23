@@ -1,0 +1,242 @@
+<!ENTITY MCcopyemail1 "Kopírovat e-mailovou adresu">
+<!ENTITY MCcopyemail2 "Kopírovat druhou e-mailovou adresu">
+<!ENTITY MCcopymenu "Kopírovat jiná data">
+<!ENTITY MCcopyname "Jméno">
+<!ENTITY MCcopyhome "Adresa domů">
+<!ENTITY MCcopyhome2 "Adresa domů 2">
+<!ENTITY MCcopywork "Adresa do práce">
+<!ENTITY MCcopywork2 "Adresa do práce 2">
+<!ENTITY MCcopyhometel "Telefon domů">
+<!ENTITY MCcopyworktel "Telefon do práce">
+<!ENTITY MCcopyfax "Fax">
+<!ENTITY MCcopycell "Mobilní telefon">
+<!ENTITY MCcopypager "Pager">
+<!ENTITY MCcopyAIM "Účet pro IM">
+<!ENTITY MCcopywebhome "Osobní webová stránka">
+<!ENTITY MCcopywebwork "Pracovní webová stránka">
+<!ENTITY MCcopyall "Všechny položky">
+<!ENTITY MCexportcontact "Export">
+<!ENTITY MCimportcontact "Import vizitky">
+<!ENTITY MCimportlist "Import seznamu">
+<!ENTITY MCeditasnew "Upravit jako nový">
+<!ENTITY MCimportvcard "Import vizitky/vcf">
+<!ENTITY MCexportvcard "Export vizitky">
+<!ENTITY MCexportrecipients "Exportovat seznam příjemců">
+<!ENTITY MCextraTab "Ostatní záznamy">
+<!ENTITY MCanagrafic "Osobní záznamy">
+<!ENTITY MCspousenameLabel "Jméno manžela / manželky:">
+<!ENTITY MCoptionsCaption "Štítky pro osobní položky">
+<!ENTITY MCopenvcard "Otevřít vizitku">
+<!ENTITY MCexportvcf "Exportovat jako vcf">
+<!ENTITY MCforwardvcard "Poslat jako vizitku">
+<!ENTITY MCcontactactions "Akce pro kontakty">
+<!ENTITY MClistactions "Akce pro seznamy">
+<!ENTITY MCaddractions "Akce pro adresáře">
+<!ENTITY MCimportmab "Importovat z .mab souboru">
+<!ENTITY MCexportmab "Exportovat do .mab souboru">
+<!ENTITY MClastModifiedDateLabel "Datum poslední změny:">
+<!ENTITY MCdata "Údaje o vizitce">
+<!ENTITY MCdayLabel "Den:">
+<!ENTITY MCmonthLabel "Měsíc:">
+<!ENTITY MCyearLabel "Rok:">
+<!ENTITY MCbirthlabel "Narozeniny">
+<!ENTITY MCanniversarylabel "Výročí">
+<!ENTITY MCipod "(pro Ipod)">
+<!ENTITY MCrecover "Rekonstruovat/Obnovit">
+<!ENTITY MCcopy "Kopírovat">
+<!ENTITY MCoptions0 "Možnosti">
+<!ENTITY MCoptions1 "Při exportu používejte u názvů usouborů pouze ascii znaky">
+<!ENTITY MCoptions2 "Kopírovat adresy v americkém formátu">
+<!ENTITY MCoptions3 "Při vytváření nového kontaktu vložit datum">
+<!ENTITY MCoptions4 "Sloupce s pevnou šířkou v panelu kontaktů">
+<!ENTITY MCoptions5 "Šířka sloupců (v pixelech):">
+<!ENTITY MCoptionsCustomVcard "Související položka vizitky:">
+<!ENTITY MCoptions7 "Pole pro vyhledávání">
+<!ENTITY MCoptions8 "Pager, Fax, Oddělení">
+<!ENTITY MCoptions9 "Kategorie, Poznámky, Rok narození">
+<!ENTITY MCcompanyLabel "Společnost:">
+<!ENTITY MCmultipleContacts "Editovat vlastnosti souhrnně">
+<!ENTITY MCoptionsCustom1 "Vlastní 1:">
+<!ENTITY MCoptionsCustom2 "Vlastní 2:">
+<!ENTITY MCoptionsCustom3 "Vlastní 3:">
+<!ENTITY MCoptionsCustom4 "Vlastní 4:">
+<!ENTITY MCbirthYearLabel "Rok narození">
+<!ENTITY MCbirthMonthLabel "Měsíc narození">
+<!ENTITY MCbirthDayLabel "Den narození">
+<!ENTITY MCcategoryLabel "Kategorie:">
+<!ENTITY HomeState.label "Kraj">
+<!ENTITY Home.box "Bydliště">
+<!ENTITY HomeAddress.label "Adresa">
+<!ENTITY HomeCity.label "Město">
+<!ENTITY HomeCountry.label "Země">
+<!ENTITY HomeZipCode.label "PSČ">
+<!ENTITY WorkAddress.label "Adresa do zaměstnání">
+<!ENTITY Work.box "Zaměstnání">
+<!ENTITY WorkState.label "Země">
+<!ENTITY WorkCity.label "Město">
+<!ENTITY WorkZipCode.label "PSČ">
+<!ENTITY WorkCountry.label "Země">
+<!ENTITY Home.Web "Domácí webová stránka">
+<!ENTITY Work.Web "Pracovní webová stránka">
+<!ENTITY preferMailFormat.label "Upřednostňovaný formát zpráv">
+<!ENTITY preferMailFormat0.label "Neznámý">
+<!ENTITY preferMailFormat1.label "Prostý text">
+<!ENTITY preferMailFormat2.label "HTML">
+<!ENTITY allowRemoteContent.label "Povolit načítání vzdálených obrázků">
+<!ENTITY allowRemoteContentYes.label "Ano">
+<!ENTITY allowRemoteContentNo.label "Ne">
+<!ENTITY Notes.label "Poznámky">
+<!ENTITY photoTab "Fotka">
+<!ENTITY deleteIMG "Odstranit obrázek">
+<!ENTITY addIMG "Upravit / Vložit obrázek">
+<!ENTITY noIMG "Obrázek není dostupný">
+<!ENTITY MCoptions10 "Zakázat podporu obrázků">
+<!ENTITY MCoptions11 "Vložit odkaz &apos;callto&apos; pro telefonní číslo">
+<!ENTITY restartWarning "Editovat možnosti, které potřebují zavřít a znovu otevřít adresář">
+<!ENTITY photoDim1.label "Kontaktní panel:">
+<!ENTITY photoDim2.label "Hlavní okno:">
+<!ENTITY photoDimCaption "Velikost obrázku (maximální šířka a délka v pixelech)">
+<!ENTITY encCaption "Formát a kódování">
+<!ENTITY MCoptions12 "Quoted-Printable a přirozené kódování">
+<!ENTITY MCoptions13 "Quoted-Printable a UTF-8">
+<!ENTITY MCoptions14 "UTF-8">
+<!ENTITY Work.JobTitle "Název">
+<!ENTITY Work.Department "Oddělení">
+<!ENTITY misc "Různé">
+<!ENTITY vcardFormat "Formát vizitky">
+<!ENTITY fieldHandling "Pole pro manipulaci">
+<!ENTITY adrMergeLines "Při exportu použít jen jedno pole pro adresu">
+<!ENTITY adrDefault "Výchozí hodnota pro adresu při importu:">
+<!ENTITY openPhoto "Otevřít fotku v okně">
+<!ENTITY maxSizeLabel "Maximální velikost fotky pro export (kB)">
+<!ENTITY sizeOnDisk "Velikost na disku:">
+<!ENTITY csvCaption "Exportovat v CSV">
+<!ENTITY csvSepLabel "Oddělovací znak:">
+<!ENTITY attachAsVcard "Připojit jako vizitku">
+<!ENTITY MCoptions15 "Seřadit kontakty v seznamu kontaktů">
+<!ENTITY MFFABbirthday "Zobrazit narozeniny ve stylu MoreFunctionsForAddressBook">
+<!ENTITY nameORemail "Jméno nebo e-mail">
+<!ENTITY MCbirthdateWarn1 "Pokud chcete zachovat kompatibilitu pro jiné programy,">
+<!ENTITY MCbirthdateWarn3 "Den = 2 znaky  -  Měsíc = 2 znaky  -  Rok = 4 znaky">
+<!ENTITY openCatDialog "Open categories list dialog">
+<!ENTITY categories "Categories">
+<!ENTITY catDialogTitle "Categories List">
+<!ENTITY catCurrentContact "Categories for this contact">
+<!ENTITY catAssign "Categories to assign">
+<!ENTITY active "Active">
+<!ENTITY name "Name">
+<!ENTITY remove "Remove">
+<!ENTITY add "Add">
+<!ENTITY delete "Delete">
+<!ENTITY assign "Assign">
+<!ENTITY catCaption "Preferences for categories management">
+<!ENTITY catViewMode "View mode in contact panel">
+<!ENTITY view0 "Standard">
+<!ENTITY view1 "Advanced">
+<!ENTITY catSep "Separator for multiple categories">
+<!ENTITY catAutoAdd "Add contact categories when opening list dialog">
+<!ENTITY showDialog "Show categories list dialog">
+<!ENTITY createList "Create new list">
+<!ENTITY topIcon "Show the category list icon at the top of contact panel">
+<!ENTITY v21 "2.1 version">
+<!ENTITY v30 "3.0 version">
+<!ENTITY charExportPref.label "Default charset for export">
+<!ENTITY charImportPref.label "Default charset for import">
+<!ENTITY noneValue.label "Manual selection (extended ascii only)">
+<!ENTITY charDialogDesc "Import/open this vCard requires the manual choose of the charset. Choose the charset that makes correct the following line">
+<!ENTITY charset "Charset">
+<!ENTITY import "Importovat">
+<!ENTITY export "Exportovat">
+<!ENTITY showAttVcard "Show vCards in attachments list also with inline view enabled">
+<!ENTITY contentTypeSend "Send vCards as:">
+<!ENTITY numberDefault "Default value for telephone numbers:">
+<!ENTITY work.lower "work">
+<!ENTITY home.lower "home">
+<!ENTITY none.lower "none">
+<!ENTITY extraFields "Doplňková pole">
+<!ENTITY extraField "Doplňkové pole">
+<!ENTITY abChooserTitle "Options for the contacts to add">
+<!ENTITY abChooserLabel1 "Choose the addressbook for the contacts">
+<!ENTITY saveRec "Save recipients addresses">
+<!ENTITY save1 "jako kontakty (vše)">
+<!ENTITY save2 "as contacts (TO and REPLY-TO only)">
+<!ENTITY save3 "as contacts (CC only)">
+<!ENTITY save4 "as contacts (BCC only)">
+<!ENTITY save5 "as list (all)">
+<!ENTITY save6 "as list (TO and REPLY-TO only)">
+<!ENTITY save7 "as list (CC only)">
+<!ENTITY save8 "as list (CCN only)">
+<!ENTITY asTha "jako text (.tha/.thm)">
+<!ENTITY asVcf "jako vizitka (vCard .vcf)">
+<!ENTITY asCsv "jako cvs (.csv)">
+<!ENTITY asThm "jako text (.thm)">
+<!ENTITY asMab "v nativním formátu Thunderbird (.mab)">
+<!ENTITY asIpod "jako vizitka pro Ipod (.vcf)">
+<!ENTITY handleVcards "Povolit rozšíření MoreFunctionsForAddressBook pracovat s vizitkami v panelu zprávy.">
+<!ENTITY hideExtraFields "Schovat extra pole">
+<!ENTITY catAddTags "Do seznamu kategorií zahrnout štítky.">
+<!ENTITY skipABtitle "Adresáře pro automatické doplňování">
+<!ENTITY skipABlabel "Prohlédněte si položky adresářů odpovídající této identitě:">
+<!ENTITY skipABactive "Povoleno">
+<!ENTITY skipABname "Jméno">
+<!ENTITY edit "Upravit">
+<!ENTITY skipABcompose "Automatické doplňování adres">
+<!ENTITY vcardDateFormat "Formát data pro export:">
+<!-- These two lines are about date format. YYYY = year, MM = month, DD = day -->
+<!ENTITY dateLong "RRR-MM-DD">
+<!ENTITY dateShort "RRRRMMDD">
+<!ENTITY MCexportcsv "Exportovat jako csv">
+<!ENTITY TaskOpenPrefPanel "Rozšířené možnosti">
+<!ENTITY extraMailTab "Ostatní e-maily">
+<!ENTITY extraMailLabel "Doplňkový e-mail">
+<!ENTITY additionalEmails_pref "Použít doplňkové emaily pro automatické doplňování adres">
+<!ENTITY showAbButton.pref "Zobrazit tlačítko pro vyhledávání v adresáři">
+<!ENTITY addressbooks "Adresář">
+<!ENTITY addressbook "Adresář">
+<!ENTITY lists "Seznam">
+<!ENTITY abSearch.label "Adresáře a seznamy s kontaktním e-mailem:">
+<!ENTITY search "Hledat">
+<!ENTITY pushAbButton "Pro hledání klepněte na tlačítko">
+<!ENTITY firstName "Jméno">
+<!ENTITY lastName "Příjmení">
+<!-- Here "unix" is a short way to mean "unix time" cfr. http://en.wikipedia.org/wiki/Unix_time , this label can't be too long -->
+<!ENTITY lastUnix "Datum posledních úprav (unixový čas)">
+<!ENTITY label.vCardField "Štítky a související vizitky">
+<!ENTITY labels "Štítky">
+<!ENTITY vCardFields "Položky souvisejících vizitek">
+<!ENTITY customFieldsLabel "Vlastní položky">
+<!ENTITY emailOtherFields "E-maily a ostatní položky">
+<!ENTITY useGlobalEmailLabel "Vložit položku do automatického doplňování pro všechny adresy kontaktů">
+<!ENTITY copyAllRecipients "Kopírovat všechny příjemce">
+<!ENTITY importFromRawFile "Importovat adresy ze souboru raw">
+<!ENTITY vcardRawCaption "Importovat z vizitky a s souboru raw">
+<!ENTITY skipExistingContact "Pokud je hlavní e-mail v adresáři, přeskočit.">
+<!ENTITY displayName "Zobrazované jméno">
+<!ENTITY nickName "Přezdívka">
+<!ENTITY email1 "Hlavní e-mail">
+<!ENTITY email2 "Další e-mail">
+<!ENTITY anniversaryY "Rok výročí">
+<!ENTITY anniversaryM "Měsíc výročí">
+<!ENTITY anniversaryD "Den výročí">
+<!ENTITY newAddressbook "Jméno nového adresáře">
+<!ENTITY browse "Procházet">
+<!ENTITY skipFirstLine "Přeskočit první řádek">
+<!ENTITY endCSV "----- (konec pole pro import ze souboru CSV) -----">
+<!ENTITY up "Přesunout nahoru">
+<!ENTITY down "Přesunout dolů">
+<!ENTITY csvImportTitle "Importovat ze souboru CVS">
+<!ENTITY filePath "Cesta k souboru">
+<!ENTITY fieldsOrder "Pořadí pole v souboru CSV">
+<!ENTITY MCimportcsv "Importovat adresář ze souboru CVS">
+<!ENTITY autocomplete "Automatické dokončování">
+<!ENTITY newContactInList "Při vytváření nového kontaktu s vybraným seznamem automaticky přidat do seznamu">
+<!ENTITY justBeginning "Pro porovnání automatického dokončování použít pouze začátek položky (položku nelze editovat ve starší verzi TB než 31)">
+<!ENTITY files "Files">
+<!ENTITY addFile "Add file">
+<!ENTITY openFileFolder "Open files folder">
+<!ENTITY fileAdd "File to add">
+<!ENTITY fileName "File name">
+<!ENTITY fileDialogDesc "A copy of this file will be stored within the directory of Thunderbird profile">
+<!ENTITY desc "Description">
+
+

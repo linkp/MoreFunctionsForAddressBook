@@ -1,0 +1,241 @@
+<!ENTITY MCcopyemail1 "Копировать электронный адрес">
+<!ENTITY MCcopyemail2 "Копировать доп. электронный адрес">
+<!ENTITY MCcopymenu "Копировать другие данные">
+<!ENTITY MCcopyname "Имя">
+<!ENTITY MCcopyhome "Домашний адрес">
+<!ENTITY MCcopyhome2 "Домашний адрес 2">
+<!ENTITY MCcopywork "Рабочий адрес">
+<!ENTITY MCcopywork2 "Рабочий адрес 2">
+<!ENTITY MCcopyhometel "Домашний телефон">
+<!ENTITY MCcopyworktel "Рабочий телефон">
+<!ENTITY MCcopyfax "Факс">
+<!ENTITY MCcopycell "Сотовый">
+<!ENTITY MCcopypager "Пейджер">
+<!ENTITY MCcopyAIM "Интернет-пейджер">
+<!ENTITY MCcopywebhome "Личная веб-страница">
+<!ENTITY MCcopywebwork "Рабочая веб-страница">
+<!ENTITY MCcopyall "Все данные">
+<!ENTITY MCexportcontact "Экспортировать">
+<!ENTITY MCimportcontact "Импортировать карточку">
+<!ENTITY MCimportlist "Импортировать список">
+<!ENTITY MCeditasnew "Создать на основе">
+<!ENTITY MCimportvcard "Импортировать файл vCard/vcf">
+<!ENTITY MCexportvcard "Экспортировать в файл vCard">
+<!ENTITY MCexportrecipients "Экспортировать список получателей">
+<!ENTITY MCextraTab "Другие данные">
+<!ENTITY MCanagrafic "Личные данные">
+<!ENTITY MCspousenameLabel "Супруг(а):">
+<!ENTITY MCoptionsCaption "Названия дополнительных полей">
+<!ENTITY MCopenvcard "Открыть файл vCard">
+<!ENTITY MCexportvcf "Экспортировать в файл vcf">
+<!ENTITY MCforwardvcard "Отправить в виде vCard">
+<!ENTITY MCcontactactions "Действия с контактами">
+<!ENTITY MClistactions "Действия со списками">
+<!ENTITY MCaddractions "Действия с адресными книгами">
+<!ENTITY MCimportmab "Импорт адресной книги из файла .mab">
+<!ENTITY MCexportmab "Экспорт в формате .mab">
+<!ENTITY MClastModifiedDateLabel "Дата последнего изменения:">
+<!ENTITY MCdata "Данные карточки">
+<!ENTITY MCdayLabel "День:">
+<!ENTITY MCmonthLabel "Месяц:">
+<!ENTITY MCyearLabel "Год:">
+<!ENTITY MCbirthlabel "День рождения">
+<!ENTITY MCanniversarylabel "Годовщина">
+<!ENTITY MCipod "(для Ipod)">
+<!ENTITY MCrecover "Восстановить">
+<!ENTITY MCcopy "Копировать">
+<!ENTITY MCoptions0 "Параметры">
+<!ENTITY MCoptions1 "При экспорте использовать в именах файлов только ASCII-символы">
+<!ENTITY MCoptions2 "Копировать адреса в американском формате">
+<!ENTITY MCoptions3 "Вставлять дату создания контакта">
+<!ENTITY MCoptions4 "Столбцы в панели контактов имеют фиксированную ширину">
+<!ENTITY MCoptions5 "Ширина столбцов (в пикселах):">
+<!ENTITY MCoptionsCustomVcard "Связанное поле vCard:">
+<!ENTITY MCoptions7 "Поля поиска контактов">
+<!ENTITY MCoptions8 "Пейджер, Факс, Отдел">
+<!ENTITY MCoptions9 "Категория, Заметки, Год рождения">
+<!ENTITY MCcompanyLabel "Компания">
+<!ENTITY MCmultipleContacts "Групповое изменение свойств">
+<!ENTITY MCoptionsCustom1 "Прочее 1">
+<!ENTITY MCoptionsCustom2 "Прочее 2">
+<!ENTITY MCoptionsCustom3 "Прочее 3">
+<!ENTITY MCoptionsCustom4 "Прочее 4">
+<!ENTITY MCbirthYearLabel "Год рождения">
+<!ENTITY MCbirthMonthLabel "Месяц рождения">
+<!ENTITY MCbirthDayLabel "День рождения">
+<!ENTITY MCcategoryLabel "Категория">
+<!ENTITY HomeState.label "Регион">
+<!ENTITY Home.box "Домашний">
+<!ENTITY HomeAddress.label "Адрес">
+<!ENTITY HomeCity.label "Город">
+<!ENTITY HomeCountry.label "Страна">
+<!ENTITY HomeZipCode.label "Почтовый индекс">
+<!ENTITY WorkAddress.label "Адрес">
+<!ENTITY Work.box "Рабочий">
+<!ENTITY WorkState.label "Регион">
+<!ENTITY WorkCity.label "Город">
+<!ENTITY WorkZipCode.label "Почтовый индекс">
+<!ENTITY WorkCountry.label "Страна">
+<!ENTITY Home.Web "Личная веб-страница">
+<!ENTITY Work.Web "Рабочая веб-страница">
+<!ENTITY preferMailFormat.label "Предпочитает получать почту в формате">
+<!ENTITY preferMailFormat0.label "Неизвестно">
+<!ENTITY preferMailFormat1.label "Простой текст">
+<!ENTITY preferMailFormat2.label "HTML">
+<!ENTITY allowRemoteContent.label "Разрешить загрузку изображений из сети">
+<!ENTITY allowRemoteContentYes.label "Да">
+<!ENTITY allowRemoteContentNo.label "Нет">
+<!ENTITY Notes.label "Заметки">
+<!ENTITY photoTab "Фото">
+<!ENTITY deleteIMG "Удалить">
+<!ENTITY addIMG "Добавить/изменить">
+<!ENTITY noIMG "Нет изображения">
+<!ENTITY MCoptions10 "Отключить поддержку фото">
+<!ENTITY MCoptions11 "Вставлять ссылку callto для телефонных номеров">
+<!ENTITY restartWarning "После изменения некоторых параметров необходимо закрыть и затем открыть адресную книгу">
+<!ENTITY photoDim1.label "Панель контакта:">
+<!ENTITY photoDim2.label "Основное окно:">
+<!ENTITY photoDimCaption "Размер фото (макс. ширина в пикселах)">
+<!ENTITY encCaption "Формат и кодировка">
+<!ENTITY MCoptions12 "Quoted-Printable и локальная кодировка">
+<!ENTITY MCoptions13 "Quoted-Printable и UTF-8">
+<!ENTITY MCoptions14 "UTF-8">
+<!ENTITY Work.JobTitle "Должность">
+<!ENTITY Work.Department "Отдел">
+<!ENTITY misc "Разное">
+<!ENTITY vcardFormat "Формат vCard">
+<!ENTITY fieldHandling "Обработка полей">
+<!ENTITY adrMergeLines "При экспорте использовать только одно поле в строках адреса">
+<!ENTITY adrDefault "Значение поля ADR по умолчанию при импорте:">
+<!ENTITY openPhoto "Открывать фото в окне">
+<!ENTITY maxSizeLabel "Макс. размер фото для экспорта (КБ):">
+<!ENTITY sizeOnDisk "Размер файла на диске:">
+<!ENTITY csvCaption "Экспорт в формате CSV:">
+<!ENTITY csvSepLabel "Разделитель полей:">
+<!ENTITY attachAsVcard "Вложить как vCard">
+<!ENTITY MCoptions15 "Сортировать контакты в списке">
+<!ENTITY MFFABbirthday "Щёлкните, чтобы увидеть дату рождения в стиле MoreFunctionsForAddressBook">
+<!ENTITY nameORemail "Имя или email">
+<!ENTITY MCbirthdateWarn1 "Если вы хотите сохранить совместимость с другими программами">
+<!ENTITY MCbirthdateWarn3 "день=2 цифры - месяц=2 цифры - год=4 цифры">
+<!ENTITY openCatDialog "Открыть диалог списка категорий">
+<!ENTITY categories "Категории">
+<!ENTITY catDialogTitle "Список категорий">
+<!ENTITY catCurrentContact "Категории этого контакта">
+<!ENTITY catAssign "Назначить категории">
+<!ENTITY active "Активно">
+<!ENTITY name "Имя">
+<!ENTITY remove "Удалить">
+<!ENTITY add "Добавить">
+<!ENTITY delete "Удалить">
+<!ENTITY assign "Назначить">
+<!ENTITY catCaption "Настройки управления категориями">
+<!ENTITY catViewMode "Режим просмотра в панели контактов">
+<!ENTITY view0 "Стандартный">
+<!ENTITY view1 "Расширенный">
+<!ENTITY catSep "Разделитель категорий">
+<!ENTITY catAutoAdd "Добавить категории контакта при открытии списка">
+<!ENTITY showDialog "Показать диалог списка категорий">
+<!ENTITY createList "Создать новый список">
+<!ENTITY topIcon "Показывать значок списка категорий вверху панели контактов">
+<!ENTITY v21 "Версия 2.1">
+<!ENTITY v30 "Версия 3.0">
+<!ENTITY charExportPref.label "Кодовая страница по умолчанию для экспорта">
+<!ENTITY charImportPref.label "Кодовая страница по умолчанию для импорта">
+<!ENTITY noneValue.label "Выбор вручную (только расширенные ASCII)">
+<!ENTITY charDialogDesc "Чтобы импортировать/открыть эту vCard нужно определить её кодовую страницу. Выберите кодовую страницу, при которой следующая строка показывается правильно">
+<!ENTITY charset "Кодовая страница">
+<!ENTITY import "Импорт">
+<!ENTITY export "Экспорт">
+<!ENTITY showAttVcard "Показывать vCard в списке вложений также в режиме встроенного просмотра">
+<!ENTITY contentTypeSend "Посылать vCard как:">
+<!ENTITY numberDefault "Телефонный номер по умолчанию:">
+<!ENTITY work.lower "рабочий">
+<!ENTITY home.lower "домашний">
+<!ENTITY none.lower "нет">
+<!ENTITY extraFields "Доп. поля">
+<!ENTITY extraField "Доп. поле">
+<!ENTITY abChooserTitle "Параметры контактов для добавления">
+<!ENTITY abChooserLabel1 "Выберите адресную книгу для контактов">
+<!ENTITY saveRec "Сохранять адреса получателей">
+<!ENTITY save1 "как контакты (все)">
+<!ENTITY save2 "как контакты (только Кому и Ответить)">
+<!ENTITY save3 "как контакты (только Копия)">
+<!ENTITY save4 "как контакты (только СК)">
+<!ENTITY save5 "как список (все)">
+<!ENTITY save6 "как список (только Кому и Ответить)">
+<!ENTITY save7 "как список (только Копия)">
+<!ENTITY save8 "как список (только СК)">
+<!ENTITY asTha "как текст (.tha/.thm)">
+<!ENTITY asVcf "как vCard (.vcf)">
+<!ENTITY asCsv "как csv (.csv)">
+<!ENTITY asThm "как текст (.thm)">
+<!ENTITY asMab "в формате Thunderbird (.mab)">
+<!ENTITY asIpod "как vCard для Ipod (.vcf)">
+<!ENTITY handleVcards "Отображать vCards в панели сообщений с помощью MoreFunctionsForAddressBook">
+<!ENTITY hideExtraFields "Скрыть доп. поля">
+<!ENTITY catAddTags "Добавлять тэги сообщений при открытии диалога списка">
+<!ENTITY skipABtitle "Адресные книги для автодополнения адресов">
+<!ENTITY skipABlabel "Для этой учётной записи искать в адресных книгах:">
+<!ENTITY skipABactive "Активно">
+<!ENTITY skipABname "Имя">
+<!ENTITY edit "Изменить">
+<!ENTITY skipABcompose "Автодополнение адресов">
+<!ENTITY vcardDateFormat "Формат даты для экспорта:">
+<!-- These two lines are about date format. YYYY = year, MM = month, DD = day -->
+<!ENTITY dateLong "YYYY-MM-DD">
+<!ENTITY dateShort "YYYYMMDD">
+<!ENTITY MCexportcsv "Экспортировать в csv">
+<!ENTITY TaskOpenPrefPanel "Дополнительные параметры">
+<!ENTITY extraMailTab "Другие адреса">
+<!ENTITY extraMailLabel "Доп. e-mail">
+<!ENTITY additionalEmails_pref "Использовать дополнительные адреса при автодополнении">
+<!ENTITY showAbButton.pref "Показывать кнопку для поиска в адресных книгах">
+<!ENTITY addressbooks "Адресные книги">
+<!ENTITY addressbook "Адресная книга">
+<!ENTITY lists "Списки">
+<!ENTITY abSearch.label "Адресные книги и списки с адресами контакта:">
+<!ENTITY search "Поиск">
+<!ENTITY pushAbButton "Нажмите кнопку для поиска">
+<!ENTITY firstName "Имя">
+<!ENTITY lastName "Фамилия">
+<!-- Here "unix" is a short way to mean "unix time" cfr. http://en.wikipedia.org/wiki/Unix_time , this label can't be too long -->
+<!ENTITY lastUnix "Последнее изменение">
+<!ENTITY label.vCardField "Labels and associated vCard fields">
+<!ENTITY labels "Labels">
+<!ENTITY vCardFields "Associated vCard fields">
+<!ENTITY customFieldsLabel "Custom fields">
+<!ENTITY emailOtherFields "E-mails and other fields">
+<!ENTITY useGlobalEmailLabel "Add an entry in autocomplete with all the addresses of the contact">
+<!ENTITY copyAllRecipients "Copy all recipients">
+<!ENTITY importFromRawFile "Import addresses from a raw file">
+<!ENTITY vcardRawCaption "Import from vCards and raw files">
+<!ENTITY skipExistingContact "Skip when the primary email is present in some of the addressbooks">
+<!ENTITY displayName "Выводимое имя">
+<!ENTITY nickName "Псевдоним/прозвище">
+<!ENTITY email1 "Основной e-mail">
+<!ENTITY email2 "Дополнительный e-mail">
+<!ENTITY anniversaryY "Год годовщины">
+<!ENTITY anniversaryM "Месяц годовщины">
+<!ENTITY anniversaryD "День годовщины">
+<!ENTITY newAddressbook "Имя новой адресной книги">
+<!ENTITY browse "Просмотреть">
+<!ENTITY skipFirstLine "Пропустить первую строку">
+<!ENTITY endCSV "----- (конец полей, импортируемых из файла CSV) -----">
+<!ENTITY up "Выше">
+<!ENTITY down "Ниже">
+<!ENTITY csvImportTitle "Импорт из файла CSV">
+<!ENTITY filePath "Путь к файлу">
+<!ENTITY fieldsOrder "Порядок полей в CSV">
+<!ENTITY MCimportcsv "Импорт адресной книги из файла CSV">
+<!ENTITY autocomplete "Автодополнение">
+<!ENTITY newContactInList "Добавлять контакт,создаваемый при выбранном списке, в этот список автоматически">
+<!ENTITY justBeginning "При автодополнении сравнивать только начала строк (неизменяемый параметр в TB до версии 31)">
+<!ENTITY files "Files">
+<!ENTITY addFile "Add file">
+<!ENTITY openFileFolder "Open files folder">
+<!ENTITY fileAdd "File to add">
+<!ENTITY fileName "File name">
+<!ENTITY fileDialogDesc "A copy of this file will be stored within the directory of Thunderbird profile">
+<!ENTITY desc "Description">
+

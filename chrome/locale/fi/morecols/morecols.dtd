@@ -1,0 +1,242 @@
+<!ENTITY MCcopyemail1 "Kopioi sähköpostiosoite">
+<!ENTITY MCcopyemail2 "Kopioi toinen sähköpostiosoite">
+<!ENTITY MCcopymenu "Kopioi muut tiedot">
+<!ENTITY MCcopyname "Nimi">
+<!ENTITY MCcopyhome "Kotiosoite">
+<!ENTITY MCcopyhome2 "Kotiosoite 2">
+<!ENTITY MCcopywork "Työosoite">
+<!ENTITY MCcopywork2 "Työosoite 2">
+<!ENTITY MCcopyhometel "Kotipuhelin">
+<!ENTITY MCcopyworktel "Työpuhelin">
+<!ENTITY MCcopyfax "Faksi">
+<!ENTITY MCcopycell "Matkapuhelin">
+<!ENTITY MCcopypager "Hakulaite">
+<!ENTITY MCcopyAIM "Pikaviestimen nimi">
+<!ENTITY MCcopywebhome "Verkkosivut (koti)">
+<!ENTITY MCcopywebwork "Verkkosivut (työ)">
+<!ENTITY MCcopyall "Kaikki tiedot">
+<!ENTITY MCexportcontact "Vie">
+<!ENTITY MCimportcontact "Tuo kortti">
+<!ENTITY MCimportlist "Tuo lista">
+<!ENTITY MCeditasnew "Muokkaa uutena">
+<!ENTITY MCimportvcard "Tuo vCard/vcf">
+<!ENTITY MCexportvcard "Vie vCard">
+<!ENTITY MCexportrecipients "Vie vastaanottajalista">
+<!ENTITY MCextraTab "Muut tiedot">
+<!ENTITY MCanagrafic "Henkilökohtaiset tiedot">
+<!ENTITY MCspousenameLabel "Puolison nimi:">
+<!ENTITY MCoptionsCaption "Omien kenttien otsikot">
+<!ENTITY MCopenvcard "Avaa vCard">
+<!ENTITY MCexportvcf "Vie vcf:nä">
+<!ENTITY MCforwardvcard "Lähetä vCardina">
+<!ENTITY MCcontactactions "Toiminnot korteille">
+<!ENTITY MClistactions "Toiminnot listoille">
+<!ENTITY MCaddractions "Toiminnot osoitekirjoille">
+<!ENTITY MCimportmab "Tuo osoitekirja mab-tiedostosta">
+<!ENTITY MCexportmab "Vie mab-muodossa">
+<!ENTITY MClastModifiedDateLabel "Viimeksi muutettu:">
+<!ENTITY MCdata "Kortin tiedot">
+<!ENTITY MCdayLabel "Päivä:">
+<!ENTITY MCmonthLabel "Kuukausi:">
+<!ENTITY MCyearLabel "Vuosi:">
+<!ENTITY MCbirthlabel "Syntymäpäivä">
+<!ENTITY MCanniversarylabel "Vuosipäivä">
+<!ENTITY MCipod "(iPodille)">
+<!ENTITY MCrecover "Palauta/Korjaa">
+<!ENTITY MCcopy "Kopioi">
+<!ENTITY MCoptions0 "Asetukset">
+<!ENTITY MCoptions1 "Käytä tiedostonimissä vain ASCII-merkkejä viennin yhteydessä">
+<!ENTITY MCoptions2 "Kopioi osoitteet yhdysvaltalaisessa muodossa">
+<!ENTITY MCoptions3 "Lisää päiväys, kun luot uuden yhteystiedon">
+<!ENTITY MCoptions4 "Vakioleveys yhteystietopaneelin sarakkeille">
+<!ENTITY MCoptions5 "Sarakeleveys (pikseleinä):">
+<!ENTITY MCoptionsCustomVcard "Vastaava vCard-kenttä:">
+<!ENTITY MCoptions7 "Yhteystietojen hakukentät">
+<!ENTITY MCoptions8 "Hakulaite, Faksi, Osasto">
+<!ENTITY MCoptions9 "Luokka, Huomautuksia, Syntymävuosi">
+<!ENTITY MCcompanyLabel "Organisaatio">
+<!ENTITY MCmultipleContacts "Muokkaa ominaisuuksia yhteisesti">
+<!ENTITY MCoptionsCustom1 "Oma 1">
+<!ENTITY MCoptionsCustom2 "Oma 2">
+<!ENTITY MCoptionsCustom3 "Oma 3">
+<!ENTITY MCoptionsCustom4 "Oma 4">
+<!ENTITY MCbirthYearLabel "Syntymävuosi">
+<!ENTITY MCbirthMonthLabel "Syntymäkuukausi">
+<!ENTITY MCbirthDayLabel "Syntymäpäivä">
+<!ENTITY MCcategoryLabel "Luokka">
+<!ENTITY HomeState.label "Lääni">
+<!ENTITY Home.box "Koti">
+<!ENTITY HomeAddress.label "Osoite">
+<!ENTITY HomeCity.label "Kaupunki">
+<!ENTITY HomeCountry.label "Maa">
+<!ENTITY HomeZipCode.label "Postinumero">
+<!ENTITY WorkAddress.label "Osoite">
+<!ENTITY Work.box "Työ">
+<!ENTITY WorkState.label "Lääni">
+<!ENTITY WorkCity.label "Kaupunki">
+<!ENTITY WorkZipCode.label "Postinumero">
+<!ENTITY WorkCountry.label "Maa">
+<!ENTITY Home.Web "Verkkosivut (koti)">
+<!ENTITY Work.Web "Verkkosivut (työ)">
+<!ENTITY preferMailFormat.label "Mieluisin muoto sähköposteille">
+<!ENTITY preferMailFormat0.label "Tuntematon">
+<!ENTITY preferMailFormat1.label "Pelkkä teksti">
+<!ENTITY preferMailFormat2.label "HTML">
+<!ENTITY allowRemoteContent.label "Salli linkitetyt, toisilla palvelimilla olevat kuvat">
+<!ENTITY allowRemoteContentYes.label "Kyllä">
+<!ENTITY allowRemoteContentNo.label "Ei">
+<!ENTITY Notes.label "Huomautuksia">
+<!ENTITY photoTab "Valokuva">
+<!ENTITY deleteIMG "Poista kuva">
+<!ENTITY addIMG "Muokkaa kuvaa/Lisää kuva">
+<!ENTITY noIMG "Ei kuvaa">
+<!ENTITY MCoptions10 "Ota valokuvien tuki pois käytöstä">
+<!ENTITY MCoptions11 "Lisää ”callto”-linkki puhelinnumeroille">
+<!ENTITY restartWarning "Joidenkin asetusten muuttaminen vaatii osoitekirjan sulkemisen ja uudelleenavaamisen.">
+<!ENTITY photoDim1.label "Yhteystietopaneeli:">
+<!ENTITY photoDim2.label "Pääikkuna:">
+<!ENTITY photoDimCaption "Valokuvan koko (enimmäisleveys ja -korkeus pikseleinä)">
+<!ENTITY encCaption "Muotoilu ja koodaus">
+<!ENTITY MCoptions12 "Quoted-Printable ja alkuperäinen koodaus">
+<!ENTITY MCoptions13 "Quoted-Printable ja UTF-8">
+<!ENTITY MCoptions14 "UTF-8">
+<!ENTITY Work.JobTitle "Ammattinimi">
+<!ENTITY Work.Department "Osasto">
+<!ENTITY misc "Sekalaista">
+<!ENTITY vcardFormat "vCard-muoto">
+<!ENTITY fieldHandling "Kenttien käsittely">
+<!ENTITY adrMergeLines "Käytä viennin yhteydessä vain yhtä kenttää osoitetietoja varten">
+<!ENTITY adrDefault "Oletusarvo ADR-kentälle viennin yhteydessä:">
+<!ENTITY openPhoto "Avaa valokuva ikkunassa">
+<!ENTITY maxSizeLabel "Valokuvan enimmäiskoko vientiä varten (kt):">
+<!ENTITY sizeOnDisk "Tiedoston koko levyllä:">
+<!ENTITY csvCaption "Vie CSV-muodossa">
+<!ENTITY csvSepLabel "Kenttäerotin:">
+<!ENTITY attachAsVcard "Liitä vCard-muodossa">
+<!ENTITY MCoptions15 "Lajittele kortit luetteloikkunassa">
+<!ENTITY MFFABbirthday "Näytä syntymäaika MoreFunctionsForAddressBookin käyttämässä muodossa">
+<!ENTITY nameORemail "Nimi tai sähköpostiosoite">
+<!ENTITY MCbirthdateWarn1 "Jos yhteensopivuus muiden ohjelmien kanssa halutaan säilyttää,">
+<!ENTITY MCbirthdateWarn3 "päivä = 2 numeroa  —  kuukausi = 2 numeroa  —  vuosi = 4 numeroa">
+<!ENTITY openCatDialog "Avaa luokkaluetteloikkuna">
+<!ENTITY categories "Luokat">
+<!ENTITY catDialogTitle "Luokkaluettelo">
+<!ENTITY catCurrentContact "Tämän yhteystiedon luokat">
+<!ENTITY catAssign "Valittavissa olevat luokat">
+<!ENTITY active "Aktiivinen">
+<!ENTITY name "Nimi">
+<!ENTITY remove "Poista">
+<!ENTITY add "Lisää">
+<!ENTITY delete "Poista">
+<!ENTITY assign "Valitse">
+<!ENTITY catCaption "Luokkienhallinnan asetukset">
+<!ENTITY catViewMode "Yhteystietopaneelin näyttötila">
+<!ENTITY view0 "Vakio">
+<!ENTITY view1 "Edistynyt">
+<!ENTITY catSep "Useampien luokkien erotin">
+<!ENTITY catAutoAdd "Lisää yhteystietoluokkia">
+<!ENTITY showDialog "Näytä luokkaluetteloikkuna">
+<!ENTITY createList "Luo uusi luettelo">
+<!ENTITY topIcon "Näytä luokkaluettelokuvake yhteystietopaneelin yläosassa">
+<!ENTITY v21 "Versio 2.1">
+<!ENTITY v30 "Versio 3.0">
+<!ENTITY charExportPref.label "Viennin oletusmerkistö">
+<!ENTITY charImportPref.label "Tuonnin oletusmerkistö">
+<!ENTITY noneValue.label "Manuaalinen valinta (ainoastaan laajennettu ASCII)">
+<!ENTITY charDialogDesc "Tämän vCardin tuonti/avaaminen vaatii manuaalisen merkistönvalinnan. Valitse merkistö, jolla seuraava rivi näyttää oikealta">
+<!ENTITY charset "Merkistö">
+<!ENTITY import "Tuonti">
+<!ENTITY export "Vienti">
+<!ENTITY showAttVcard "Näytä vCardit liiteluettelossa myös silloin, kun liitteet näytetään viestiin sisällytettynä">
+<!ENTITY contentTypeSend "Lähetä vCardit muodossa:">
+<!ENTITY numberDefault "Puhelinnumeroiden oletusarvo:">
+<!ENTITY work.lower "työ">
+<!ENTITY home.lower "koti">
+<!ENTITY none.lower "ei mikään">
+<!ENTITY extraFields "Lisäkentät">
+<!ENTITY extraField "Lisäkenttä">
+<!ENTITY abChooserTitle "Asetukset lisättäville korteille">
+<!ENTITY abChooserLabel1 "Valitse osoitekirja korteille">
+<!ENTITY saveRec "Tallenna vastaanottajien osoitteet">
+<!ENTITY save1 "kortteina (kaikki)">
+<!ENTITY save2 "kortteina (vain Vastaanottaja- ja Vastausosoite-kentät)">
+<!ENTITY save3 "kortteina (vain Kopio-kenttä)">
+<!ENTITY save4 "kortteina (vain Piilokopio-kenttä)">
+<!ENTITY save5 "listana (kaikki)">
+<!ENTITY save6 "listana (vain Vastaanottaja- ja Vastausosoite-kentät)">
+<!ENTITY save7 "listana (vain Kopio-kenttä)">
+<!ENTITY save8 "listana (vain Piilokopio-kenttä)">
+<!ENTITY asTha "tekstinä (.tha/.htm)">
+<!ENTITY asVcf "vCardina (.vcf)">
+<!ENTITY asCsv "CSV:nä (.csv)">
+<!ENTITY asThm "tekstinä (.thm)">
+<!ENTITY asMab "Thunderbirdin omassa muodossa (.mab)">
+<!ENTITY asIpod "iPod-vCardina (.vcf)">
+<!ENTITY handleVcards "MoreFunctionsForAddressBook saa käsitellä vCardeja viestipaneelissa">
+<!ENTITY hideExtraFields "Piilota lisäkentät">
+<!ENTITY catAddTags "Lisää viestitunnisteet avattaessa listan valintaikkuna">
+<!ENTITY skipABtitle "Osoitekirjat osoitteiden automaattista täydennystä varten">
+<!ENTITY skipABlabel "Näillä käyttäjätiedoilla, hae vastaavia merkintöjä seuraavista osoitekirjoista:">
+<!ENTITY skipABactive "Käytössä">
+<!ENTITY skipABname "Nimi">
+<!ENTITY edit "Muokkaa">
+<!ENTITY skipABcompose "Osoitteiden automaattinen täydentäminen">
+<!ENTITY vcardDateFormat "Päiväysmuoto viennissä:">
+<!-- These two lines are about date format. YYYY = year, MM = month, DD = day -->
+<!ENTITY dateLong "VVVV-KK-PP">
+<!ENTITY dateShort "VVVVKKPP">
+<!ENTITY MCexportcsv "Vie csv:nä">
+<!ENTITY TaskOpenPrefPanel "Lisäasetukset">
+<!ENTITY extraMailTab "Muut sähköpostiosoitteet">
+<!ENTITY extraMailLabel "Lisäsähköpostiosoite">
+<!ENTITY additionalEmails_pref "Käytä lisäsähköpostiosoitteita automaattisessa täydennyksessä">
+<!ENTITY showAbButton.pref "Näytä osoitekirjahaun painike">
+<!ENTITY addressbooks "Osoitekirjat">
+<!ENTITY addressbook "Osoitekirja">
+<!ENTITY lists "Listat">
+<!ENTITY abSearch.label "Osoitekirjat ja listat, joissa on yhteystietojen sähköpostiosoitteita:">
+<!ENTITY search "Hae">
+<!ENTITY pushAbButton "Hae napsauttamalla painiketta">
+<!ENTITY firstName "Etunimi">
+<!ENTITY lastName "Sukunimi">
+<!-- Here "unix" is a short way to mean "unix time" cfr. http://en.wikipedia.org/wiki/Unix_time , this label can't be too long -->
+<!ENTITY lastUnix "Viimeinen muokkauspäivämäärä (unix)">
+<!ENTITY label.vCardField "Otsikot ja vastaavat vCard-kentät">
+<!ENTITY labels "Otsikot">
+<!ENTITY vCardFields "Vastaavat vCard-kentät">
+<!ENTITY customFieldsLabel "Omat kentät">
+<!ENTITY emailOtherFields "Sähköpostiosoitteet ja muut kentät">
+<!ENTITY useGlobalEmailLabel "Lisää automaattiseen täydennykseen kohta, joka sisältää kaikki yhteystiedon sähköpostiosoitteet.">
+<!ENTITY copyAllRecipients "Kopioi kaikki vastaanottajat">
+<!ENTITY importFromRawFile "Tuo osoitteet raakatiedostosta">
+<!ENTITY vcardRawCaption "Tuo vCard- ja raakatiedostoista">
+<!ENTITY skipExistingContact "Ohita, jos ensisijainen sähköpostiosoite löytyy jostakin osoitekirjasta">
+<!ENTITY displayName "Näyttönimi">
+<!ENTITY nickName "Lempinimi">
+<!ENTITY email1 "Ensisijainen sähköposti">
+<!ENTITY email2 "Toissijainen sähköposti">
+<!ENTITY anniversaryY "Vuosipäivän vuosi">
+<!ENTITY anniversaryM "Vuosipäivän kuukausi">
+<!ENTITY anniversaryD "Vuosipäivän päivä">
+<!ENTITY newAddressbook "Uuden osoitekirjan nimi">
+<!ENTITY browse "Selaa">
+<!ENTITY skipFirstLine "Ohita ensimmäinen rivi">
+<!ENTITY endCSV "----- (CSV-tiedostosta tuotavien kenttien loppu ------">
+<!ENTITY up "Siirrä ylös">
+<!ENTITY down "Siirrä alas">
+<!ENTITY csvImportTitle "Tuo CSV-tiedostosta">
+<!ENTITY filePath "Tiedostopolku">
+<!ENTITY fieldsOrder "Kenttien järjestys CSV-tiedostossa">
+<!ENTITY MCimportcsv "Tuo osoitekirja CSV-tiedostosta">
+<!ENTITY autocomplete "Automaattinen täydennys">
+<!ENTITY newContactInList "Kun luodaan uutta yhteystietoa luettelon ollessa valittuna, lisää se automaattisesti luetteloon">
+<!ENTITY justBeginning "Etsi vain tietojen alkuosan vastinetta automaattisessa täydennyksessä (asetus on muokattavissa TB 31:ssä tai myöhemmissä versioissa)">
+<!ENTITY files "Files">
+<!ENTITY addFile "Add file">
+<!ENTITY openFileFolder "Open files folder">
+<!ENTITY fileAdd "File to add">
+<!ENTITY fileName "File name">
+<!ENTITY fileDialogDesc "A copy of this file will be stored within the directory of Thunderbird profile">
+<!ENTITY desc "Description">
+
+

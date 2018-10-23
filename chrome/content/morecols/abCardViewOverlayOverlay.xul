@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay SYSTEM "chrome://morecols/locale/morecols.dtd">
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" xmlns:html="http://www.w3.org/1999/xhtml">os
+
+	<script type="application/x-javascript" src="chrome://morecols/content/abCardViewOverlayOverlay.js"/>
+	<script type="application/x-javascript" src="chrome://messenger/content/dateFormat.js"/>
+	<script type="application/x-javascript" src="chrome://morecols/content/photo.js"/>
+	<script type="application/x-javascript" src="chrome://morecols/content/utils.js"/>
+	
+	<vbox id="cvbContact">
+		<description id="cvSpouseName" class="CardViewText" insertbefore="cvScreennameBox" />
+		<description id="cvBirthDate" class="CardViewText" insertbefore="cvScreennameBox" />
+		<description id="cvAnniversary" class="CardViewText" insertbefore="cvScreennameBox" />
+		<spacer height="5" />
+		<hbox align="center">
+			<description id="cvFiles" class="CardViewText" insertbefore="cvScreennameBox" />
+			<button label="&openFileFolder;"  oncommand="MFFABfileutils.openFilesDir()">
+				<observes element="cvFiles" attribute="collapsed"/>
+			</button>
+		</hbox>
+		<!--  <vbox id="photoVBOX">
+		<hbox>
+			<html:img  id="photo" collapsed="true" ondblclick="MFFABabCardView.openPhoto(this)"/><spacer flex="1" />
+		</hbox>
+		</vbox> -->
+		<description id="cvExtraEmailBox5" insertafter="cvEmail2Box" class="CardViewLink">
+			<html:a href="" id="cvExtraEmail5"/>
+		</description>
+		<description id="cvExtraEmailBox4" insertafter="cvEmail2Box" class="CardViewLink">
+			<html:a href="" id="cvExtraEmail4"/>
+		</description>
+		<description id="cvExtraEmailBox3" insertafter="cvEmail2Box" class="CardViewLink">
+			<html:a href="" id="cvExtraEmail3"/>
+		</description>
+		<description id="cvExtraEmailBox2" insertafter="cvEmail2Box" class="CardViewLink">
+			<html:a href="" id="cvExtraEmail2"/>
+		</description>
+		<description id="cvExtraEmailBox1" insertafter="cvEmail2Box" class="CardViewLink">
+			<html:a href="" id="cvExtraEmail1"/>
+		</description>
+		
+		<vbox flex="1" id="searchABbox">
+			<description id="searchAB" class="CardViewHeading">&addressbooks; (&lists;)</description>
+			<hbox>
+			<vbox flex="1" id="searchABvbox">
+				<description id="ABplaceHolder" style="color:grey; font-style:italic">&pushAbButton;</description>
+			</vbox>
+			<vbox>
+				<button label="&search;" oncommand="searchABhandler.populate()" />
+			</vbox>
+			</hbox>
+		</vbox>
+	</vbox>
+	
+	<vbox id="cvbOther">
+		<description id="cvMFFABcustom1" class="CardViewText" />
+		<description id="cvMFFABcustom2" class="CardViewText" />
+		<description id="cvMFFABcustom3" class="CardViewText" />
+		<description id="cvMFFABcustom4" class="CardViewText" />
+		<description id="cvMFFABcustom5" class="CardViewText" />
+		<description id="cvMFFABcustom6" class="CardViewText" />
+		<description id="cvMFFABcustom7" class="CardViewText" />
+		<description id="cvMFFABcustom8" class="CardViewText" />
+		<description id="cvMFFABcustom9" class="CardViewText" />
+		<description id="cvMFFABcustom10" class="CardViewText" />
+	</vbox>
+	
+</overlay>

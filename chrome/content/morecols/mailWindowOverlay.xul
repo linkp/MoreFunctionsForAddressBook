@@ -1,0 +1,27 @@
+<?xml version="1.0"?> 
+<!DOCTYPE overlay SYSTEM "chrome://morecols/locale/morecols.dtd">
+<overlay id="MFFABmailWindowOverlay" 
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript" src="chrome://morecols/content/utils.js"/>
+  <script type="application/x-javascript" src="chrome://morecols/content/moreColsPopup.js"/>
+  <script type="application/x-javascript" src="chrome://morecols/content/mailWindowOverlay.js"/>
+  
+<popup id="emailAddressPopup">
+	<menu label="&saveRec;">
+		<menupopup onpopupshowing="MFFABcollector.context(this)">
+			<menuitem label="&save1;" oncommand="MFFABcollector.addContacts(0)" />
+			<menuitem label="&save2;" oncommand="MFFABcollector.addContacts(1)" />
+			<menuitem label="&save3;" oncommand="MFFABcollector.addContacts(2)" />
+			<menuitem label="&save4;" oncommand="MFFABcollector.addContacts(3)" />
+			<menuseparator />
+			<menuitem label="&save5;" oncommand="MFFABcollector.addList(0)" />
+			<menuitem label="&save6;" oncommand="MFFABcollector.addList(1)" />
+			<menuitem label="&save7;" oncommand="MFFABcollector.addList(2)" />
+			<menuitem label="&save8;" oncommand="MFFABcollector.addList(3)" />
+			<menuseparator />
+		</menupopup>
+	</menu>
+	<menuitem label="&copyAllRecipients;" oncommand="MFFABcollector.copyContacts()" />
+</popup>
+
+</overlay>

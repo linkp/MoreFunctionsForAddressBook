@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE MFFABmainWinOverlay SYSTEM "chrome://morecols/locale/morecols.dtd">
+<overlay id="prova" 
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="text/javascript" src="chrome://morecols/content/vcardTools.js" />
+<script type="text/javascript" src="chrome://morecols/content/utils.js" />
+<script type="text/javascript" src="chrome://morecols/content/mainWindowOverlay.js" />	
+
+<popup id="attachmentListContext">
+	<menuitem id="vCardOpener" label="&MCopenvcard;" 
+	insertafter="context-openAttachment" oncommand="MFFABvcardHandler.start()" 
+	collapsed="true" />
+</popup>
+  
+</overlay>

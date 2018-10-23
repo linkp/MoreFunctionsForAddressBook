@@ -1,4 +1,25 @@
-overlay 	chrome://messenger/content/messenger.xul		chrome://morecols/content/mainWindowOverlay.xul
+content	morecols	chrome/content/morecols/
+locale	morecols	en-US	chrome/locale/en-US/morecols/
+locale	morecols	cs-CZ	chrome/locale/cs-CZ/morecols/
+locale	morecols	de	chrome/locale/de/morecols/
+locale	morecols	es-ES	chrome/locale/es-ES/morecols/
+locale	morecols	fi	chrome/locale/fi/morecols/
+locale	morecols	fr	chrome/locale/fr/morecols/
+locale	morecols	he-IL	chrome/locale/he-IL/morecols/
+locale 	morecols        hu-HU   chrome/locale/hu-HU/morecols/
+locale	morecols	it	chrome/locale/it/morecols/
+locale	morecols	nl	chrome/locale/nl/morecols/
+locale	morecols	pl	chrome/locale/pl/morecols/
+locale	morecols	pt-PT	chrome/locale/pt-PT/morecols/
+locale  morecols        ru-RU   chrome/locale/ru-RU/morecols/
+locale	morecols	sk-SK	chrome/locale/sk-SK/morecols/
+locale  morecols   	sl-SI   chrome/locale/sl-SI/morecols/
+locale	morecols	sv-SE	 chrome/locale/sv-SE/morecols/
+locale	morecols	zh-CN	 chrome/locale/zh-CN/morecols/
+locale	morecols	zh-TW	 chrome/locale/zh-TW/morecols/
+
+
+overlay chrome://messenger/content/messenger.xul		chrome://morecols/content/mainWindowOverlay.xul
 overlay	chrome://messenger/content/addressbook/addressbook.xul	chrome://morecols/content/moreColsOverlay.xul
 overlay	chrome://messenger/content/addressbook/addressbook.xul	chrome://morecols/content/tasksOverlay.xul
 overlay	chrome://messenger/content/addressbook/addressbook.xul	chrome://morecols/content/moreColsPopup.xul
@@ -8,14 +29,12 @@ overlay	chrome://messenger/content/addressbook/abNewCardDialog.xul	chrome://more
 overlay	chrome://messenger/content/addressbook/abEditCardDialog.xul	chrome://morecols/content/abNewEditOverlay.xul
 overlay	chrome://messenger/content/addressbook/abMailListDialog.xul	chrome://morecols/content/moreColsPopup.xul
 overlay	chrome://messenger/content/addressbook/abCardViewOverlay.xul	chrome://morecols/content/abCardViewOverlayOverlay.xul
-overlay 	chrome://messenger/content/ABSearchDialog.xul	chrome://morecols/content/searchOverlay.xul
+overlay chrome://messenger/content/ABSearchDialog.xul	chrome://morecols/content/searchOverlay.xul
 overlay	chrome://messenger/content/addressbook/abContactsPanel.xul	chrome://morecols/content/winMessOverlay.xul
-overlay 	chrome://messenger/content/mailWindowOverlay.xul	chrome://morecols/content/mailWindowOverlay.xul
-overlay 	chrome://messenger/content/am-addressing.xul	chrome://morecols/content/amAddressing.xul
-overlay 	chrome://messenger/content/am-identity-edit.xul	chrome://morecols/content/amAddressing.xul
+overlay chrome://messenger/content/mailWindowOverlay.xul	chrome://morecols/content/mailWindowOverlay.xul
+overlay chrome://messenger/content/am-addressing.xul	chrome://morecols/content/amAddressing.xul
+overlay chrome://messenger/content/am-identity-edit.xul	chrome://morecols/content/amAddressing.xul
 overlay	chrome://messenger/content/messengercompose/messengercompose.xul	chrome://morecols/content/winComposeOverlay.xul
-
-content	morecols	jar:chrome/morecols.jar!/content/morecols/
 
 component {2f946df9-114c-41fe-8899-81f10daf4f00} components/nsAbAutoCompleteSearch.js  appversion<31.0
 contract @mozilla.org/autocomplete/search;1?name=addrbook {2f946df9-114c-41fe-8899-81f10daf4f00} appversion<31.0
@@ -37,28 +56,7 @@ component {2307CDBE-E459-11DC-9333-2E3456D89593} components/openAB.js
 contract @mozilla.org/commandlinehandler/general-startup;1?type=myopenAB {2307CDBE-E459-11DC-9333-2E3456D89593}
 category command-line-handler m-openAB @mozilla.org/commandlinehandler/general-startup;1?type=myopenAB
 
-locale	morecols	en-US	jar:chrome/morecols.jar!/locale/en-US/morecols/
-locale	morecols	cs-CZ	jar:chrome/morecols.jar!/locale/cs-CZ/morecols/
-locale	morecols	de	jar:chrome/morecols.jar!/locale/de/morecols/
-locale	morecols	es-ES	jar:chrome/morecols.jar!/locale/es-ES/morecols/
-locale	morecols	fi	jar:chrome/morecols.jar!/locale/fi/morecols/
-locale	morecols	fr	jar:chrome/morecols.jar!/locale/fr/morecols/
-locale	morecols	he-IL	jar:chrome/morecols.jar!/locale/he-IL/morecols/
-locale  	morecols        hu-HU   jar:chrome/morecols.jar!/locale/hu-HU/morecols/
-locale	morecols	it	jar:chrome/morecols.jar!/locale/it/morecols/
-locale  	morecols	nb-NO   jar:chrome/morecols.jar!/locale/nb-NO/morecols/
-locale	morecols	nl	jar:chrome/morecols.jar!/locale/nl/morecols/
-locale	morecols	pl	jar:chrome/morecols.jar!/locale/pl/morecols/
-locale	morecols	pt-BR	jar:chrome/morecols.jar!/locale/pt-BR/morecols/
-locale	morecols	pt-PT	jar:chrome/morecols.jar!/locale/pt-PT/morecols/
-locale  	morecols        ru-RU   jar:chrome/morecols.jar!/locale/ru-RU/morecols/
-locale	morecols	sk-SK	jar:chrome/morecols.jar!/locale/sk-SK/morecols/
-locale  	morecols   	sl-SI   jar:chrome/morecols.jar!/locale/sl-SI/morecols/
-locale	morecols	sv-SE	 jar:chrome/morecols.jar!/locale/sv-SE/morecols/
-locale  	morecols	uk	jar:chrome/morecols.jar!/locale/uk/morecols/
-locale  	morecols	tr	jar:chrome/morecols.jar!/locale/tr/morecols/
-locale	morecols	zh-CN	 jar:chrome/morecols.jar!/locale/zh-CN/morecols/
-locale	morecols	zh-TW	 jar:chrome/morecols.jar!/locale/zh-TW/morecols/
+
 
 
 
